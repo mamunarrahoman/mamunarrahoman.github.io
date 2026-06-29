@@ -18,6 +18,9 @@
                 <i class='bx bx-menu'></i>
             </div>
             <ul class="nav-menu" id="nav-menu">
+                <div class="drawer-close" id="drawer-close">
+                    <i class='bx bx-x'></i>
+                </div>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Project Page</a></li>
@@ -177,35 +180,33 @@
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
         const navOverlay = document.getElementById('nav-overlay');
+        const drawerClose = document.getElementById('drawer-close');
         const navLinks = document.querySelectorAll('.nav-menu a');
 
         function toggleMenu() {
             const isOpen = navMenu.classList.toggle('show-menu');
             navOverlay.classList.toggle('show-overlay', isOpen);
             
-            // Forces the icon to swap to a cross ('bx-x') when open, or menu when closed
-            const icon = navToggle.querySelector('i');
-            icon.className = isOpen ? 'bx bx-x' : 'bx bx-menu';
-            
-            // Lock body scrolling when drawer is active
+            // Adjust body background overflow context
             document.body.style.overflow = isOpen ? 'hidden' : '';
         }
 
         function closeMenu() {
             navMenu.classList.remove('show-menu');
             navOverlay.classList.remove('show-overlay');
-            // Revert back to standard hamburger icon on close
-            navToggle.querySelector('i').className = 'bx bx-menu';
             document.body.style.overflow = '';
         }
 
-        // Toggle Drawer Visibility on button tap
+        // Toggle visibility on hamburger icon click
         navToggle.addEventListener('click', (e) => {
             toggleMenu();
             e.stopPropagation();
         });
 
-        // Clear active classes, add focus to target layout, and close drawer safely
+        // Close drawer explicitly via the internal cross button
+        drawerClose.addEventListener('click', closeMenu);
+
+        // Clear layout styles, assign visibility indices, and collapse panel on path shift
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.forEach(nav => nav.classList.remove('active'));
@@ -214,7 +215,7 @@
             });
         });
 
-        // Close Drawer safely if backdrop panel is clicked
+        // Close instantly on outer overlay backdrop interactions
         navOverlay.addEventListener('click', closeMenu);
     </script>
 
