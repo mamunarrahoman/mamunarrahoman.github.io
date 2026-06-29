@@ -7,7 +7,7 @@
     --accent-hover: #3b4e81;
     --text-color: #334155;
     /* Slate 700 */
-    --text-light: #64748b;
+    --text-light: #006aff;
     /* Slate 500 */
     --bg-body: #fafafa;
     --card-bg: #ffffff;
@@ -61,7 +61,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
 }
 
 .nav-container {
