@@ -183,40 +183,38 @@
             const isOpen = navMenu.classList.toggle('show-menu');
             navOverlay.classList.toggle('show-overlay', isOpen);
             
-            // Swap menu icon with close icon smoothly
+            // Forces the icon to swap to a cross ('bx-x') when open, or menu when closed
             const icon = navToggle.querySelector('i');
             icon.className = isOpen ? 'bx bx-x' : 'bx bx-menu';
             
-            // Prevent background page from scrolling when menu is active
+            // Lock body scrolling when drawer is active
             document.body.style.overflow = isOpen ? 'hidden' : '';
         }
 
         function closeMenu() {
             navMenu.classList.remove('show-menu');
             navOverlay.classList.remove('show-overlay');
+            // Revert back to standard hamburger icon on close
             navToggle.querySelector('i').className = 'bx bx-menu';
             document.body.style.overflow = '';
         }
 
-        // Toggle Drawer Visibility
+        // Toggle Drawer Visibility on button tap
         navToggle.addEventListener('click', (e) => {
             toggleMenu();
             e.stopPropagation();
         });
 
-        // Close Drawer when an item link is clicked
+        // Clear active classes, add focus to target layout, and close drawer safely
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // Remove active styling class from other links
                 navLinks.forEach(nav => nav.classList.remove('active'));
-                // Highlight clicked section
                 link.classList.add('active');
-                // Automatically slide close and turn cross back to hamburger
                 closeMenu();
             });
         });
 
-        // Close Drawer if clicked anywhere on the darkened overlay layout
+        // Close Drawer safely if backdrop panel is clicked
         navOverlay.addEventListener('click', closeMenu);
     </script>
 
