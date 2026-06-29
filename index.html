@@ -9,8 +9,6 @@
 </head>
 <body>
 
-    <div class="nav-overlay" id="nav-overlay"></div>
-
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">MMRR</div>
@@ -24,8 +22,10 @@
                 <li><a href="#research">Research</a></li>
                 <li><a href="#cv">CV/SoP</a></li>
                 
-                <div class="drawer-close" id="drawer-close">
-                    <i class='bx bx-x'></i>
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
                 </div>
             </ul>
         </div>
@@ -180,38 +180,43 @@
     <script>
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
-        const navOverlay = document.getElementById('nav-overlay');
         const drawerClose = document.getElementById('drawer-close');
         const navLinks = document.querySelectorAll('.nav-menu a');
 
-        function toggleMenu() {
-            const isOpen = navMenu.classList.toggle('show-menu');
-            navOverlay.classList.toggle('show-overlay', isOpen);
-            document.body.style.overflow = isOpen ? 'hidden' : '';
-        }
-
-        function closeMenu() {
-            navMenu.classList.remove('show-menu');
-            navOverlay.classList.remove('show-overlay');
-            document.body.style.overflow = '';
-        }
-
+        // Toggle Drawer Visibility
         navToggle.addEventListener('click', (e) => {
-            toggleMenu();
+            navMenu.classList.toggle('show-menu');
+            
+            const icon = navToggle.querySelector('i');
+            if(navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
             e.stopPropagation();
         });
 
-        drawerClose.addEventListener('click', closeMenu);
+        // Close Drawer when cross button inside circle layout is clicked
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
 
+        // Close Drawer when a link is clicked
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                link.classList.add('active');
-                closeMenu();
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
             });
         });
 
-        navOverlay.addEventListener('click', closeMenu);
+        // Close Drawer if clicked anywhere completely outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
     </script>
 
 </body>
