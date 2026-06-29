@@ -234,6 +234,15 @@ strong {
     text-align: justify;
 }
 
+.project-tool a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.project-tool a:hover {
+    color: #0a58ca;
+}
+
 /* --- Grid Cards --- */
 .grid-3 {
     display: grid;
