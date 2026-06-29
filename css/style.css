@@ -1,8 +1,8 @@
 /* --- Root Variables & Modern Reset --- */
 :root {
     --primary-color: #0f172a; /* Slate 900 */
-    --accent-color: #2563eb;  /* Modern Accent Blue */
-    --accent-hover: #1d4ed8;
+    --accent-color: #15171a3f;  /* Modern Accent Blue */
+    --accent-hover: #435a99;
     --text-color: #334155;    /* Slate 700 */
     --text-light: #64748b;    /* Slate 500 */
     --bg-body: #fafafa;
