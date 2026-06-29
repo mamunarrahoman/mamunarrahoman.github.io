@@ -4,8 +4,8 @@
     /* Slate 900 */
     --accent-color: #000000;
     /* Modern Accent Blue */
-    --accent-hover: #3b4e81;
-    --text-color: #334155;
+    --accent-hover: #000000;
+    --text-color: #000000;
     /* Slate 700 */
     --text-light: #006aff;
     /* Slate 500 */
@@ -339,7 +339,7 @@ footer {
         right: -280px;
         width: 280px;
         height: 100vh;
-        background-color: rgba(15, 23, 42, 0.95);
+        background-color: rgba(0, 0, 0, 0.9);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         flex-direction: column;
