@@ -384,7 +384,7 @@ footer {
         transition: background 0.2s ease, color 0.2s ease;
     }
 
-    /* Instant haptic response style for tap interactions */
+    /* Visual tracking feedback for tap interactions */
     .nav-menu a:active,
     .nav-menu a.active {
         background-color: rgba(255, 255, 255, 0.08);
