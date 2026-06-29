@@ -100,7 +100,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* Hidden on desktop display nodes by default */
+/* Hidden on desktop views */
 .drawer-close {
     display: none;
 }
@@ -341,7 +341,7 @@ footer {
         pointer-events: auto;
     }
 
-    /* Mobile Side-Drawer Drawer Layout */
+    /* Mobile Side-Drawer Layout */
     .nav-menu {
         position: fixed;
         top: 0;
@@ -352,7 +352,7 @@ footer {
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
-        padding: 24px;
+        padding: 40px 24px;
         gap: 8px;
         align-items: flex-start;
         z-index: 1000;
@@ -369,20 +369,30 @@ footer {
         transform: translateX(0);
     }
 
-    /* Explicit cross icon button placed natively inside the drawer layout */
+    /* Circular Close Button at Bottom with interactive scaling hover effects */
     .drawer-close {
         display: flex;
-        align-self: flex-end;
-        font-size: 1.8rem;
+        align-items: center;
+        justify-content: center;
+        align-self: center;        /* Centered horizontally inside the drawer */
+        margin-top: auto;          /* Pushes it directly to the bottom */
+        margin-bottom: 12px;       
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        font-size: 1.7rem;
         color: #94a3b8;
         cursor: pointer;
-        padding: 8px;
-        margin-bottom: 16px;
-        transition: color 0.2s ease;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .drawer-close:hover {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
         color: #ffffff;
+        transform: scale(1.08);    /* Scale-up bounce effect */
     }
 
     .nav-menu li {
