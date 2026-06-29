@@ -100,6 +100,11 @@ a:hover {
     cursor: pointer;
 }
 
+/* Hidden on desktop display nodes by default */
+.drawer-close {
+    display: none;
+}
+
 /* --- Modern Typography Layouts --- */
 section {
     padding: 4px 0;
@@ -151,10 +156,10 @@ li {
 }
 
 strong {
-    color: #334155; /* Slate 700 */
+    color: #334155;
 }
 
-/* --- Buttons - Uniform Minimal Shape --- */
+/* --- Buttons --- */
 .btn-container {
     display: flex;
     gap: 10px;
@@ -218,7 +223,7 @@ strong {
     text-align: justify;
 }
 
-/* --- Grid Cards Modern Restyling --- */
+/* --- Grid Cards --- */
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -347,7 +352,7 @@ footer {
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
-        padding: 90px 24px 40px 24px;
+        padding: 24px;
         gap: 8px;
         align-items: flex-start;
         z-index: 1000;
@@ -364,7 +369,22 @@ footer {
         transform: translateX(0);
     }
 
-    /* Touch Target Dimensions Optimization */
+    /* Explicit cross icon button placed natively inside the drawer layout */
+    .drawer-close {
+        display: flex;
+        align-self: flex-end;
+        font-size: 1.8rem;
+        color: #94a3b8;
+        cursor: pointer;
+        padding: 8px;
+        margin-bottom: 16px;
+        transition: color 0.2s ease;
+    }
+
+    .drawer-close:hover {
+        color: #ffffff;
+    }
+
     .nav-menu li {
         width: 100%;
     }
