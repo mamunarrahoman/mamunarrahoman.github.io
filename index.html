@@ -18,14 +18,15 @@
                 <i class='bx bx-menu'></i>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <div class="drawer-close" id="drawer-close">
-                    <i class='bx bx-x'></i>
-                </div>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Project Page</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#cv">CV/SoP</a></li>
+                
+                <div class="drawer-close" id="drawer-close">
+                    <i class='bx bx-x'></i>
+                </div>
             </ul>
         </div>
     </nav>
@@ -186,8 +187,6 @@
         function toggleMenu() {
             const isOpen = navMenu.classList.toggle('show-menu');
             navOverlay.classList.toggle('show-overlay', isOpen);
-            
-            // Adjust body background overflow context
             document.body.style.overflow = isOpen ? 'hidden' : '';
         }
 
@@ -197,16 +196,13 @@
             document.body.style.overflow = '';
         }
 
-        // Toggle visibility on hamburger icon click
         navToggle.addEventListener('click', (e) => {
             toggleMenu();
             e.stopPropagation();
         });
 
-        // Close drawer explicitly via the internal cross button
         drawerClose.addEventListener('click', closeMenu);
 
-        // Clear layout styles, assign visibility indices, and collapse panel on path shift
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.forEach(nav => nav.classList.remove('active'));
@@ -215,7 +211,6 @@
             });
         });
 
-        // Close instantly on outer overlay backdrop interactions
         navOverlay.addEventListener('click', closeMenu);
     </script>
 
