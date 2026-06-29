@@ -150,7 +150,6 @@ li {
     text-align: justify;
 }
 
-/* Target bolded texts inside paragraphs or lists to make them 25% less dark */
 strong {
     color: #334155; /* Slate 700 */
 }
@@ -194,7 +193,6 @@ strong {
     border: 1px solid var(--border-color);
 }
 
-/* Unified Modern Hover Style */
 .btn:hover,
 .btn-dark:hover, 
 .btn-light:hover, 
@@ -265,7 +263,7 @@ strong {
     text-align: justify;
 }
 
-/* --- Contact Cards Converted into Interactive Buttons --- */
+/* --- Contact Cards --- */
 .card-button {
     display: block;
     background-color: var(--card-bg);
@@ -284,7 +282,6 @@ strong {
     transform: translateY(-1px);
 }
 
-/* Override hovered elements if nested in interactive button components */
 .card-button:hover .card-title {
     color: #ffffff;
 }
@@ -315,7 +312,7 @@ footer {
 
     .nav-toggle {
         display: block;
-        padding: 8px; /* Expand interactive hot-spot area */
+        padding: 8px; 
     }
 
     /* Darkened Blur Backdrop Panel */
@@ -339,7 +336,7 @@ footer {
         pointer-events: auto;
     }
 
-    /* Hardware Accelerated Mobile Side-Drawer Drawer */
+    /* Mobile Side-Drawer Drawer Layout */
     .nav-menu {
         position: fixed;
         top: 0;
@@ -356,11 +353,9 @@ footer {
         z-index: 1000;
         border-left: 1px solid rgba(255, 255, 255, 0.08);
         
-        /* Smooth scrolling for low height displays & prevents background propagation */
         overflow-y: auto;
         overscroll-behavior: contain; 
         
-        /* CSS Translate utilizes GPU rendering for consistent performance */
         transform: translateX(280px);
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -369,7 +364,7 @@ footer {
         transform: translateX(0);
     }
 
-    /* Accessible Mobile Touch Targets */
+    /* Touch Target Dimensions Optimization */
     .nav-menu li {
         width: 100%;
     }
@@ -378,13 +373,12 @@ footer {
         font-size: 1.15rem;
         display: block;
         width: 100%;
-        padding: 12px 16px; /* Optimized 48px touch zone height layout */
+        padding: 12px 16px; 
         border-radius: 8px;
         color: #cbd5e1;
         transition: background 0.2s ease, color 0.2s ease;
     }
 
-    /* Visual tracking feedback for tap interactions */
     .nav-menu a:active,
     .nav-menu a.active {
         background-color: rgba(255, 255, 255, 0.08);
