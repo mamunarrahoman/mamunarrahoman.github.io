@@ -341,12 +341,13 @@ footer {
         right: 0;
     }
 
-    /* Outer structural row block handling horizontal centering profile */
+    /* Row block container handling layout and vertical gap offsetting */
     .drawer-close-container {
         display: flex;
         width: 100%;
         justify-content: center;
         margin-top: auto;          /* Pins button layer down dynamically to list bottom */
+        margin-bottom: 24px;       /* Pushes cross up slightly away from screen border edge */
         padding-top: 20px;
     }
 
