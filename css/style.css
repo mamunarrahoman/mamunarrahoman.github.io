@@ -8,7 +8,7 @@
     --bg-body: #fafafa;
     --card-bg: #ffffff;
     --border-color: #e2e8f0;   /* Slate 200 */
-    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-family: "Times New Roman", Times, serif;
 }
 
 * {
