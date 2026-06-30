@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/ask_me.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="../index.html#projects">Project Page</a></li>
+                <li><a href="../index.html#research">Research</a></li>
+                <li><a href="#" class="active">CV/SoP</a></li>
+                <li><a href="../index.html#contact" class="active">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="qa-section">
+            <h2>Ask a Question</h2>
+            <p>Have a question about VLSI design, physical implementation flows, or potential collaborations? Drop your question below.</p>
+
+            <div class="qa-container">
+                <form action="https://formsubmit.co/mamunar.edu@gmail.com" method="POST" class="qa-form">
+                    
+                    <input type="hidden" name="_subject" value="New Portfolio Q&A Submission!">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="qa-name">Full Name</label>
+                            <input type="text" id="qa-name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qa-email">Email Address</label>
+                            <input type="email" id="qa-email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qa-topic">Topic / Category</label>
+                        <select id="qa-topic" name="topic" required>
+                            <option value="" disabled selected>Select a topic...</option>
+                            <option value="physical-design">IC Physical Design & Verification</option>
+                            <option value="rtl-digital">RTL Design & Digital Systems</option>
+                            <option value="research">Research & Thesis Inquiries</option>
+                            <option value="collaboration">Professional Collaboration</option>
+                            <option value="other">Other Inquiries</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qa-question">Your Question</label>
+                        <textarea id="qa-question" name="question" rows="5" placeholder="Type your question in detail here..." required></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-dark">
+                            Submit Question <i class='bx bx-paper-plane'></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        // Toggle Drawer Visibility
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        // Close Drawer when cross button inside circle layout is clicked
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        // Close Drawer when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        // Close Drawer if clicked anywhere completely outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
