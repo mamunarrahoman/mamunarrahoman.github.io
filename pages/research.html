@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV/SoP | MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
+        .resume-item {
+            margin-bottom: 8px;
+            padding-left: 2px;
+        }
+
+        .date-badge {
+            font-size: 0.88rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 2px;
+            letter-spacing: -0.1px;
+        }
+
+        .job-title {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+
+        .company-name {
+            font-size: 0.96rem;
+            color: var(--text-color);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .details-text {
+            font-size: 0.92rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="projects.html">Project Page</a></li>
+                <li><a href="#" class="active">Research</a></li>
+                <li><a href="cv_sop.html">CV/SoP</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="contact">
+            <h2>Undergraduate Thesis: Applications to Rectilinear Steiner Minimum Trees for Higher Degree Nets with
+                Advanced Net-breaking Techniques.</h2>
+            <p>In this research, our main goal was to develop a routing technique for nets whose degree is greater than
+                8. We chose the threshold of 8 because our routing solution database contains pre-computed routing
+                solutions only up to net degree 8. The size of this database grows with the number of pins considered,
+                and since we are running the source code on local machines rather than on powerful servers, we must
+                limit the database size to ensure manageable runtime and memory use. Therefore, we utilize this solution
+                set—referred to as the RSMT database—to reduce the overall execution time.
+
+                Our main approach to solving the high-degree net routing problem is to break down nets whose degree
+                exceeds 8. We have applied advanced net-breaking techniques to achieve this. Another method we use is
+                the bin (or cluster) technique, where the entire design is divided into several rectangular regions
+                called bins. Routing within bins naturally reduces net degree because each bin contains fewer pins.
+                After partitioning, we perform routing inside each bin.
+
+                This approach allows us to handle high-degree nets efficiently without increasing the size of the
+                routing solution database.
+            </p>
+            <h3>Note: Please go-through chapter-3 from thesis book to get clear idea about our working methodology.</h3>
+
+            <div class="grid-3">
+                <a href="https://drive.google.com/file/d/1W2UeG-PDb5Xmm35AsDgJfkzXHyBSzN5Y/view" target="_blank"
+                    class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i>Poster Presentation</div>
+                    <div class="card-content">click to explore</div>
+                </a>
+                <a href="https://drive.google.com/file/d/1CB3c7tg587gXWbSXRjbN98cPbFzLTvCO/view" target="_blank"
+                    class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i>Thesis Presentation</div>
+                    <div class="card-content">click to explore</div>
+                </a>
+                <a href="https://drive.google.com/file/d/1FknSlsVERFT48vqrrUjN7TfQzMA4Ix2p/view" target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i>Thesis book</div>
+                    <div class="card-content">click to explore</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional collaboration. I
+                am always open to collaborating with others in my areas of interest.</p>
+
+            <div class="grid-3">
+                <a href="mailto:mamunar.edu@gmail.com" class="card-button">
+                    <div class="card-title"><i class='bx bx-envelope'></i> Email</div>
+                    <div class="card-content">mamunar.edu@gmail.com</div>
+                </a>
+                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-linkedin-square'></i> LinkedIn</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-github'></i> GitHub</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        // Toggle Drawer Visibility
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        // Close Drawer when cross button inside circle layout is clicked
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        // Close Drawer when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        // Close Drawer if clicked anywhere completely outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
