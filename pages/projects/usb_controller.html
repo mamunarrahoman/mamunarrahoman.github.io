@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <style>
+        /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
+        .resume-item {
+            margin-bottom: 8px;
+            padding-left: 2px;
+        }
+
+        .date-badge {
+            font-size: 0.88rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 2px;
+            letter-spacing: -0.1px;
+        }
+
+        .job-title {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+
+        .company-name {
+            font-size: 0.96rem;
+            color: var(--text-color);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .details-text {
+            font-size: 0.92rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About me</a></li>
+                <li><a href="../projects.html" class="active">Project Page</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../cv_sop.html">CV/SoP</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="contact" style="line-height: 1.25;">
+            <h2 style="font-weight: 500;"><strong>PROJECT TITLE: </strong>
+                <span style="font-weight: 350;">
+                    Full-chip design of a unidirectional data transmitter using serial and parallel data communication
+                    modes.
+                </span>
+            </h2>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>Project duration: </strong>
+                Undergraduate, 4th Year 2nd Semester.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Objective: </strong>
+                The project aimed to develop a system capable of supporting unidirectional serial and parallel data
+                communication, with a selectable mode to determine which communication method will be used. This system
+                was then integrated with a game console, providing two communication modes: Normal Mode and Gaming Mode.
+                In Normal Mode (or Navigation Mode), serial data communication is used, while in Gaming Mode, parallel
+                data communication is employed to achieve faster data transfer at a lower clock frequency, optimizing
+                performance for gaming applications.
+            </p>
+            <p>
+                After developing and implementing the system using Verilog, we performed the full Place and Route (PnR)
+                flow, successfully completing the project as a full-chip design.
+            </p>
+
+            <p> <strong> NOTE: </strong>
+                No STA analysis and sign-off checks were performed for this project; the focus was on verifying the
+                results obtained directly from the PnR flow.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>Tool used: </strong>ModelSim, Xilinx Vivado (RTL and Testbencg), Cadence Genus (Synthesis),
+                Cadence Innovus (PnR)</p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>HDL Used: </strong> Verilog</p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>Technology Node: </strong> 45nm</p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/usb_controller/collage.jpg" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong>Visual representation of start to end process.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Abstract: </strong>
+                This project focuses on the full-chip design of a unidirectional USB transmitter using both serial and
+                parallel data communication modes. The chip's functionality is specifically tailored to handle input and
+                output tasks via distinct communication methods. Input signals include a clock, reset, and control bits,
+                which are processed to generate corresponding parallel or serial output data streams. The design process
+                involved detailed I/O pin planning, finite state machine (FSM) design, and flow optimization.
+                Verification was conducted using Verilog testbench code on ModelSim, and the final chip schematic was
+                synthesized and optimized through Cadence Genus and Innovus tools. The design underwent several stages
+                of optimization, including clock tree synthesis (CTS) and physical verification(we just check the report
+                from Innovus and tried to optimize the issues that occurred in PnR stage), with the final results
+                showing minimal violations. This work demonstrates a robust approach to USB transmitter (we are defining
+                this project as USB controller) design, balancing functional requirements with hardware constraints to
+                achieve an efficient implementation.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/usb_controller/usb_controller_fsm_diagram-01.jpg"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong>FSM diagram.
+            </p>
+        </section>
+
+        <section id="contact">
+            <p><strong>Methodology: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">Design Specification and Requirement Analysis.</li>
+                <li style="margin-bottom: 0px;">I/O Pin Planning and IO PAD implementation.</li>
+                <li style="margin-bottom: 0px;">Finite State Machine (FSM) Design.</li>
+                <li style="margin-bottom: 0px;">RTL Design with verilog. (ModelSim).</li>
+                <li style="margin-bottom: 0px;">Verification using Verilog. Testbench (ModelSim & Xilinx vivado).</li>
+                <li style="margin-bottom: 0px;">Physical Design and Optimization. (Cadence Innovus).</li>
+                <li style="margin-bottom: 0px;">Physical Verification. (Cadence Innovus built in system).</li>
+            </ul>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/usb_controller/RTL_schematic.png" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong>RTL to block level representation using Xilinx
+                Vivado.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/usb_controller/Testbench_output.png" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong>RTL functionality verification with verilog
+                testbench and it's waveform.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/usb_controller/testbench_1.PNG" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong> RTL functionality Cross verification from Xilinx
+                Vivado.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/usb_controller/schematic_crope.png" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong> Schematic diagram after RTL synthesis using Cadence
+                Genus.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/usb_controller/data.png" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong> Final result summary and constrains that we
+                applied.
+            </p>
+        </section>
+
+        <section id="contact">
+            <p><strong>Learnings: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">Gained hands-on experience in designing and analyzing FSM (Finite State
+                    Machine) diagrams.</li>
+                <li style="margin-bottom: 0px;">Improved proficiency in Verilog along with developing and verifying
+                    designs using Verilog testbenches.</li>
+                <li style="margin-bottom: 0px;">Understood the synthesis flow, including RTL-to-gate-level conversion
+                    steps.</li>
+                <li style="margin-bottom: 0px;">Learned the basics of placement and routing (PnR) using GUI-based EDA
+                    tools.</li>
+                <li style="margin-bottom: 0px;">Basic idea of Input files of PnR. (SDC, LEF, LIB,DEF) </li>
+                <li style="margin-bottom: 0px;">GDS extraction from Innovus and reopen it from virtuoso. </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <p><strong>Learnings: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">During verification of the Verilog design with the testbench in serial
+                    communication mode, we observed that data transfer required at least 8 clock cycles, since the
+                    serial communication was implemented using an 8-bit register. This required fine-tuning of the input
+                    signal pulse width to ensure correct output behavior. Through this, we gained practical
+                    understanding of timing budgeting.</li>
+                <li style="margin-bottom: 0px;">While integrating I/O PADs, we initially faced difficulties because we
+                    were only familiar with conventional Verilog design. With guidance from our respected faculty
+                    members, we were able to successfully implement the I/O PADs and complete the top-level design.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <p><strong>My role in this project: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">I served as the Team Lead for this project. The core idea of developing
+                    a data communication system with both serial and parallel communication modes originated from me. I
+                    designed the FSM architecture and developed the Verilog code along with the testbench for functional
+                    verification.</li>
+                <li style="margin-bottom: 0px;">Additionally, I was responsible for the entire Placement and Routing
+                    (PnR) stage and ensured smooth coordination within the team. I closely monitored progress,
+                    collaborated actively with teammates, and guided technical decisions throughout the project.</li>
+            </ul>
+            <p>
+                Finally, we successfully completed the full-chip implementation, and our project was recognized as the
+                best project of the section.
+            </p>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/usb_controller/main/Full_Chip_File/usb_controller_wpad.v">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 RTL Code</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/usb_controller/main/Full_Chip_File/usb_controller_tb.v">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Testbench Code</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/usb_controller/main/Full_Chip_File/synthesis_script.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Synthesis Flow</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <div class="grid-3">
+                <a href="https://github.com/mamunarrahoman/usb_controller/blob/main/Full_Chip_File/usb_controller_wpad.v"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> RTL Code</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman/usb_controller/blob/main/Full_Chip_File/usb_controller_tb.v"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i>Testbench Code</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/usb_controller/blob/main/Full_Chip_File/synthesis_script.tcl"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Synthesis Flow
+                    </div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1nwQz6iwArKV1OUMcDO1uYsqXgLk9PLz0/view?usp=drive_link"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> project report
+                    </div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://docs.google.com/presentation/d/1NMc-4vJ22AJyuz9sqd8UQVaTte9LwIhq/edit?usp=drive_link&ouid=109592186456280608192&rtpof=true&sd=true"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Project presentation
+                    </div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25">
+            <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
+                collaboration. I
+                am always open to collaborating with others in my areas of interest.</p>
+
+            <div class="grid-3">
+                <a href="mailto:mamunar.edu@gmail.com" class="card-button">
+                    <div class="card-title"><i class='bx bx-envelope'></i> Email</div>
+                    <div class="card-content">mamunar.edu@gmail.com</div>
+                </a>
+                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-linkedin-square'></i> LinkedIn</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-github'></i> GitHub</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function escapeHTML(str) {
+                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            }
+
+            function highlight(text) {
+                const lines = text.split("\n");
+                const keywords = [
+                    "set", "proc", "if", "else", "foreach", "for", "while",
+                    "module", "endmodule", "assign", "always", "begin", "end",
+                    "input", "output", "wire", "reg", "logic", "parameter"
+                ];
+
+                return lines.map(line => {
+                    let safe = escapeHTML(line);
+                    let commentStart = safe.length;
+
+                    const i1 = safe.indexOf("#");
+                    const i2 = safe.indexOf("//");
+                    const i3 = safe.indexOf("--");
+                    const arr = [i1, i2, i3].filter(i => i !== -1);
+
+                    if (arr.length > 0) commentStart = Math.min(...arr);
+
+                    let code = safe.substring(0, commentStart);
+                    let comment = safe.substring(commentStart);
+
+                    keywords.forEach(k => {
+                        const r = new RegExp("\\b" + k + "\\b", "g");
+                        code = code.replace(r, `<span class="kw">${k}</span>`);
+                    });
+
+                    if (commentStart !== safe.length) {
+                        comment = `<span class="com">${comment}</span>`;
+                    } else {
+                        comment = "";
+                    }
+                    return code + comment;
+                }).join("\n");
+            }
+
+            // Universal execution over all boxes relative to their content placement
+            document.querySelectorAll(".viewer-box").forEach(async (box) => {
+                const fileURL = box.getAttribute("data-src");
+                const metaEl = box.querySelector(".viewer-meta");
+                const editorEl = box.querySelector(".viewer-editor");
+                const statusEl = box.querySelector(".viewer-status");
+
+                if (metaEl) metaEl.textContent = fileURL;
+
+                try {
+                    if (statusEl) statusEl.textContent = "Loading file...";
+                    const res = await fetch(fileURL);
+                    const text = await res.text();
+
+                    if (editorEl) editorEl.innerHTML = highlight(text);
+                    if (statusEl) statusEl.textContent = "Loaded successfully";
+                } catch (e) {
+                    if (editorEl) editorEl.textContent = "Error loading file";
+                    if (statusEl) statusEl.textContent = "Failed";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

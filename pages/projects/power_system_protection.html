@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <style>
+        /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
+        .resume-item {
+            margin-bottom: 8px;
+            padding-left: 2px;
+        }
+
+        .date-badge {
+            font-size: 0.88rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 2px;
+            letter-spacing: -0.1px;
+        }
+
+        .job-title {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+
+        .company-name {
+            font-size: 0.96rem;
+            color: var(--text-color);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .details-text {
+            font-size: 0.92rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About me</a></li>
+                <li><a href="../projects.html" class="active">Project Page</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../cv_sop.html">CV/SoP</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="contact" style="line-height: 1.25;">
+            <h2 style="font-weight: 500;"><strong>PROJECT TITLE: </strong>
+                <span style="font-weight: 350;">
+                    Over Voltage, Under Voltage, and Over Load Protection of Power System using NodeMCU Mega WiFi R3
+                    (ATmega 2560).
+                </span>
+            </h2>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>Project duration: </strong>
+                Undergraduate, 4th Year 1st Semester.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Objective: </strong>
+                The objective of this project is to design and implement a comprehensive protection system for
+                electrical power networks, focusing on safeguarding against overvoltage, undervoltage, and overload
+                conditions. The primary aim is to ensure the reliable and stable operation of the system by detecting
+                potential faults and initiating appropriate protective responses. A key feature of the project is the
+                seamless graphical synchronization between the user interface and the hardware module, enabling
+                real-time monitoring and control. The system accurately displays live voltage readings, load status
+                (on/off), and the current flow through the network. Moreover, it includes an automated protection
+                mechanism: if the load exceeds the predefined threshold, the system instantly shuts down and issues a
+                warning on the display to prevent equipment damage.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>Tool used: </strong>Arduino IDE (for implementing code corresponding the system specification),
+                EasyEDA (Schematic drawing).</p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>Programming Language used: </strong> C++</p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/power_system_projection/Project_image.jpg" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong>Overall outlook of the protection system project,
+                illustrating the hardware setup, graphical interface, and real-time monitoring features.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Abstract: </strong>
+                A voltage-monitoring sensor continuously measures input voltage levels and detects abnormal
+                fluctuations. When an under-voltage or over-voltage condition is identified, the system triggers a
+                protective relay that disconnects power to the affected circuit. After a predefined time delay, the
+                relay automatically resets and restores power once normal conditions are re-established. The under and
+                over-voltage protection circuitry is implemented using comparators to ensure accurate threshold
+                detection.
+            </p>
+            <p>
+                The protection system also includes a current-sensing module that monitors real-time load current. If
+                the current exceeds the predefined reference limit, the protective relays operate sequentially to
+                disconnect all loads in a controlled manner. This staged tripping mechanism prevents excessive stress on
+                the system and mitigates the risk of a complete blackout, thereby enhancing overall system reliability
+                and safety.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/power_system_projection/block_diagram-cropped.svg" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong> Block diagram of protection system project.
+            </p>
+        </section>
+
+        <section id="contact">
+            <p><strong>Component List: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">Node MCU Mega WI-FI R3 Atmega 2560.</li>
+                <li style="margin-bottom: 0px;">3.5 inch LCD Display.</li>
+                <li style="margin-bottom: 0px;">ACS712 Current Sensor.</li>
+                <li style="margin-bottom: 0px;">ZMPT101B Voltage Senso.</li>
+                <li style="margin-bottom: 0px;">4 Channel Relay Module.</li>
+                <li style="margin-bottom: 0px;">Phase indicator bulb.</li>
+                <li style="margin-bottom: 0px;">Filament Bulb(40W).</li>
+            </ul>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/power_system_projection/circuit_diagram.svg" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact">
+            <p><strong>Learnings: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">Gained hands-on experience in microcontroller interfacing, including
+                    sensor integration and peripheral control.</li>
+                <li style="margin-bottom: 0px;">Developed a strong understanding of User Interface (UI) design, enabling
+                    seamless synchronization between hardware components and the graphical interface.</li>
+                <li style="margin-bottom: 0px;">Learned the operational principles of voltage and current sensors, along
+                    with their respective libraries and configuration in the Arduino environment.</li>
+                <li style="margin-bottom: 0px;">Acquired skills in system design, applying real-world problem-solving
+                    methodologies to develop reliable and scalable solutions.</li>
+                <li style="margin-bottom: 0px;">Strengthened proficiency in C++ programming within the Arduino IDE for
+                    embedded system implementation.</li>
+            </ul>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Difficulties Faced: </strong>
+                During the interfacing of the ZMPT101B voltage sensor, we encountered significant instability in the
+                measured voltage values. Within every 10–15 samples, the sensor occasionally produced unrealistic or
+                highly fluctuating readings. As a result, the system behaved unpredictably because the raw voltage
+                values were being used directly for comparison in the protection algorithm. This undermined the accuracy
+                and reliability of the overall system and initially prevented it from functioning as intended.
+            </p>
+
+            <p>
+                To address this issue, we implemented a sampling and averaging technique. By collecting 100 consecutive
+                voltage samples and computing their average before performing any comparisons, we were able to
+                substantially reduce measurement noise and improve the stability of the readings. Although this
+                filtering method introduced a slight increase in system response time, it significantly enhanced the
+                accuracy and effectiveness of the protection mechanism.
+            </p>
+        </section>
+
+        <section id="contact">
+            <p><strong>My role in this project: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">Designed the entire user interface (UI) and ensured seamless
+                    synchronization between the hardware system and the graphical interface.</li>
+                <li style="margin-bottom: 0px;">Developed and implemented the complete software code, including sensor
+                    integration, protection logic, and system control features.</li>
+                <li style="margin-bottom: 0px;">Led the system design, covering both functional architecture.</li>
+                <li style="margin-bottom: 0px;">Proposed and implemented the hardware setup, including the
+                    sampling-average technique to stabilize voltage readings and enhance system reliability.</li>
+            </ul>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/Power_system_protection_OV_UV_OL/main/project_code_Arduino_code/project_code.ino">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Project Code</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <div class="grid-3">
+                <a href="https://github.com/mamunarrahoman/Power_system_protection_OV_UV_OL/blob/main/project_code_Arduino_code/project_code.ino"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Project Code</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman/Power_system_protection_OV_UV_OL/blob/main/circuit_diagram.svg"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i>Schematic diagram</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1SrlIhEpIiVXeAauEvhswKVg-EMcbwI8D/view?usp=drive_link"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Project report
+                    </div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://docs.google.com/presentation/d/1-bWEsXwzDaYhlRV2P_VIqLxNMIinTbI0/edit?usp=sharing&ouid=109592186456280608192&rtpof=true&sd=true"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> project presentation
+                    </div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://drive.google.com/file/d/1Iy9tc-j71gcTe-rNcnMslTUyO-bfcXt0/view?usp=sharing"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Demodulation Video-I
+                    </div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://drive.google.com/file/d/1q9QxMMaFPvFZXcQJ7VX2qzgPa0si6Vd1/view?usp=drive_link"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> demonstration video -II
+                    </div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25">
+            <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
+                collaboration. I
+                am always open to collaborating with others in my areas of interest.</p>
+
+            <div class="grid-3">
+                <a href="mailto:mamunar.edu@gmail.com" class="card-button">
+                    <div class="card-title"><i class='bx bx-envelope'></i> Email</div>
+                    <div class="card-content">mamunar.edu@gmail.com</div>
+                </a>
+                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-linkedin-square'></i> LinkedIn</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-github'></i> GitHub</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function escapeHTML(str) {
+                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            }
+
+            function highlight(text) {
+                const lines = text.split("\n");
+                const keywords = [
+                    "set", "proc", "if", "else", "foreach", "for", "while",
+                    "module", "endmodule", "assign", "always", "begin", "end",
+                    "input", "output", "wire", "reg", "logic", "parameter"
+                ];
+
+                return lines.map(line => {
+                    let safe = escapeHTML(line);
+                    let commentStart = safe.length;
+
+                    const i1 = safe.indexOf("#");
+                    const i2 = safe.indexOf("//");
+                    const i3 = safe.indexOf("--");
+                    const arr = [i1, i2, i3].filter(i => i !== -1);
+
+                    if (arr.length > 0) commentStart = Math.min(...arr);
+
+                    let code = safe.substring(0, commentStart);
+                    let comment = safe.substring(commentStart);
+
+                    keywords.forEach(k => {
+                        const r = new RegExp("\\b" + k + "\\b", "g");
+                        code = code.replace(r, `<span class="kw">${k}</span>`);
+                    });
+
+                    if (commentStart !== safe.length) {
+                        comment = `<span class="com">${comment}</span>`;
+                    } else {
+                        comment = "";
+                    }
+                    return code + comment;
+                }).join("\n");
+            }
+
+            // Universal execution over all boxes relative to their content placement
+            document.querySelectorAll(".viewer-box").forEach(async (box) => {
+                const fileURL = box.getAttribute("data-src");
+                const metaEl = box.querySelector(".viewer-meta");
+                const editorEl = box.querySelector(".viewer-editor");
+                const statusEl = box.querySelector(".viewer-status");
+
+                if (metaEl) metaEl.textContent = fileURL;
+
+                try {
+                    if (statusEl) statusEl.textContent = "Loading file...";
+                    const res = await fetch(fileURL);
+                    const text = await res.text();
+
+                    if (editorEl) editorEl.innerHTML = highlight(text);
+                    if (statusEl) statusEl.textContent = "Loaded successfully";
+                } catch (e) {
+                    if (editorEl) editorEl.textContent = "Error loading file";
+                    if (statusEl) statusEl.textContent = "Failed";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

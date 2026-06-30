@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <style>
+        /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
+        .resume-item {
+            margin-bottom: 8px;
+            padding-left: 2px;
+        }
+
+        .date-badge {
+            font-size: 0.88rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 2px;
+            letter-spacing: -0.1px;
+        }
+
+        .job-title {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+
+        .company-name {
+            font-size: 0.96rem;
+            color: var(--text-color);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .details-text {
+            font-size: 0.92rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About me</a></li>
+                <li><a href="../projects.html" class="active">Project Page</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../cv_sop.html">CV/SoP</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="contact" style="line-height: 1.25;">
+            <h2 style="font-weight: 500;"><strong>PROJECT TITLE: </strong>
+                <span style="font-weight: 350;">
+                    Design and Implementation of High Power Buck-Boost Converter Circuit with TL494 IC.
+                </span>
+            </h2>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>Project duration: </strong>
+                Undergraduate, 4th Year 2nd Semester
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Objective: </strong>
+                The objective of this project is to design, calculate, and implement a high-power Boost Converter using
+                the TL494 Pulse Width Modulation (PWM) IC. The boost converter steps up a low input voltage (4.27V) to a
+                higher output voltage (60V), making it highly suitable for applications where the output voltage must be
+                greater than the input. This project aims to demonstrate the design and operation of the circuit while
+                maintaining efficiency and reliability under varying load conditions.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>Tool used: </strong>N/A</p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/buck_boost_converter/project_image.png" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong>Hardware implementation of High Power Buck-Boost
+                Converter Circuit with TL494 IC.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Methodology: </strong>
+                A buck-boost converter is a versatile type of DC-DC converter that can either increase or decrease the
+                input voltage, depending on the needs of the system. This makes it particularly useful in situations
+                where the input voltage may vary but a stable output voltage is required. For example, in
+                battery-powered devices, where the battery voltage drops as it discharges, a buck-boost converter can
+                adjust the voltage to ensure that the device operates consistently. The basic working principle of the
+                converter involves an inductor, a switch (typically a transistor), a diode, and a capacitor. When the
+                switch is closed, energy is stored in the magnetic field of the inductor, and when the switch is opened,
+                this stored energy is transferred to the load through the diode, either increasing or decreasing the
+                voltage as needed.
+            </p>
+            <p>
+                One of the unique characteristics of a traditional buck-boost converter is that it inverts the polarity
+                of the output voltage, though non-inverting designs are also available. The converter can operate in two
+                modes: buck mode (where it steps down the voltage if the input is higher than the required output) and
+                boost mode (where it steps up the voltage if the input is lower than the required output). This dual
+                functionality makes it an efficient solution for a wide range of applications, including portable
+                electronics, solar power systems, and other devices where power supply voltage may vary. Because of its
+                high efficiency and ability to maintain a stable voltage, the buck-boost converter is a crucial
+                component in many modern electronic systems.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="../../assest/project/buck_boost_converter/circuit_diagram.jpg" alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25; margin-top: -25px;">
+            <p style="text-align: center;"><strong>Figure: </strong>Circuit diagram for TL494 Based Buck-Boost Converter
+                Schematic Diagram.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Circuit Reference: </strong>
+                https://circuitdigest.com/electronic-circuits/high-power-inverting-buck-boost-converter-circuit-design-with-tl494
+            </p>
+        </section>
+
+        <section id="contact">
+            <p><strong>Learnings: </strong></p>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li style="margin-bottom: 0px;">Gained knowledge about different types of advanced buck-boost converter
+                    circuits beyond the ideal/basic models.</li>
+                <li style="margin-bottom: 0px;">Learned the practical operation, design considerations, and real-world
+                    challenges of power electronics circuits.</li>
+                <li style="margin-bottom: 0px;">Understood the differences between ideal and non-ideal circuit behavior,
+                    including efficiency, voltage ripple, and component limitations.</li>
+            </ul>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>My role in this project: </strong>
+                I was responsible for implementing the buck-boost circuit on a breadboard and ensuring it operated
+                correctly. Other aspects of the project, such as analysis, and documentation, were handled by other
+                group members.
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <div class="grid-3">
+                <a href="https://github.com/mamunarrahoman/buck_boost_converter/blob/main/circuit_diagram.jpg" target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Circuit diagram</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://drive.google.com/file/d/1pUo5Fw_VwQd4IxcebatvaAVQgylzcse5/view?usp=sharing"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Project report</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25">
+            <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
+                collaboration. I
+                am always open to collaborating with others in my areas of interest.</p>
+
+            <div class="grid-3">
+                <a href="mailto:mamunar.edu@gmail.com" class="card-button">
+                    <div class="card-title"><i class='bx bx-envelope'></i> Email</div>
+                    <div class="card-content">mamunar.edu@gmail.com</div>
+                </a>
+                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-linkedin-square'></i> LinkedIn</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-github'></i> GitHub</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function escapeHTML(str) {
+                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            }
+
+            function highlight(text) {
+                const lines = text.split("\n");
+                const keywords = [
+                    "set", "proc", "if", "else", "foreach", "for", "while",
+                    "module", "endmodule", "assign", "always", "begin", "end",
+                    "input", "output", "wire", "reg", "logic", "parameter"
+                ];
+
+                return lines.map(line => {
+                    let safe = escapeHTML(line);
+                    let commentStart = safe.length;
+
+                    const i1 = safe.indexOf("#");
+                    const i2 = safe.indexOf("//");
+                    const i3 = safe.indexOf("--");
+                    const arr = [i1, i2, i3].filter(i => i !== -1);
+
+                    if (arr.length > 0) commentStart = Math.min(...arr);
+
+                    let code = safe.substring(0, commentStart);
+                    let comment = safe.substring(commentStart);
+
+                    keywords.forEach(k => {
+                        const r = new RegExp("\\b" + k + "\\b", "g");
+                        code = code.replace(r, `<span class="kw">${k}</span>`);
+                    });
+
+                    if (commentStart !== safe.length) {
+                        comment = `<span class="com">${comment}</span>`;
+                    } else {
+                        comment = "";
+                    }
+                    return code + comment;
+                }).join("\n");
+            }
+
+            // Universal execution over all boxes relative to their content placement
+            document.querySelectorAll(".viewer-box").forEach(async (box) => {
+                const fileURL = box.getAttribute("data-src");
+                const metaEl = box.querySelector(".viewer-meta");
+                const editorEl = box.querySelector(".viewer-editor");
+                const statusEl = box.querySelector(".viewer-status");
+
+                if (metaEl) metaEl.textContent = fileURL;
+
+                try {
+                    if (statusEl) statusEl.textContent = "Loading file...";
+                    const res = await fetch(fileURL);
+                    const text = await res.text();
+
+                    if (editorEl) editorEl.innerHTML = highlight(text);
+                    if (statusEl) statusEl.textContent = "Loaded successfully";
+                } catch (e) {
+                    if (editorEl) editorEl.textContent = "Error loading file";
+                    if (statusEl) statusEl.textContent = "Failed";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
