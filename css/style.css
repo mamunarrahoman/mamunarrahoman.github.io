@@ -2,7 +2,7 @@
 :root {
     --primary-color: #0f172a;
     /* Slate 900 */
-    --accent-color: #000000;
+    --accent-color: #4548c4;
     /* Modern Accent Blue */
     --accent-hover: #000000;
     --text-color: #000000;
@@ -126,7 +126,7 @@ h1 {
     font-weight: 800;
     color: var(--primary-color);
     letter-spacing: -1px;
-    line-height: 1.2;
+    line-height: 1.25;
     margin-bottom: 4px;
 }
 
