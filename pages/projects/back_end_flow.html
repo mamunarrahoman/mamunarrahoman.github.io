@@ -75,13 +75,162 @@
 
     <div class="container">
 
+        <section id="contact">
+            <h1>MOTIVE</h1>
+            <p>During my period of unemployment, I remained actively engaged in study-related activities rather than
+                spending my time idly. One of my major self-learning projects was developing a beginner-level RTL-to-GDS
+                back-end flow. To accomplish this, I studied the Innovus user manual extensively and implemented the
+                flow, which I later validated using an ALU project available in my university laboratory. Since I had
+                already completed my degree, I no longer had regular access to the laboratory facilities. Therefore, I
+                obtained permission from my supervisor before using the lab resources. After receiving approval, I
+                performed flow verification and resolved several major and minor issues encountered during the
+                implementation. As I am sharing this work solely for educational purposes, I believe that it does not
+                violate any ethical principles or academic policies.</p>
+            <h2>RTL-to-GDS FLOW Elaboration</h2>
+            <p>
+                <strong>RTL Generation:</strong>
+                Since my primary focus was on the PnR flow, I intentionally chose a simple RTL design to minimize
+                computational complexity and to facilitate a clearer understanding of the overall flow.
+
+                This synchronous 4-bit ALU (alu_4bit) processes two 4-bit inputs (A and B) through three distinct,
+                shaded sub-modules to produce an overflow-safe 8-bit output (Y). Inside the design, the arithmetic_unit
+                concurrently computes addition (A + B) and subtraction (A - B) into registers, while the logical_unit
+                continuously evaluates bitwise AND (A&B) and XOR (A^B) wire outputs. A central 4-to-1 multiplexer inside
+                the control_unit monitors a 2-bit Opcode input, routing the corresponding arithmetic or logical result
+                to an 8-bit output register on every rising edge of the system clock (posedge clk) according to a fixed
+                functional table (00 for add, 01 for subtract, 10 for AND, and 11 for XOR).
+            </p>
+            <p><strong>Tool used: </strong> ModelSim ; <strong>HDL: </strong> Verilog</p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=1YWWB5-QGIy1woCIOQqaQFGTH6H1j2Ug4&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
         <section id="code-viewer-section">
-            <div class="viewer-box" id="codeViewerContainer"
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/input_files/alu_4bit.v">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 ALU Verilog Code</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Functional Verification/Design Verification:</strong>
+                After developing the Verilog description of the system, the design must pass through the functional
+                verification stage to ensure correct operation. This verification is carried out using a Verilog
+                testbench,
+                which checks whether the design behaves according to the specified functionality. The simulation
+                waveform
+                demonstrates the correct operation of the designed system, thereby validating its functionality.
+            </p>
+            <p><strong>Tool used: </strong> ModelSim ; <strong>HDL: </strong> System Verilog</p>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
                 data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/input_files/alu_4bit_tb.v">
-                <h2 style="margin-top: -8px; color: #ffffff;;">💻 ALU Verilog Testbench Code</h2>
-                <div class="viewer-meta" id="sourceUrl" style="margin-top: -12px;"></div>
-                <div class="viewer-editor" id="content">Loading...</div>
-                <div class="viewer-status" id="status"></div>
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 ALU Verilog Testbench Code</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=1tcdQhb1Z7dWC-p-zeO94ilvZTgvv4eDI&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Makefile:</strong>
+                A Makefile serves as an efficient automation tool that streamlines the execution of various stages of
+                the backend flow. Since physical design typically requires multiple iterations and extensive
+                trial-and-error, the Makefile significantly reduces manual effort by automating tasks and minimizing the
+                number of commands required to run the flow.
+            </p>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/Makefile">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Makefile</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Placement and Routing (PnR) Flow:</strong>
+                Conventionally, the Placement and Routing (PnR) flow starts with design import. In this implementation,
+                however, the flow is initiated from the synthesis stage, which is integrated into the Makefile to
+                achieve a fully automated RTL-to-GDS flow. While industrial PnR flows often incorporate several
+                intermediate optimization stages, including pre-placement, pre-CTS, and pre-routing steps, such stages
+                are not strictly mandatory but effective for tressing and modification in the script. Therefore, these
+                intermediate steps are omitted in this work to maintain a simple and streamlined flow while retaining
+                its effectiveness. This simplified approach facilitates a better understanding of the overall physical
+                design process and reduces unnecessary complexity. The following sections present the sequence of steps
+                involved in the complete PnR flow, as automated through the Makefile.
+            </p>
+            <p>
+                <strong>RTL Synthesis:</strong>
+                To transform a coded design into a physical device, we need to perform synthesis. Through this process,
+                the Register Transfer Level (RTL) description is converted into a technology specific (As example: 2nm,
+                3nm, 4nm, 5nm etc. PDK specific synthesis) gate-level representation. Major goals of synthesis are: (i)
+                To get a gate level netlist, (ii) Inserting clock gates, (iii) logic optimization, (iv) Inserting DEF
+                (Design Exchange Format) logic, (v) Logic equivalence between RTL and Netlist should be maintained.
+            </p>
+            </p>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/synthesis_script.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 RTL Synthesis</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+        <section id="contact">
+            <p>Here, I used Cadence Genus for synthesis. I had already defined the design constraints in the
+                synthesis.tcl file, and finally obtained an exported alu_4bit.sdc file as an elaborated version of the
+                design constraints. Several key design constraints are applied during synthesis to facilitate timing
+                optimization and to ensure that the resulting design closely satisfies the specified timing and design
+                constrains.
+            </p>
+            <section id="contact">
+                <h2>Constraints &amp; Parameters</h2>
+                <ul
+                    style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                    <li style="margin-bottom: 6px;">Input and Output delay.</li>
+                    <li style="margin-bottom: 6px;">Clock Uncertainty (Jitter) and Derate Value.</li>
+                    <li style="margin-bottom: 6px;">Clock and Data transition.</li>
+                    <li style="margin-bottom: 6px;">DRC (Design Rule Constraints — Max Fanout, Max Transition, Min
+                        Capacitance).</li>
+                    <li style="margin-bottom: 6px;">Clock Period, etc.</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/syn_export/alu_4bit.sdc">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Exported SDC after Synthesis</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
             </div>
         </section>
 
@@ -93,8 +242,286 @@
         </section>
 
         <section id="contact">
+            <p>After completing synthesis, the exported SDC file includes comprehensive design constraint information.
+                Furthermore, a schematic diagram was generated and exported from the Cadence Genus GUI.
+            </p>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/config.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Design Variable Configuration</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Design Import:</strong>
+                Following synthesis, the backend implementation flow, consisting of Placement and Routing (PnR), is
+                initiated. The design is first imported into the tool by defining a set of essential variables that are
+                utilized throughout the flow. These variables include the top module name, power and ground nets,
+                Verilog netlist path, MMMC configuration path, and technology library file paths (LIB, LEF, TLU+, etc.).
+                After specifying these parameters, the tool environment is initialized and configured using the
+                appropriate tool-specific commands.
+            </p>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/mmmc.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Multi Mode Multi Corner Configuration</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>MMMC:</strong>
+                In the modern VLSI physical design flow, Multi-Mode Multi-Corner (MMMC) analysis is a critical
+                methodology used to ensure a chip's reliability across diverse operational and environmental conditions.
+                It bridges two distinct variables: Modes, which define functional states (such as sleep, test, or normal
+                operation) via specific clock frequencies and timing constraints (SDC); and Corners, which account for
+                physical manufacturing process variations, voltage fluctuations, and temperature swings (PVT). By
+                integrating these scenarios into Electronic Design Automation (EDA) tools using specialized timing
+                libraries (.lib) and parasitic RC models, MMMC allows design engineers to simultaneously analyze and
+                optimize critical setup and hold timing constraints, preventing post-silicon failures before the chip
+                ever goes to fabrication. For advanced chip designs, On-Chip Variation (OCV) effects are considered to
+                improve timing robustness. This is accomplished by applying pessimistic timing constraints, ensuring
+                that the design can tolerate process, voltage, and temperature variations while still meeting its
+                performance requirements.
+            </p>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/init_design.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Design Initialization</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Design Initialization and Floor-planning:</strong>
+                The physical design implementation begins with the design
+                initialization phase, where the environment is configured by sourcing global variables from a central
+                configuration script (config.tcl). The core design database is then instantiated via the init_design
+                command, which imports the structural Verilog netlist, physical technology libraries (.lef), top-level
+                cell definitions, and the Multi-Mode Multi-Corner (MMMC) timing environment files while explicitly
+                mapping the global power and ground nets (POWER_NET and GROUND_NET). Following initialization, the
+                initial floorplan is established utilizing the floorPlan command to define a core area of 40 um by 15.4
+                um with a uniform 2 um peripheral margin on all sides. Boundary constraints and physical reliability
+                structures are then added, including the insertion of boundary/endcap cells [ DECAP4 (for left and right
+                edge) and DECAP2 (for top and bottom edge) ] along the chip edges to prevent well-isolation rule
+                violations, and well-tap cells placed at a regular interval of 15 um to mitigate latch-up phenomena. To
+                prevent unwanted special routing extensions over these peripheral decap structures, localized routing
+                blockages are created on the Metal1 layer. Finally, logical-to-physical power connectivity is
+                established via global net connections (globalNetConnect), and structured, layer-specific peripheral pin
+                placements are defined—allocating data inputs (A and B) to the left on Metal3, outputs (Y) to the right
+                on Metal3, the clock network (clk) to the top on Metal2, and control signals (Opcode) to the bottom on
+                Metal1—before the initialized state is committed to disk.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=1lxIgmHxpB12Bg-ZkoElWPRdblzyzSe5C&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/power.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Power Planning</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Power-planning:</strong>
+                The power planning phase begins by restoring the previously initialized design database
+                (init_design.inn.dat) and defining the structural parameters for the Power Delivery Network (PDN). A
+                robust power mesh configuration is programmatically synthesized using a TCL loop that targets orthogonal
+                metal layers to minimize IR drop across the die. The script dynamically allocates vertical power and
+                ground stripes on the even-numbered Metal4 layer (generating 16 strip sets) and horizontal stripes on
+                the odd-numbered Metal5 layer (generating 6 strip sets). These stripes utilize a wire width and spacing
+                of 0.1 um, maintain a symmetrical 2 um offset from the core boundaries, and extend completely to the
+                design edge with explicitly enabled power ports for external connectivity. Following mesh synthesis, the
+                standard cell rows are integrated into the global power grid using the special routing (sroute) command.
+                This creates follow-pins and establishes physical connections between the standard cell core pins on
+                Metal1 and the upper-layer power stripes, ensuring reliable vertical via-stacking spanning from Metal1
+                through Metal4. Finally, a Design Rule Check (DRC) violation clearance is executed, the temporary
+                peripheral routing blockages are purged to open up the routing tracks for subsequent design phases, and
+                the complete power-planned database is saved.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=1VmfRr8kAKYdwGhh7_njTT48w4si9SRBq&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/place_design.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Placement</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Standard Cell Placement and Pre-CTS Optimization:</strong>
+                The placement phase is initiated by restoring the
+                power-planned design database (power_design.inn.dat) to prepare the netlist for physical cell
+                instantiation. To ensure optimal routability and timing closure, the placement engine is configured with
+                stringent constraints via setPlaceMode, specifying high effort for both global congestion management and
+                global timing optimization, while explicitly enabling clock power-driven placement to minimize
+                downstream clock tree power dissipation. Following setup, the standard cells are physically mapped to
+                the row sites using the core place_design command, followed by detailed wire-length optimization and
+                localized Engineering Change Order (ECO) cell displacement limits. Immediately post-placement, a
+                pre-Clock Tree Synthesis optimization (optDesign -preCTS) is executed to fix initial setup timing
+                violations and design rule violations (DRVs) by resizing gates or inserting buffers before the clock
+                tree is built. Finally, comprehensive design health diagnostics are performed—generating path, slack,
+                and DRV reports for the top 50 critical paths, alongside localized routing congestion and cell density
+                maps—before committing the placement-closed database to disk.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=1BFMOjZIzF0er6csJTOhHk7laVv4T3Grl&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/ccopt_design.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 CTS</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Clock Tree Synthesis and Clock Concurrent Optimization:</strong>
+                The Clock Tree Synthesis (CTS) phase is initiated by restoring the placement-closed design database
+                (place_design.inn.dat) to establish the physical layout of the 4-bit ALU's synchronous elements. To
+                achieve a highly optimized and balanced clock distribution network, the synthesis engine is configured
+                to use Clock Concurrent Optimization (ccopt) mode via setCTSMode. Stringent design targets are applied
+                to the clock tree properties, explicitly bounding the global target clock skew to 0.05 ns and
+                restricting the maximum clock transition time to 0.20 ns. A dedicated clock tree specification file
+                (ccopt.spec) is then dynamically generated and sourced to define the clock roots, sinks, and skew
+                groups. Executing the core ccopt_design -cts command synthesizes the physical clock tree by inserting
+                balancing buffers and inverters, which is immediately followed by post-CTS timing optimization
+                (optDesign -postCTS) to resolve hold time violations and clean up setup slacks. Finally, comprehensive
+                post-CTS static timing analysis is executed to generate setup, hold, and design rule violation (DRV)
+                reports for the top 50 critical paths, alongside specialized clock tree structure and skew group
+                summaries, before saving the design database.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=11E8v2tShAhnn8_KTnEL0djlgu2_7VHwb&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/route_design.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 Routing</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Detail Routing and Post-Route Optimization:</strong>
+                The physical design implementation transitions to the routing phase by restoring the
+                clock-tree-synthesized database (ccopt_design.inn.dat). To achieve robust signal integrity and timing
+                closure, the NanoRoute engine is configured to run concurrently as timing-driven and Signal Integrity
+                (SI)-driven, while the multi-cut via insertion effort is set to high via setNanoRouteMode to enhance
+                manufacturing yield and reduce electromigration risks. The core routeDesign command is executed to
+                complete global and detailed routing across the design's signal nets. Following wire instantiation, the
+                analysis mode is explicitly shifted to On-Chip Variation (onChipVariation) to accurately model
+                microscopic structural differences across the silicon die. Post-route optimization (optDesign
+                -postRoute) is then performed sequentially for both setup and hold criteria to clean up residual timing
+                violations and crosstalk effects introduced by actual wire parasitics. Finally, sign-off verification is
+                conducted—running extensive post-route setup and hold timing analyses for the top 50 paths, alongside
+                geometric Design Rule Checks (verify_drc) and physical connectivity checks (verifyConnectivity)—before
+                committing the routed database to disk.
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=1AtBF8Sl3JtevKDsoLd2Rl9yyBlrb8VTJ&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/back_end_flow/main/scripts/fill.tcl">
+                <h2 style="margin-top: -10px; color: #ffffff;">💻 FILL</h2>
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>
+                <strong>Chip Finishing, Metal Filling, and GDSII Stream Out:</strong>
+                The final phase of the physical design flow focuses on layout completion and manufacturing preparation,
+                beginning with the recovery of the fully routed database (route_design.inn.dat). To establish structural
+                continuity across the standard cell rows, physical-only filler cells and decoupling capacitors—ranging
+                from FILL1 to FILL64 and DECAP10—are systematically populated into empty row spaces using the addFiller
+                command, resolving well-continuity and baseline density requirements before checking layout integrity
+                via checkPlace. Following cell layout closure, planar density rules mandated by the foundry are
+                addressed through automated dummy metal fill generation (addMetalFill), with the maximum length of the
+                fill structures constrained to 10 um to mitigate parasitic capacitance overhead on active routing
+                tracks. Physical sign-off verification is then conducted using verifyGeometry to catch residual Design
+                Rule Check (DRC) violations, and layout artifacts are cleared. Finally, the tape-out ready database is
+                converted into a physical hardware format via streamOut, exporting a compressed GDSII file
+                (alu_4bit.gds.gz) by mapping standard unit metrics, unique cell designations, and merging the active
+                design hierarchy directly with the foundational PDK standard cell layout database (gsclib045.gds).
+            </p>
+        </section>
+
+        <section id="portfolio-banner-section">
+            <div class="banner-image-container">
+                <img src="https://drive.google.com/thumbnail?id=1QQZHmH7MgpLubgvZrCQQrBqGmtDVewDJ&sz=w2000"
+                    alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact">
             <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
-            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional collaboration. I
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
+                collaboration. I
                 am always open to collaborating with others in my areas of interest.</p>
 
             <div class="grid-3">
@@ -118,17 +545,80 @@
     <footer>
     </footer>
 
-    <script src="../../js/viewer.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function escapeHTML(str) {
+                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            }
+
+            function highlight(text) {
+                const lines = text.split("\n");
+                const keywords = [
+                    "set", "proc", "if", "else", "foreach", "for", "while",
+                    "module", "endmodule", "assign", "always", "begin", "end",
+                    "input", "output", "wire", "reg", "logic", "parameter"
+                ];
+
+                return lines.map(line => {
+                    let safe = escapeHTML(line);
+                    let commentStart = safe.length;
+
+                    const i1 = safe.indexOf("#");
+                    const i2 = safe.indexOf("//");
+                    const i3 = safe.indexOf("--");
+                    const arr = [i1, i2, i3].filter(i => i !== -1);
+
+                    if (arr.length > 0) commentStart = Math.min(...arr);
+
+                    let code = safe.substring(0, commentStart);
+                    let comment = safe.substring(commentStart);
+
+                    keywords.forEach(k => {
+                        const r = new RegExp("\\b" + k + "\\b", "g");
+                        code = code.replace(r, `<span class="kw">${k}</span>`);
+                    });
+
+                    if (commentStart !== safe.length) {
+                        comment = `<span class="com">${comment}</span>`;
+                    } else {
+                        comment = "";
+                    }
+                    return code + comment;
+                }).join("\n");
+            }
+
+            // Universal execution over all boxes relative to their content placement
+            document.querySelectorAll(".viewer-box").forEach(async (box) => {
+                const fileURL = box.getAttribute("data-src");
+                const metaEl = box.querySelector(".viewer-meta");
+                const editorEl = box.querySelector(".viewer-editor");
+                const statusEl = box.querySelector(".viewer-status");
+
+                if (metaEl) metaEl.textContent = fileURL;
+
+                try {
+                    if (statusEl) statusEl.textContent = "Loading file...";
+                    const res = await fetch(fileURL);
+                    const text = await res.text();
+
+                    if (editorEl) editorEl.innerHTML = highlight(text);
+                    if (statusEl) statusEl.textContent = "Loaded successfully";
+                } catch (e) {
+                    if (editorEl) editorEl.textContent = "Error loading file";
+                    if (statusEl) statusEl.textContent = "Failed";
+                }
+            });
+        });
+    </script>
+
     <script>
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
         const drawerClose = document.getElementById('drawer-close');
         const navLinks = document.querySelectorAll('.nav-menu a');
 
-        // Toggle Drawer Visibility
         navToggle.addEventListener('click', (e) => {
             navMenu.classList.toggle('show-menu');
-
             const icon = navToggle.querySelector('i');
             if (navMenu.classList.contains('show-menu')) {
                 icon.className = 'bx bx-x';
@@ -138,13 +628,11 @@
             e.stopPropagation();
         });
 
-        // Close Drawer when cross button inside circle layout is clicked
         drawerClose.addEventListener('click', () => {
             navMenu.classList.remove('show-menu');
             navToggle.querySelector('i').className = 'bx bx-menu';
         });
 
-        // Close Drawer when a link is clicked
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('show-menu');
@@ -152,7 +640,6 @@
             });
         });
 
-        // Close Drawer if clicked anywhere completely outside
         document.addEventListener('click', (e) => {
             if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                 navMenu.classList.remove('show-menu');
