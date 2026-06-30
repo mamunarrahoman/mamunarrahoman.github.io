@@ -7,6 +7,7 @@
     <title>MMRR</title>
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ask_me.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 <li><a href="#projects">Project Page</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="pages/cv_sop.html">CV/SoP</a></li>
-                <li><a href="pages/ask_me.html">Contact</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
 
                 <div class="drawer-close-container">
                     <div class="drawer-close-circle" id="drawer-close">
@@ -182,6 +183,57 @@
                 <li>Automation tool efficiency improvement.</li>
                 <li>FPGA/Embedded systems.</li>
             </ul>
+        </section>
+
+        <section id="qa-section">
+            <h2><i class="bx bx-message-rounded-dots"></i>ASK ME A QUESTION</h2>
+            <p>Have a question about VLSI design, physical implementation flows, or potential collaborations? Drop your
+                question below.</p>
+
+            <div class="qa-container">
+                <form action="https://formsubmit.co/mamunar.edu@gmail.com" method="POST" class="qa-form">
+
+                    <input type="hidden" name="_subject" value="New Portfolio Q&A Submission!">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="qa-name">Full Name</label>
+                            <input type="text" id="qa-name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qa-email">Email Address</label>
+                            <input type="email" id="qa-email" name="email" placeholder="your.email@example.com"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qa-topic">Topic / Category</label>
+                        <select id="qa-topic" name="topic" required>
+                            <option value="" disabled selected>Select a topic...</option>
+                            <option value="physical-design">IC Physical Design & Verification</option>
+                            <option value="rtl-digital">RTL Design & Digital Systems</option>
+                            <option value="research">Research & Thesis Inquiries</option>
+                            <option value="collaboration">Professional Collaboration</option>
+                            <option value="other">Other Inquiries</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qa-question">Your Question</label>
+                        <textarea id="qa-question" name="question" rows="5"
+                            placeholder="Type your question in detail here..." required></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-dark">
+                            Submit Question <i class='bx bx-paper-plane'></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <section id="contact">
