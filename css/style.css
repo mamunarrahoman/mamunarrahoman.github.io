@@ -299,6 +299,34 @@ strong {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Success Toast */
+.toast{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background:#16a34a;
+    color:#fff;
+    padding:15px 22px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+    font-weight:500;
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+    transform:translateX(150%);
+    transition:.4s ease;
+    z-index:9999;
+}
+
+.toast.show{
+    transform:translateX(0);
+}
+
+.toast i{
+    font-size:22px;
+}
+
 .card-button:hover {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
