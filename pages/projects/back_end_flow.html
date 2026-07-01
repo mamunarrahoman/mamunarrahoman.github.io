@@ -75,9 +75,25 @@
 
     <div class="container">
 
-         <section id="contact" style="line-height: 1.25;">
-            <h1>MOTIVE</h1>
-            <p>During my period of unemployment, I remained actively engaged in study-related activities rather than
+        <section id="contact" style="line-height: 1.25;">
+            <h2 style="font-weight: 500;"><strong>PROJECT TITLE: </strong>
+                <span style="font-weight: 350;">
+                    Complete RTL-to-GDS Flow Implementation and Verification of a 4-bit ALU Design.
+                </span>
+            </h2>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>Project duration: </strong>
+                During my period of unemployment.
+            </p>
+            <p><strong>Tool used: </strong>ModelSim, Cadence Genus, Cadence Innovus</p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>MOTIVE: </strong>
+                During my period of unemployment, I remained actively engaged in study-related
+                activities rather than
                 spending my time idly. One of my major self-learning projects was developing a beginner-level RTL-to-GDS
                 back-end flow. To accomplish this, I studied the Innovus user manual extensively and implemented the
                 flow, which I later validated using an ALU project available in my university laboratory. Since I had
@@ -85,8 +101,9 @@
                 obtained permission from my supervisor before using the lab resources. After receiving approval, I
                 performed flow verification and resolved several major and minor issues encountered during the
                 implementation. As I am sharing this work solely for educational purposes, I believe that it does not
-                violate any ethical principles or academic policies.</p>
-            <h2>RTL-to-GDS FLOW Elaboration</h2>
+                violate any ethical principles or academic policies.
+            </p>
+            <h2 style="font-weight: 600; text-align: center;">FLOW Elaboration</h2>
             <p>
                 <strong>RTL Generation:</strong>
                 Since my primary focus was on the PnR flow, I intentionally chose a simple RTL design to minimize
@@ -100,7 +117,6 @@
                 to an 8-bit output register on every rising edge of the system clock (posedge clk) according to a fixed
                 functional table (00 for add, 01 for subtract, 10 for AND, and 11 for XOR).
             </p>
-            <p><strong>Tool used: </strong> ModelSim ; <strong>HDL: </strong> Verilog</p>
         </section>
 
         <section id="portfolio-banner-section">
@@ -120,7 +136,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Functional Verification/Design Verification:</strong>
                 After developing the Verilog description of the system, the design must pass through the functional
@@ -130,7 +146,6 @@
                 waveform
                 demonstrates the correct operation of the designed system, thereby validating its functionality.
             </p>
-            <p><strong>Tool used: </strong> ModelSim ; <strong>HDL: </strong> System Verilog</p>
         </section>
 
         <section id="code-viewer-section">
@@ -150,7 +165,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Makefile:</strong>
                 A Makefile serves as an efficient automation tool that streamlines the execution of various stages of
@@ -170,7 +185,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Placement and Routing (PnR) Flow:</strong>
                 Conventionally, the Placement and Routing (PnR) flow starts with design import. In this implementation,
@@ -203,7 +218,7 @@
                 <div class="viewer-status"></div>
             </div>
         </section>
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>Here, I used Cadence Genus for synthesis. I had already defined the design constraints in the
                 synthesis.tcl file, and finally obtained an exported alu_4bit.sdc file as an elaborated version of the
                 design constraints. Several key design constraints are applied during synthesis to facilitate timing
@@ -257,7 +272,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Design Import:</strong>
                 Following synthesis, the backend implementation flow, consisting of Placement and Routing (PnR), is
@@ -279,7 +294,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>MMMC:</strong>
                 In the modern VLSI physical design flow, Multi-Mode Multi-Corner (MMMC) analysis is a critical
@@ -307,7 +322,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Design Initialization and Floor-planning:</strong>
                 The physical design implementation begins with the design
@@ -347,7 +362,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Power-planning:</strong>
                 The power planning phase begins by restoring the previously initialized design database
@@ -384,7 +399,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Standard Cell Placement and Pre-CTS Optimization:</strong>
                 The placement phase is initiated by restoring the
@@ -420,7 +435,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Clock Tree Synthesis and Clock Concurrent Optimization:</strong>
                 The Clock Tree Synthesis (CTS) phase is initiated by restoring the placement-closed design database
@@ -456,7 +471,7 @@
             </div>
         </section>
 
-         <section id="contact" style="line-height: 1.25; margin-top: -15px;">
+        <section id="contact" style="line-height: 1.25; margin-top: -15px;">
             <p>
                 <strong>Detail Routing and Post-Route Optimization:</strong>
                 The physical design implementation transitions to the routing phase by restoring the
@@ -515,6 +530,84 @@
             <div class="banner-image-container">
                 <img src="https://drive.google.com/thumbnail?id=1QQZHmH7MgpLubgvZrCQQrBqGmtDVewDJ&sz=w2000"
                     alt="VLSI Design Banner">
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <div class="grid-3">
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/input_files/alu_4bit.v"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Verilog code</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/input_files/alu_4bit_tb.v"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Testbench code</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/Makefile" target="_blank"
+                    class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Makefile</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/synthesis_script.tcl"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> synthesis script</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/syn_export/alu_4bit.sdc"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> exported sdc</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/config.tcl" target="_blank"
+                    class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> design variable</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/mmmc.tcl" target="_blank"
+                    class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> MMMC file</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/init_design.tcl"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> init design</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/power.tcl" target="_blank"
+                    class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> powewr planning</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/place_design.tcl"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> Placement</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/ccopt_design.tcl"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> CTS</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/route_design.tcl"
+                    target="_blank" class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> routing</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman/back_end_flow/blob/main/scripts/fill.tcl" target="_blank"
+                    class="card-button">
+                    <div class="card-title"><i class="bx bx-file"></i> fill</div>
+                    <div class="card-content">Click to explore</div>
+                </a>
             </div>
         </section>
 
