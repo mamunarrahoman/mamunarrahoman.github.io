@@ -332,7 +332,7 @@ strong {
     visibility: visible;
 }
 
-..toast-content {
+.toast-content {
     display: inline-flex;
     align-items: center;
     justify-content: center;
