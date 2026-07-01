@@ -377,19 +377,17 @@
                         window.location.href = "/";
                     }, 2500);
 
+                } else {
+
+                    alert("Something went wrong. Please try again.");
+
                 }
 
-            } else {
+            } catch (error) {
 
-                alert("Something went wrong. Please try again.");
+                alert("Network error. Please try again.");
 
             }
-
-        } catch (error) {
-
-            alert("Network error. Please try again.");
-
-        }
 
         });
     </script>
