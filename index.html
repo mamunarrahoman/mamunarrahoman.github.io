@@ -352,17 +352,23 @@
 
                     form.reset();
 
-                    // Close drawer
+                    // Close mobile drawer
                     navMenu.classList.remove("show-menu");
                     navToggle.querySelector("i").className = "bx bx-menu";
 
-                    // Calculate the center of the current visible screen
                     const popup = document.querySelector(".toast-content");
 
-                    popup.style.position = "absolute";
-                    popup.style.left = "50%";
-                    popup.style.top = `${window.scrollY + window.innerHeight / 2}px`;
-                    popup.style.transform = "translate(-50%, -50%)";
+                    if (window.visualViewport) {
+                        popup.style.position = "fixed";
+                        popup.style.left = "50%";
+                        popup.style.top = `${window.visualViewport.offsetTop + (window.visualViewport.height / 2)}px`;
+                        popup.style.transform = "translate(-50%, -50%)";
+                    } else {
+                        popup.style.position = "fixed";
+                        popup.style.left = "50%";
+                        popup.style.top = "50%";
+                        popup.style.transform = "translate(-50%, -50%)";
+                    }
 
                     toast.classList.add("show");
 
@@ -370,6 +376,8 @@
                         toast.classList.remove("show");
                         window.location.href = "/";
                     }, 2500);
+
+                }
 
             } else {
 

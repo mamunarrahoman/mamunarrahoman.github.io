@@ -306,20 +306,20 @@ strong {
 ========================================== */
 
 .toast {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    inset: 0;
 
     display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, .3);
 
     z-index: 999999;
 }
 
 .toast.show {
-    display: block;
+    display: flex;
 }
 
 .toast-content {
