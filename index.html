@@ -361,7 +361,19 @@
                     if (window.visualViewport) {
                         popup.style.position = "fixed";
                         popup.style.left = "50%";
-                        popup.style.top = `${window.visualViewport.offsetTop + (window.visualViewport.height / 2)}px`;
+                        const popup = document.querySelector(".toast-content");
+
+                        popup.style.position = "fixed";
+
+                        if (window.visualViewport) {
+                            popup.style.left = `${window.visualViewport.width / 2}px`;
+                            popup.style.top = `${window.visualViewport.offsetTop + window.visualViewport.height / 2}px`;
+                        } else {
+                            popup.style.left = "50%";
+                            popup.style.top = "50%";
+                        }
+
+                        popup.style.transform = "translate(-50%, -50%)";
                         popup.style.transform = "translate(-50%, -50%)";
                     } else {
                         popup.style.position = "fixed";
