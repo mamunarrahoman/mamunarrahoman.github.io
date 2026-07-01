@@ -307,59 +307,68 @@ strong {
 
 .toast {
     position: fixed;
-    inset: 0;
-
-    display: none;
-    align-items: center;
-    justify-content: center;
+    top: 0;
+    left: 0;
 
     width: 100vw;
     height: 100dvh;
-    /* better than 100vh on mobile */
+    /* Dynamic viewport height */
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .3s ease;
     z-index: 999999;
-
-    background: rgba(0, 0, 0, .25);
 }
 
 .toast.show {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
-.toast-content {
-
+..toast-content {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.8rem;
-
-    width: fit-content;
-    max-width: min(90vw, 600px);
-    min-width: 280px;
+    gap: 12px;
 
     background: #16a34a;
     color: #fff;
+
+    width: fit-content;
+    max-width: min(90vw, 500px);
 
     padding: 16px 24px;
 
     border-radius: 14px;
 
-    font-size: clamp(0.85rem, 1vw + 0.45rem, 1.1rem);
+    font-size: clamp(.9rem, 1vw + .5rem, 1.05rem);
     font-weight: 600;
     text-align: center;
 
     box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
 
-    animation: popup .35s ease;
+    transform: scale(.9);
+    transition: transform .3s ease;
+}
+
+.toast.show .toast-content {
+    transform: scale(1);
+}
+
+.toast-content i {
+    font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
 .toast-content span {
     white-space: nowrap;
-}
-
-.toast-content i {
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
-    flex-shrink: 0;
 }
 
 @keyframes popup {
