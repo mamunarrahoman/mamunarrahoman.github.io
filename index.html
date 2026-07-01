@@ -204,7 +204,7 @@
     <h2><i class="bx bx-message-rounded-dots"></i> ASK ME A QUESTION</h2>
 
     <div class="qa-container">
-        <form action="https://formsubmit.co/mamunar.edu@gmail.com" method="POST" class="qa-form">
+        <form id="qaForm" action="https://formsubmit.co/ajax/mamunar.edu@gmail.com" method="POST" class="qa-form">
 
             <!-- FormSubmit Settings -->
             <input type="hidden" name="_subject" value="New Portfolio Q&A Submission!">
@@ -319,6 +319,11 @@
             }
         });
     </script>
+
+<div id="toast" class="toast">
+    <i class="bx bx-check-circle"></i>
+    Your message has been sent successfully!
+</div>
 
 </body>
 
