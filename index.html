@@ -350,9 +350,13 @@
 
                 if (response.ok) {
 
-                    toast.classList.add("show");
+                    // Close mobile drawer if it is open
+                    navMenu.classList.remove("show-menu");
+                    navToggle.querySelector("i").className = "bx bx-menu";
 
                     form.reset();
+
+                    toast.classList.add("show");
 
                     setTimeout(() => {
                         window.location.href = "/";
