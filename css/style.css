@@ -325,22 +325,23 @@ strong {
 
 .toast-content {
 
-    width: clamp(280px, 85vw, 500px);
-
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.8rem;
+
+    width: fit-content;
+    max-width: min(90vw, 600px);
+    min-width: 280px;
 
     background: #16a34a;
     color: #fff;
 
-    padding: clamp(14px, 2vw, 24px);
+    padding: 16px 24px;
 
-    border-radius: clamp(10px, 1vw, 18px);
+    border-radius: 14px;
 
     font-size: clamp(0.85rem, 1vw + 0.45rem, 1.1rem);
-
     font-weight: 600;
     text-align: center;
 
@@ -349,10 +350,12 @@ strong {
     animation: popup .35s ease;
 }
 
+.toast-content span {
+    white-space: nowrap;
+}
+
 .toast-content i {
-
     font-size: clamp(1.2rem, 2vw, 1.8rem);
-
     flex-shrink: 0;
 }
 
