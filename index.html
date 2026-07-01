@@ -350,17 +350,20 @@
 
                 if (response.ok) {
 
-                    // Close mobile drawer if it is open
+                    // Close mobile drawer
                     navMenu.classList.remove("show-menu");
                     navToggle.querySelector("i").className = "bx bx-menu";
 
                     form.reset();
 
-                    toast.classList.add("show");
+                    // Wait until the drawer animation finishes
+                    setTimeout(() => {
+                        toast.classList.add("show");
+                    }, 350);
 
                     setTimeout(() => {
                         window.location.href = "/";
-                    }, 2500);
+                    }, 2850);
 
                 } else {
 
