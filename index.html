@@ -200,57 +200,58 @@
             </ul>
         </section>
 
- <section id="qa-section" style="line-height: 1.25;">
-    <h2><i class="bx bx-message-rounded-dots"></i> ASK ME A QUESTION</h2>
+        <section id="qa-section" style="line-height: 1.25;">
+            <h2><i class="bx bx-message-rounded-dots"></i> ASK ME A QUESTION</h2>
 
-    <div class="qa-container">
-        <form id="qaForm" action="https://formsubmit.co/ajax/mamunar.edu@gmail.com" method="POST" class="qa-form">
+            <div class="qa-container">
+                <form id="qaForm" action="https://formsubmit.co/ajax/mamunar.edu@gmail.com" method="POST"
+                    class="qa-form">
 
-            <!-- FormSubmit Settings -->
-            <input type="hidden" name="_subject" value="New Portfolio Q&A Submission!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://mamunarrahoman.github.io/">
+                    <!-- FormSubmit Settings -->
+                    <input type="hidden" name="_subject" value="New Portfolio Q&A Submission!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://mamunarrahoman.github.io/">
 
-            <div class="form-group-row">
-                <div class="form-group">
-                    <label for="qa-name">Full Name</label>
-                    <input type="text" id="qa-name" name="name" placeholder="Your name" required>
-                </div>
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="qa-name">Full Name</label>
+                            <input type="text" id="qa-name" name="name" placeholder="Your name" required>
+                        </div>
 
-                <div class="form-group">
-                    <label for="qa-email">Email Address</label>
-                    <input type="email" id="qa-email" name="email"
-                        placeholder="your.email@example.com" required>
-                </div>
+                        <div class="form-group">
+                            <label for="qa-email">Email Address</label>
+                            <input type="email" id="qa-email" name="email" placeholder="your.email@example.com"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qa-topic">Topic / Category</label>
+                        <select id="qa-topic" name="topic" required>
+                            <option value="" disabled selected>Select a topic...</option>
+                            <option value="physical-design">IC Physical Design & Verification</option>
+                            <option value="rtl-digital">RTL Design & Digital Systems</option>
+                            <option value="research">Research & Thesis Inquiries</option>
+                            <option value="collaboration">Professional Collaboration</option>
+                            <option value="other">Other Inquiries</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qa-question">Your Question</label>
+                        <textarea id="qa-question" name="question" rows="5"
+                            placeholder="Type your question in detail here..." required></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-dark">
+                            Submit <i class="bx bx-paper-plane"></i>
+                        </button>
+                    </div>
+
+                </form>
             </div>
-
-            <div class="form-group">
-                <label for="qa-topic">Topic / Category</label>
-                <select id="qa-topic" name="topic" required>
-                    <option value="" disabled selected>Select a topic...</option>
-                    <option value="physical-design">IC Physical Design & Verification</option>
-                    <option value="rtl-digital">RTL Design & Digital Systems</option>
-                    <option value="research">Research & Thesis Inquiries</option>
-                    <option value="collaboration">Professional Collaboration</option>
-                    <option value="other">Other Inquiries</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="qa-question">Your Question</label>
-                <textarea id="qa-question" name="question" rows="5"
-                    placeholder="Type your question in detail here..." required></textarea>
-            </div>
-
-            <div class="form-submit">
-                <button type="submit" class="btn btn-dark">
-                    Submit <i class="bx bx-paper-plane"></i>
-                </button>
-            </div>
-
-        </form>
-    </div>
-</section>
+        </section>
 
         <section id="contact" style="line-height: 1.25">
             <h2>LET'S CONNECT</h2>
@@ -320,53 +321,56 @@
         });
     </script>
 
-<div id="toast" class="toast">
-    <i class="bx bx-check-circle"></i>
-    Your message has been sent successfully!
-</div>
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="bx bx-check-circle"></i>
+            <span>Your message has been sent successfully!</span>
+        </div>
+    </div>
+    
     <script>
-const form = document.getElementById("qaForm");
-const toast = document.getElementById("toast");
+        const form = document.getElementById("qaForm");
+        const toast = document.getElementById("toast");
 
-form.addEventListener("submit", async function(e) {
+        form.addEventListener("submit", async function (e) {
 
-    e.preventDefault();
+            e.preventDefault();
 
-    const data = new FormData(form);
+            const data = new FormData(form);
 
-    try {
+            try {
 
-        const response = await fetch(form.action,{
-            method:"POST",
-            body:data,
-            headers:{
-                "Accept":"application/json"
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: data,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (response.ok) {
+
+                    toast.classList.add("show");
+
+                    form.reset();
+
+                    setTimeout(() => {
+                        window.location.href = "/";
+                    }, 2500);
+
+                } else {
+
+                    alert("Something went wrong. Please try again.");
+
+                }
+
+            } catch (error) {
+
+                alert("Network error. Please try again.");
+
             }
+
         });
-
-        if(response.ok){
-
-            toast.classList.add("show");
-
-            form.reset();
-
-            setTimeout(() => {
-    window.location.href = "/";
-}, 2500);
-
-        }else{
-
-            alert("Something went wrong. Please try again.");
-
-        }
-
-    }catch(error){
-
-        alert("Network error. Please try again.");
-
-    }
-
-});
     </script>
 
 </body>
