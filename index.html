@@ -201,7 +201,7 @@
         </section>
 
         <section id="qa-section" style="line-height: 1.25;">
-            <h2><i class="bx bx-message-rounded-dots"></i> ASK ME A QUESTION</h2>
+            <h2>ASK ME A QUESTION</h2>
 
             <div class="qa-container">
                 <form id="qaForm" action="https://formsubmit.co/ajax/mamunar.edu@gmail.com" method="POST"
@@ -332,7 +332,7 @@
         const form = document.getElementById("qaForm");
         const toast = document.getElementById("toast");
 
-        form.addEventListener("submit", async function (e) {
+        form.addEventListener("submit", async (e) => {
 
             e.preventDefault();
 
@@ -350,20 +350,31 @@
 
                 if (response.ok) {
 
-                    // Close mobile drawer
+                    // Reset the form
+                    form.reset();
+
+                    // Close mobile drawer if open
                     navMenu.classList.remove("show-menu");
                     navToggle.querySelector("i").className = "bx bx-menu";
 
-                    form.reset();
+                    // Wait for drawer animation to finish
+                    await new Promise(resolve => setTimeout(resolve, 350));
 
-                    // Wait until the drawer animation finishes
+                    // Force browser reflow
+                    document.body.offsetHeight;
+
+                    // Show popup
+                    toast.classList.add("show");
+
+                    // Hide popup after 2.2 seconds
                     setTimeout(() => {
-                        toast.classList.add("show");
-                    }, 350);
+                        toast.classList.remove("show");
+                    }, 2200);
 
+                    // Redirect after 2.5 seconds
                     setTimeout(() => {
                         window.location.href = "/";
-                    }, 2850);
+                    }, 2500);
 
                 } else {
 
