@@ -350,43 +350,38 @@
 
                 if (response.ok) {
 
-                    // Reset the form
                     form.reset();
 
-                    // Close mobile drawer if open
+                    // Close drawer
                     navMenu.classList.remove("show-menu");
                     navToggle.querySelector("i").className = "bx bx-menu";
 
-                    // Wait for drawer animation to finish
-                    await new Promise(resolve => setTimeout(resolve, 350));
+                    // Calculate the center of the current visible screen
+                    const popup = document.querySelector(".toast-content");
 
-                    // Force browser reflow
-                    document.body.offsetHeight;
+                    popup.style.position = "absolute";
+                    popup.style.left = "50%";
+                    popup.style.top = `${window.scrollY + window.innerHeight / 2}px`;
+                    popup.style.transform = "translate(-50%, -50%)";
 
-                    // Show popup
                     toast.classList.add("show");
 
-                    // Hide popup after 2.2 seconds
                     setTimeout(() => {
                         toast.classList.remove("show");
-                    }, 2200);
-
-                    // Redirect after 2.5 seconds
-                    setTimeout(() => {
                         window.location.href = "/";
                     }, 2500);
 
-                } else {
+            } else {
 
-                    alert("Something went wrong. Please try again.");
-
-                }
-
-            } catch (error) {
-
-                alert("Network error. Please try again.");
+                alert("Something went wrong. Please try again.");
 
             }
+
+        } catch (error) {
+
+            alert("Network error. Please try again.");
+
+        }
 
         });
     </script>
