@@ -398,20 +398,14 @@
 
                     form.reset();
 
-                    // Close mobile drawer if open
                     navMenu.classList.remove("show-menu");
                     navToggle.querySelector("i").className = "bx bx-menu";
 
-                    // Show success popup
                     toast.classList.add("show");
 
-                    // Hide popup and redirect
                     setTimeout(() => {
-
                         toast.classList.remove("show");
-
                         window.location.href = "./index.html#contact";
-
                     }, 2500);
 
                 } else {
