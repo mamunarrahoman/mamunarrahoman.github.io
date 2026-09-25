@@ -111,41 +111,6 @@
                 </br>
                 Following this
             </p>
-            <h2 style="font-weight: 600; text-align: center;">FLOW Elaboration</h2>
-            <p>
-                <strong>RTL Generation:</strong>
-                Since my primary focus was on the PnR flow, I intentionally chose a simple RTL design to minimize
-                computational complexity and to facilitate a clearer understanding of the overall flow.
-
-                This synchronous 4-bit ALU (alu_4bit) processes two 4-bit inputs (A and B) through three distinct,
-                shaded sub-modules to produce an overflow-safe 8-bit output (Y). Inside the design, the arithmetic_unit
-                concurrently computes addition (A + B) and subtraction (A - B) into registers, while the logical_unit
-                continuously evaluates bitwise AND (A&B) and XOR (A^B) wire outputs. A central 4-to-1 multiplexer inside
-                the control_unit monitors a 2-bit Opcode input, routing the corresponding arithmetic or logical result
-                to an 8-bit output register on every rising edge of the system clock (posedge clk) according to a fixed
-                functional table (00 for add, 01 for subtract, 10 for AND, and 11 for XOR).
-            </p>
-        </section>
-
-        <section id="portfolio-banner-section">
-            <div class="banner-image-container">
-                <img src="https://drive.google.com/thumbnail?id=1YWWB5-QGIy1woCIOQqaQFGTH6H1j2Ug4&sz=w2000"
-                    alt="VLSI Design Banner">
-            </div>
-        </section>
-
-        <section id="pdf-viewer-section">
-            <h2 style="font-weight: 600;"><i class="bx bx-file"></i> Project Report</h2>
-            <div class="pdf-viewer-box">
-                <object class="pdf-object" data="/home/mamun/ASIC Layout_2  Digital Innovus.pdf" type="application/pdf">
-                    <div class="pdf-fallback">
-                        <p>Your browser can't display the PDF inline.</p>
-                        <a class="btn btn-dark" href="/home/mamun/ASIC Layout_2  Digital Innovus.pdf" target="_blank" rel="noopener">
-                            <i class='bx bx-download'></i> Download PDF
-                        </a>
-                    </div>
-                </object>
-            </div>
             <div class="pdf-viewer-actions">
                 <a class="btn btn-light" href="/home/mamun/ASIC Layout_2  Digital Innovus.pdf" target="_blank" rel="noopener">
                     <i class='bx bx-expand'></i> Open in new tab
