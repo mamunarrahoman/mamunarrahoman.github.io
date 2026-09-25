@@ -42,10 +42,218 @@
             color: var(--text-light);
             margin-top: 2px;
         }
+
+        /* =========================================================
+           Projects page — modernized layout
+           Scoped to body.projects-page so nothing else on the site
+           is affected. Uses the site's existing palette as-is
+           (--primary-color, --accent-color, --text-color,
+           --text-light, --border-color, --card-bg, --bg-body) —
+           no new background or colors introduced.
+        ========================================================= */
+        body.projects-page {
+            --ink: var(--primary-color);
+            --ink-soft: var(--text-light);
+            --line: var(--border-color);
+            --die: var(--card-bg);
+            --accent: var(--accent-color);
+            --accent-soft: color-mix(in srgb, var(--accent-color) 10%, transparent);
+        }
+
+        .projects-shell {
+            padding-top: 12px;
+            padding-bottom: 56px;
+        }
+
+        .projects-hero {
+            max-width: 720px;
+        }
+
+        .projects-hero h1 {
+            font-size: clamp(2.3rem, 4vw, 3.1rem);
+            font-weight: 600;
+            color: var(--ink);
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+
+        .hero-intro {
+            max-width: 64ch;
+            color: var(--ink-soft);
+            font-size: 1rem;
+            line-height: 1.75;
+            text-align: left;
+        }
+
+        .projects-filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 32px 0 6px;
+        }
+
+        .projects-filter-chip {
+            font-size: 0.78rem;
+            padding: 6px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background-color: var(--die);
+            color: var(--ink-soft);
+            cursor: pointer;
+            transition: border-color 0.15s ease, color 0.15s ease;
+        }
+
+        .projects-filter-chip:hover {
+            color: var(--ink);
+            border-color: var(--ink-soft);
+        }
+
+        .projects-filter-chip.active {
+            color: var(--ink);
+            border-color: var(--ink);
+            background-color: var(--die);
+            font-weight: 500;
+        }
+
+        .layer-group {
+            margin-top: 10px;
+        }
+
+        .layer-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: var(--ink-soft);
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--line);
+            margin-bottom: 4px;
+        }
+
+        .layer-swatch {
+            width: 9px;
+            height: 9px;
+            border-radius: 2px;
+            background-color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .entry-list {
+            background-color: var(--die);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .entry-row {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 16px 18px;
+            border-bottom: 1px solid var(--line);
+            transition: background-color 0.15s ease;
+        }
+
+        .entry-list .entry-row:last-child {
+            border-bottom: none;
+        }
+
+        .entry-row:hover {
+            background-color: var(--accent-soft);
+        }
+
+        .entry-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+        }
+
+        .entry-title {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--ink);
+            line-height: 1.45;
+            text-align: left;
+        }
+
+        .status-pill {
+            font-size: 0.68rem;
+            font-weight: 500;
+            padding: 2px 9px;
+            border-radius: 999px;
+            background-color: rgba(220, 38, 38, 0.1);
+            color: #dc2626;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .entry-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag {
+            font-size: 0.72rem;
+            padding: 3px 9px;
+            border-radius: 5px;
+            background-color: var(--bg-body);
+            border: 1px solid var(--line);
+            color: var(--ink-soft);
+        }
+
+        .entry-link {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+        }
+
+        .entry-link:hover {
+            color: var(--ink);
+        }
+
+        body.projects-page a:focus-visible,
+        .projects-filter-chip:focus-visible {
+            outline: 2px solid var(--ink);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 640px) {
+            .entry-main {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .entry-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .entry-row {
+                transition: none;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body class="projects-page">
 
     <nav class="navbar">
         <div class="nav-container">
@@ -59,6 +267,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="#" class="active">Project Page</a></li>
+                <li><a href="self_learning.html">Self-Learning</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="cv_sop.html">CV/SoP</a></li>
                 <li><a href="../index.html#contact">Contact</a></li>
@@ -72,10 +281,10 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container projects-shell">
 
         <section id="contact" style="line-height: 1.25;">
-            <h2>ALL PROJECT LIST </h2>
+            <h2>PROJECTS:</h2>
             <p>
                 Below are several projects I completed during my university years. Most of these projects were
                 conducted, designed, and implemented independently by me, with the consent of my team members, as I
@@ -85,188 +294,288 @@
                 satisfied with the outcomes. Some projects were part of coursework, while others were pursued
                 independently during my free time.
             </p>
-            <h2>TECHNICAL SKILL DEVELEOPMENT PROJECTS</h2>
-            <section id="projects">
+        </section>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Fine-Grained ASIC Physical Design Analysis & Optimization.</strong>
-                            | status: <span style="color: red;">ongoing</span>
-                        </li>
-                    </ul>
-                    <div class="project-tool">Tool used: Yosys, OpenRoad, OpenSTA | <a href="../pages/projects/phase2/asic_pd.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Complete RTL-to-GDS Flow Implementation and Verification of a 4-bit ALU
-                                Design.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: ModelSim, Cadence Genus, Cadence Innovus | <a
-                            href="../pages/projects/back_end_flow.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+        <div class="projects-filter-bar" id="projects-filter-bar">
+            <button class="projects-filter-chip active" data-filter="all">All</button>
+            <button class="projects-filter-chip" data-filter="technical">Technical skill development</button>
+            <button class="projects-filter-chip" data-filter="academic">Academic</button>
+            <button class="projects-filter-chip" data-filter="self-learning">Self-learning</button>
+        </div>
 
-            </section>
+        <section class="layer-group" data-category="technical">
+            <div class="layer-label"><span class="layer-swatch"></span> Technical skill development</div>
+            <div class="entry-list">
 
-            <h2>ACADEMIC PROJECTS</h2>
-            <section id="projects">
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Fine-Grained ASIC Physical Design Analysis & Optimization.</h3>
+                        <span class="status-pill"
+                            style="background-color: rgba(220, 38, 38, 0.1); color: #dc2626;">Ongoing</span>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Yosys</span>
+                            <span class="tag">OpenRoad</span>
+                            <span class="tag">OpenSTA</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/phase2/asic_pd.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Full-chip design of a unidirectional data transmitter using serial and parallel data
-                                communication modes.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: ModelSim, Xilinx Vivado, Cadence Genus, Cadence Innovus. | <a
-                            href="../pages/projects/usb_controller.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Complete RTL-to-GDS Flow Implementation and Verification of a 4-bit
+                            ALU Design.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">ModelSim</span>
+                            <span class="tag">Cadence Genus</span>
+                            <span class="tag">Cadence Innovus</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/back_end_flow.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Schematic and Layout Design of a Low-Power Multiplexer-Based 1-Bit Full Adder
-                                Circuit.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Cadence Virtuoso. | <a
-                            href="../pages/projects/mbfa_12t.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+            </div>
+        </section>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Over Voltage, Under Voltage, and Over Load Protection of Power System using NodeMCU
-                                Mega WiFi R3 (ATmega 2560).</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Arduino IDE, EasyEDA (for schematic drawing) | <a
-                            href="../pages/projects/power_system_protection.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+        <section class="layer-group" data-category="academic">
+            <div class="layer-label"><span class="layer-swatch"></span> Academic projects</div>
+            <div class="entry-list">
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Complete architecture of physical electrical system on veroboard using the pole zero
-                                method.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Simulink (MATLAB) | <a
-                            href="../pages/projects/pid_controller.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Full-chip design of a unidirectional data transmitter using serial
+                            and parallel data communication modes.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">ModelSim</span>
+                            <span class="tag">Xilinx Vivado</span>
+                            <span class="tag">Cadence Genus</span>
+                            <span class="tag">Cadence Innovus</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/usb_controller.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Operational amplifier-based analog tachometer to estimate RPM of rotary
-                                object.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: EasyEDA (for schematic drawing) | <a
-                            href="../pages/projects/tachometer.html">Project details
-                            <i class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Schematic and Layout Design of a Low-Power Multiplexer-Based 1-Bit
+                            Full Adder Circuit.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Cadence Virtuoso</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/mbfa_12t.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>ESP32 Home Automation with an integrated Arduino Nano-based oscilloscope for
-                                power-grid signal quality analysis.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Arduino IDE, EasyEDA(for schematic drawing) | <a
-                            href="../pages/projects/iot_oscilloscope.html">Project
-                            details <i class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Over Voltage, Under Voltage, and Over Load Protection of Power
+                            System
+                            using NodeMCU Mega WiFi R3 (ATmega 2560).</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Arduino IDE</span>
+                            <span class="tag">EasyEDA (for schematic drawing)</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/power_system_protection.html">Project details
+                            <i class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Design and analysis of a digital filter and it's application to remove noise from an
-                                ECG signal.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: MATLAB | <a href="../pages/projects/ecg_signal.html">Project
-                            details <i class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Complete architecture of physical electrical system on veroboard
+                            using the pole zero method.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Simulink (MATLAB)</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/pid_controller.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Advanced Scientific Calculator using MATLAB (GUI) to calculate complex calculation
-                                of Engineering problems.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: MATLAB | <a href="../pages/projects/matlab_cal.html">Project
-                            details <i class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Operational amplifier-based analog tachometer to estimate RPM of
+                            rotary object.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">EasyEDA (for schematic drawing)</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/tachometer.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Signal Transmit and Receive using Frequency Modulator and PLL (Phase-Locked Loop)
-                                Demodulator using MATLAB (GUI).</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: MATLAB, Octave | <a
-                            href="../pages/projects/fm_modulation.html">Project
-                            details <i class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">ESP32 Home Automation with an integrated Arduino Nano-based
+                            oscilloscope for power-grid signal quality analysis.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Arduino IDE</span>
+                            <span class="tag">EasyEDA (for schematic drawing)</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/iot_oscilloscope.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Design and Implementation of High Power Buck-Boost Converter Circuit with TL494
-                                IC.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: N/A | <a
-                            href="../pages/projects/buck_boost_converter.html">Project
-                            details <i class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Design and analysis of a digital filter and it's application to
+                            remove noise from an ECG signal.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">MATLAB</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/ecg_signal.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Electrical Service Design of a floor using AutoCAD considering project
-                                requirements.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: AutoCAD | <a
-                            href="../pages/projects/electrical_service_design.html">Project
-                            details <i class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Advanced Scientific Calculator using MATLAB (GUI) to calculate
+                            complex
+                            calculation of Engineering problems.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">MATLAB</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/matlab_cal.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-            </section>
-            <!-- PERSONAL PROJECT -->
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Signal Transmit and Receive using Frequency Modulator and PLL
+                            (Phase-Locked Loop) Demodulator using MATLAB (GUI).</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Octave</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/fm_modulation.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Design and Implementation of High Power Buck-Boost Converter Circuit
+                            with TL494 IC.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">N/A</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/buck_boost_converter.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-            <h2>SELF-LEARNING PROJECTS</h2>
-            <section id="projects">
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Electrical Service Design of a floor using AutoCAD considering
+                            project requirements.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">AutoCAD</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/electrical_service_design.html">Project
+                            details
+                            <i class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>RTL Design, functional verification of Serial to parallel and Parallel to serial
-                                data communication system using verilog.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Xilinx Vivado, ModelSim | <a
-                            href="../pages/projects/serdes.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+            </div>
+        </section>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>28T CMOS Full-Adder using only Metal-1, preserving higher metal layers for
-                                hierarchical integration.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Cadence Virtuoso | <a
-                            href="../pages/projects/28_fadded.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+        <section class="layer-group" data-category="self-learning">
+            <div class="layer-label"><span class="layer-swatch"></span> Self-learning projects</div>
+            <div class="entry-list">
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Design of simple user interface using NodeMCU Mega WIFI R3(ATmega 2560).</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Arduino IDE, EasyEDA (for schematic drawing) | <a
-                            href="../pages/projects/simple_ui.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">RTL Design, functional verification of Serial to parallel and
+                            Parallel to serial data communication system using verilog.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Xilinx Vivado</span>
+                            <span class="tag">ModelSim</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/serdes.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-                <div class="project-item">
-                    <ul>
-                        <li><strong>Digital Weight Machine with Metal Detection technology.</strong></li>
-                    </ul>
-                    <div class="project-tool">Tool used: Arduino IDE, EasyEDA (for schematic drawing) | <a
-                            href="../pages/projects/digital_weight_machine.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a></div>
-                </div>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">28T CMOS Full-Adder using only Metal-1, preserving higher metal
+                            layers for hierarchical integration.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Cadence Virtuoso</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/28_fadded.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
-            </section>
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Design of simple user interface using NodeMCU Mega WIFI R3(ATmega
+                            2560).</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Arduino IDE</span>
+                            <span class="tag">EasyEDA (for schematic drawing)</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/simple_ui.html">Project details <i
+                                class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
 
+                <article class="entry-row">
+                    <div class="entry-main">
+                        <h3 class="entry-title">Digital Weight Machine with Metal Detection technology.</h3>
+                    </div>
+                    <div class="entry-meta">
+                        <div class="tag-row">
+                            <span class="tag">Arduino IDE</span>
+                            <span class="tag">EasyEDA (for schematic drawing)</span>
+                        </div>
+                        <a class="entry-link" href="../pages/projects/digital_weight_machine.html">Project details
+                            <i class='bx bx-right-top-arrow-circle'></i></a>
+                    </div>
+                </article>
+
+            </div>
         </section>
 
         <!-- <section id="contact" style="line-height: 1.25">
@@ -294,6 +603,24 @@
 
     <footer>
     </footer>
+
+    <script>
+        const filterChips = document.querySelectorAll('.projects-filter-chip');
+        const layerGroups = document.querySelectorAll('.layer-group');
+
+        filterChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                filterChips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                const filter = chip.getAttribute('data-filter');
+
+                layerGroups.forEach(group => {
+                    const match = filter === 'all' || group.getAttribute('data-category') === filter;
+                    group.style.display = match ? '' : 'none';
+                });
+            });
+        });
+    </script>
 
     <script>
         const navToggle = document.getElementById('nav-toggle');
