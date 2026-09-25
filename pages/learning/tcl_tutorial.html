@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | MMRR</title>
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../css/style.css">
-    <link rel="stylesheet" href="../../../css/project.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project.css">
     <style>
         /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
         .resume-item {
@@ -51,19 +51,19 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+                <a href="../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../about.html">About me</a></li>
-                <li><a href="../../projects.html" class="active">Project Page</a></li>
-                <li><a href="../../self_learning.html">Self-Learning</a></li>
-                <li><a href="../../research.html">Research</a></li>
-                <li><a href="../../cv_sop.html">CV/SoP</a></li>
-                <li><a href="../../../index.html#contact">Contact</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About me</a></li>
+                <li><a href="../projects.html">Project Page</a></li>
+                <li><a href="../self_learning.html" class="active">Self-Learning</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../cv_sop.html">CV/SoP</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
 
                 <div class="drawer-close-container">
                     <div class="drawer-close-circle" id="drawer-close">
@@ -77,80 +77,46 @@
     <div class="container">
 
         <section id="contact" style="line-height: 1.25;">
-            <h2 style="font-weight: 500;"><strong>PROJECT TITLE: </strong>
+            <h2 style="font-weight: 500;"><strong>COURSE TITLE: </strong>
                 <span style="font-weight: 350;">
-                    Fine-Grained ASIC Physical Design Analysis & Optimization.
+                    TCL Tutorial - Basics to Advanced.
                 </span>
             </h2>
         </section>
 
         <section id="contact" style="line-height: 1.25;">
-            <p> <strong>Project duration: </strong>
-                During professional skill development and graduate study preparation.
+            <p> <strong>Platform: </strong>
+                YouTube | VLSI Academy
             </p>
-            <p><strong>Tool used: </strong>Yosys, OpenROAD, OpenSTA</p>
         </section>
-
-        <h1 style="align-items: center;">Project in Progress — Full details and results will be showcased here upon
-            completion. Stay connected!</h1>
-
 
         <section id="contact" style="line-height: 1.25;">
-            <p><strong>MOTIVE: </strong>
-                It is my goal to design, implement, and tape out a complete IC from the first step to the final step,
-                and eventually fabricate it. That is why I am choosing an open-source platform, so that I do not need to
-                rely on commercial tools and can independently handle and troubleshoot the problems that arise at each
-                stage of the process. In this way, I can learn the complete process from the fundamentals. On the other
-                hand, throughout this project, I will try to utilize my observations and the knowledge I gained from my
-                previous experience. From my point of view, this will not only strengthen my existing knowledge of
-                complete IC design but also allow me to learn many new things that will help me understand more complex
-                designs. Most importantly, by taking responsibility for the entire process myself, I will gain
-                experience in identifying and solving problems independently and learn how to adapt to different design
-                environments, including commercial IC design flows.
-                </br>
-                </br>
-                Following this
+            <p> <strong>About this course: </strong>
+                As an IC Physical Design Engineer, mastering TCL scripting and its application in PnR flows is
+                essential. As part of my Trainee Engineer onboarding at Ulkasemi Pvt. Ltd., I completed a fast-paced TCL
+                training module within a few hours and successfully passed the hands-on scripting evaluation.
             </p>
-            <h2 style="font-weight: 600; text-align: center;">FLOW Elaboration</h2>
-            <p>
-                <strong>RTL Generation:</strong>
-                Since my primary focus was on the PnR flow, I intentionally chose a simple RTL design to minimize
-                computational complexity and to facilitate a clearer understanding of the overall flow.
-
-                This synchronous 4-bit ALU (alu_4bit) processes two 4-bit inputs (A and B) through three distinct,
-                shaded sub-modules to produce an overflow-safe 8-bit output (Y). Inside the design, the arithmetic_unit
-                concurrently computes addition (A + B) and subtraction (A - B) into registers, while the logical_unit
-                continuously evaluates bitwise AND (A&B) and XOR (A^B) wire outputs. A central 4-to-1 multiplexer inside
-                the control_unit monitors a 2-bit Opcode input, routing the corresponding arithmetic or logical result
-                to an 8-bit output register on every rising edge of the system clock (posedge clk) according to a fixed
-                functional table (00 for add, 01 for subtract, 10 for AND, and 11 for XOR).
-            </p>
-        </section>
-
-        <section id="portfolio-banner-section">
-            <div class="banner-image-container">
-                <img src="https://drive.google.com/thumbnail?id=1YWWB5-QGIy1woCIOQqaQFGTH6H1j2Ug4&sz=w2000"
-                    alt="VLSI Design Banner">
-            </div>
         </section>
 
         <section id="pdf-viewer-section">
-            <h2 style="font-weight: 600;"><i class="bx bx-file"></i> Project Report</h2>
+            <h2 style="font-weight: 600;"><i class="bx bx-file"></i> Course Note:</h2>
             <div class="pdf-viewer-box">
-                <object class="pdf-object" data="/home/mamun/ASIC Layout_2  Digital Innovus.pdf" type="application/pdf">
+                <object class="pdf-object" data="../../assest/self_learning/tcl_tutorial.pdf" type="application/pdf">
                     <div class="pdf-fallback">
                         <p>Your browser can't display the PDF inline.</p>
-                        <a class="btn btn-dark" href="/home/mamun/ASIC Layout_2  Digital Innovus.pdf" target="_blank" rel="noopener">
+                        <a class="btn btn-dark" href="../../assest/self_learning/tcl_tutorial.pdf" target="_blank"
+                            rel="noopener">
                             <i class='bx bx-download'></i> Download PDF
                         </a>
                     </div>
                 </object>
             </div>
             <div class="pdf-viewer-actions">
-                <a class="btn btn-light" href="/home/mamun/ASIC Layout_2  Digital Innovus.pdf" target="_blank" rel="noopener">
+                <a class="btn btn-light" href="../../assest/self_learning/tcl_tutorial.pdf" target="_blank"
+                    rel="noopener">
                     <i class='bx bx-expand'></i> Open in new tab
                 </a>
-                <a class="btn btn-light" href="/home/mamun/ASIC Layout_2  Digital Innovus.pdf" download>
+                <a class="btn btn-light" href="../../assest/self_learning/tcl_tutorial.pdf" download>
                     <i class='bx bx-download'></i> Download
                 </a>
             </div>

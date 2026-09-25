@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ask_me.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/about.html">About me</a></li>
+                <li><a href="pages/projects.html">Project Page</a></li>
+                <li><a href="pages/self_learning.html">Self-Learning</a></li>
+                <li><a href="pages/research.html">Research</a></li>
+                <li><a href="pages/cv_sop.html">CV/SoP</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" style="line-height: 1.25;">
+            <h1 style="font-weight: 700; font-size: 1.5rem;">MD MAMUNAR RAHOMAN ROTON</h1>
+            <!-- <div class="subtitle">VLSI Engineer | IC Physical Design</div> -->
+            <p>Highly interested in VLSI and digital system design, with a strong commitment to contributing to
+                technological advancements. Continuously engaged in learning and self-development through diverse
+                resources to enhance my technical expertise and professional growth.</p>
+
+            <div class="btn-container">
+                <a href="https://drive.google.com/file/d/1ZJwfSXPQzwCUhmbIXzgiIv6hTF0pc1VK/view?usp=drive_link" class="btn btn-dark"><i
+                        class='bx bx-download'></i> Download CV</a>
+                <a href="pages/projects.html" class="btn btn-light">View Projects <i
+                        class='bx bx-right-top-arrow-circle'></i></a>
+            </div>
+        </section>
+
+        <!-- <section id="about">
+            <h2><i class="bx bx-id-card"></i>About Me</h2>
+            <p>Hi, I am Md. Mamunar Rahoman Roton — a VLSI engineer with hands-on experience in IC Physical Design and
+                backend implementation flows, including floorplanning, CTS, place & route, timing closure, and physical
+                verification using industry EDA tools at advanced technology nodes.</p>
+            <p>I am particularly interested in digital system design, RTL development (SystemVerilog), and computer
+                architecture, especially CPU/GPU microarchitecture and high-performance, low-power computing systems. My
+                goal is to bridge architecture and physical implementation, contributing to efficient and scalable
+                semiconductor designs as a future Digital System Design Architect.</p>
+            <a href="pages/about.html" class="btn btn-inline">Explore More <i
+                    class='bx bx-right-top-arrow-circle'></i></a>
+        </section> -->
+
+        <section id="highlights" style="line-height: 1.25;">
+            <h2 style="font-size: 1.2rem;">KEY HIGHLIGHTS</h2>
+            <ul>
+                <li>Nearly 1 year industry experience in IC Physical Design. (Hands-on tapeout experience on TSMC 3nm
+                    node, specializing in Physical Design Verification and advanced-node sign-off methodologies.)</li>
+                <li>Worked as an Assistant Engineer at Ulkasemi Pvt. Ltd. on a Synopsys contract project.</li>
+                <li>Strong knowledge of VLSI backend flows, digital design, and CMOS systems.</li>
+            </ul>
+        </section>
+
+        <section id="projects" style="line-height: 1.25;">
+            <h2 style="font-size: 1.2rem;">FEATURED PROJECTS</h2>
+
+            <div class="project-item">
+                <ul>
+                    <li><strong>Fine-Grained ASIC Physical Design Analysis & Optimization.</strong>
+                        | status: <span style="color: red;">ongoing</span>
+                    </li>
+                </ul>
+                <div class="project-tool">Tool used: Yosys, OpenRoad, OpenSTA | <a href="pages/projects/phase2/asic_pd.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a></div>
+            </div>
+
+            <div class="project-item">
+                <ul>
+                    <li><strong>Complete RTL-to-GDS Flow Implementation and Verification of a 4-bit ALU
+                            Design.</strong></li>
+                </ul>
+                <div class="project-tool">Tool used: ModelSim, Cadence Genus, Cadence Innovus | <a
+                        href="pages/projects/back_end_flow.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a></div>
+            </div>
+            <div class="project-item">
+                <ul>
+                    <li><strong>Full-chip design of a unidirectional data transmitter using serial and parallel data
+                            communication modes.</strong></li>
+                </ul>
+                <div class="project-tool">Tool used: ModelSim, Xilinx Vivado, Cadence Genus, Cadence Innovus. | <a
+                        href="./pages/projects/usb_controller.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a></div>
+            </div>
+
+            <div class="project-item">
+                <ul>
+                    <li><strong>28T CMOS Full-Adder using only Metal-1, preserving higher metal layers for
+                                hierarchical integration.</strong></li>
+                </ul>
+                <div class="project-tool">Tool used: Cadence Virtuoso | <a
+                        href="./pages/projects/28_fadded.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a></div>
+            </div>
+
+            <div class="project-item">
+                <ul>
+                    <li><strong>Schematic and Layout Design of a Low-Power Multiplexer-Based 1-Bit Full Adder
+                            Circuit.</strong></li>
+                </ul>
+                <div class="project-tool">Tool used: Cadence Virtuoso | <a href="./pages/projects/mbfa_12t.html">Project
+                        details <i class='bx bx-right-top-arrow-circle'></i></a></div>
+            </div>
+
+            <div class="project-item">
+                <ul>
+                    <li><strong>RTL Design, functional verification of Serial to parallel and Parallel to serial data
+                            communication system using verilog.</strong></li>
+                </ul>
+                <div class="project-tool">Tool used: Xilinx Vivado, ModelSim | <a
+                        href="./pages/projects/serdes.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a></div>
+            </div>
+
+            <div class="project-item">
+                <ul>
+                    <li><strong>Over Voltage, Under Voltage, and Over Load Protection of Power System using NodeMCU Mega
+                            WiFi R3 (ATmega 2560).</strong></li>
+                </ul>
+                <div class="project-tool">Tool used: Arduino IDE, EasyEDA (for schematic drawing). | <a
+                        href="./pages/projects/power_system_protection.html">Project
+                        details <i class='bx bx-right-top-arrow-circle'></i></a></div>
+            </div>
+
+            <a href="pages/projects.html" class="btn btn-inline">View all projects <i
+                    class='bx bx-right-top-arrow-circle'></i></a>
+        </section>
+
+        <section id="skills" style="line-height: 1.25;">
+            <h2 style="font-size: 1.2rem;">SKILL OVERVIEW</h2>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title"><i class='bx bx-cog'></i>Domain</div>
+                    <div class="card-content">VLSI, Physical Design Verification (DRC, LVS, ERC, ANTENNA), Physical
+                        Design (PnR, CTS, STA, Timing Optimization), RTL Design and Verification.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class='bx bx-cog'></i>EDA Tools</div>
+                    <div class="card-content">Synopsys (ICC2, ICV, PrimeTime), Cadence (Innovus, Virtuoso), ModelSim,
+                        Xilinx Vivado.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class='bx bx-cog'></i>Embedded Systems</div>
+                    <div class="card-content">Microprocessor Interfacing (ATmega 328P, ATmega 2560, ESP8266)</div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title"><i class='bx bx-cog'></i>HDL/Programming</div>
+                    <div class="card-content">Verilog, C++, MATLAB, Python(basic)</div>
+                </div>
+                <div class="card">
+                    <div class="card-title"><i class='bx bx-cog'></i>Platforms</div>
+                    <div class="card-content">Linux, Shell Scripting, TCL Scripting, perl(basic)</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" style="line-height: 1.25;">
+            <h2 style="font-size: 1.2rem;">RESEARCH</h2>
+            <p>Undergraduate Thesis: <strong><em>Applications to Rectilinear Steiner Minimum Trees for Higher Degree
+                        Nets with Advanced Net-breaking Techniques.</em></strong></p>
+            <ul>
+                <li>Compressed and optimized the existing RSMT (Rectilinear Steiner Minimum Tree) database using
+                    orientation-based methodologies to improve efficiency and reduce redundancy.</li>
+                <li>Applied advanced net-breaking techniques to enable scalable and accurate routing for higher-degree
+                    nets in Physical Design Automation.</li>
+                <li>Developed a methodology to generate multiple routing solution paths from placement data instead of
+                    relying on a single reference solution, expanding design flexibility.</li>
+                <li>Enhanced routing efficiency and runtime performance by introducing alternative routing strategies
+                    for critical paths using the newly developed multi-solution database.</li>
+            </ul>
+            <a href="./pages/research.html" class="btn btn-inline">Explore more <i
+                    class='bx bx-right-top-arrow-circle'></i></a>
+        </section>
+
+        <section id="interests" style="line-height: 1.25;">
+            <h2 style="font-size: 1.2rem;">INTERESTED FIELD</h2>
+            <ul>
+                <li>Improvement of VLSI back-end design flow.</li>
+                <li>Automation tool efficiency improvement.</li>
+                <li>FPGA/Embedded systems.</li>
+            </ul>
+        </section>
+
+        <section id="qa-section" style="line-height: 1.25;">
+            <h2 style="font-size: 1.2rem;">SEND ME A MESSAGE</h2>
+
+            <div class="qa-container">
+
+                <form id="qaForm" action="https://api.web3forms.com/submit" method="POST" class="qa-form">
+
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="9fbd8b9f-0ff5-4eb7-a9ec-f7f42a448980">
+
+                    <!-- Email Subject -->
+                    <input type="hidden" name="subject" value="New Portfolio Q&A Submission">
+
+                    <!-- Website Name -->
+                    <input type="hidden" name="from_name" value="Mamunar Rahoman Portfolio">
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="botcheck" style="display:none;">
+
+                    <div class="form-group-row">
+
+                        <div class="form-group">
+                            <label for="qa-name">Full Name</label>
+                            <input type="text" id="qa-name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qa-email">Email Address</label>
+                            <input type="email" id="qa-email" name="email" placeholder="your.email@example.com"
+                                required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qa-topic">Topic / Category</label>
+
+                        <select id="qa-topic" name="topic" required>
+
+                            <option value="" disabled selected>
+                                Select a topic...
+                            </option>
+
+                            <option value="physical-design">
+                                IC Physical Design & Verification
+                            </option>
+
+                            <option value="rtl-digital">
+                                RTL Design & Digital Systems
+                            </option>
+
+                            <option value="research">
+                                Research & Thesis Inquiries
+                            </option>
+
+                            <option value="collaboration">
+                                Professional Collaboration
+                            </option>
+
+                            <option value="other">
+                                Other Inquiries
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="qa-question">
+                            Your Message
+                        </label>
+
+                        <textarea id="qa-question" name="message" rows="5"
+                            placeholder="Type your question in detail here..." required></textarea>
+
+                    </div>
+
+                    <div class="form-submit">
+
+                        <button type="submit" class="btn btn-dark">
+
+                            Send
+                            <i class="bx bx-paper-plane"></i>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section id="contact" style="line-height: 1.25">
+            <h2 style="font-size: 1.2rem;">LET'S CONNECT</h2>
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional collaboration. I
+                am always open to collaborating with others in my areas of interest.</p>
+
+            <div class="grid-3">
+                <a href="mailto:mamunar.edu@gmail.com" class="card-button">
+                    <div class="card-title"><i class='bx bx-envelope'></i> Email</div>
+                    <div class="card-content">mamunar.edu@gmail.com</div>
+                </a>
+                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-linkedin-square'></i> LinkedIn</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-github'></i> GitHub</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        // Toggle Drawer Visibility
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        // Close Drawer when cross button inside circle layout is clicked
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        // Close Drawer when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        // Close Drawer if clicked anywhere completely outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="bx bx-check-circle"></i>
+            <span>Message sent successfully!</span>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById("qaForm");
+        const toast = document.getElementById("toast");
+        const submitBtn = form.querySelector("button[type='submit']");
+
+        form.addEventListener("submit", async (e) => {
+
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            const originalHTML = submitBtn.innerHTML;
+
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.disabled = true;
+
+            try {
+
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+
+                    // Reset form
+                    form.reset();
+
+                    // Close mobile drawer if open
+                    if (navMenu.classList.contains("show-menu")) {
+                        navMenu.classList.remove("show-menu");
+                        navToggle.querySelector("i").className = "bx bx-menu";
+                    }
+
+                    // Show success popup
+                    toast.classList.add("show");
+
+                    // Hide popup and redirect
+                    setTimeout(() => {
+                        toast.classList.remove("show");
+                        window.location.href = "./index.html#contact";
+                    }, 2500);
+
+                } else {
+
+                    alert(result.message || "Failed to send your message.");
+
+                }
+
+            } catch (error) {
+
+                console.error(error);
+                alert("Network error. Please check your internet connection.");
+
+            } finally {
+
+                submitBtn.innerHTML = originalHTML;
+                submitBtn.disabled = false;
+
+            }
+
+        });
+
+        const sections = document.querySelectorAll("section[id]");
+        const navItems = document.querySelectorAll(".nav-menu a[href^='#'], .nav-menu a[href*='index.html#']");
+
+        window.addEventListener("scroll", () => {
+            const scrollY = window.scrollY;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute("id");
+
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+
+                    navItems.forEach(link => link.classList.remove("active"));
+
+                    const activeLink = document.querySelector(
+                        `.nav-menu a[href="#${sectionId}"], .nav-menu a[href="index.html#${sectionId}"]`
+                    );
+
+                    if (activeLink) {
+                        activeLink.classList.add("active");
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Learning | MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <style>
+        /* --- Self Learning page adjustments --- */
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        .filter-chip {
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 999px;
+            border: 1px solid var(--border-color);
+            background-color: #ffffff;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-chip:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .filter-chip.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .course-card {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .course-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .course-badge {
+            flex-shrink: 0;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background-color: rgba(10, 89, 192, 0.1);
+            color: var(--accent-color);
+        }
+
+        .course-provider {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .course-date {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .course-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="projects.html">Project Page</a></li>
+                <li><a href="self_learning.html" class="active">Self-Learning</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv_sop.html">CV/SoP</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="self-learning-header" style="line-height: 1.25;">
+            <h1>Self Learning</h1>
+            <p class="subtitle" style="font-size: 1.1rem;">Courses and certifications I've completed outside the
+                classroom.</p>
+        </section>
+
+        <section id="self-learning-intro" style="line-height: 1.25;">
+            <p>
+                Alongside my formal studies and industry work, I regularly take structured courses to deepen my
+                understanding of VLSI design, digital fundamentals, and the tools I rely on. This page tracks what
+                I've completed, when, and where.
+            </p>
+        </section>
+
+        <section id="self-learning-courses" style="line-height: 1.25;">
+            <h2>Completed Courses</h2>
+
+            <div class="filter-bar" id="filter-bar">
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="frontend">Frontend VLSI</button>
+                <button class="filter-chip" data-filter="backend">Backend VLSI</button>
+                <button class="filter-chip" data-filter="general">General EE/CS</button>
+            </div>
+
+            <div class="grid-3" id="course-grid">
+
+                <div class="card course-card" data-category="frontend">
+                    <div class="course-top">
+                        <div class="card-title" style="text-transform:none; letter-spacing:0;">GPU Design in
+                            SystemVerilog</div>
+                        <span class="course-badge">Frontend</span>
+                    </div>
+                    <div class="course-provider"><i class='bx bx-building-house'></i>SEMIRISE</div>
+                    <div class="course-date"><i class='bx bx-calendar'></i> Completed — April 26, 2026</div>
+                    <div class="card-content">Learned the basics of GPU architecture and its working principles using
+                        SystemVerilog.</div>
+                    <div class="course-footer">
+                        <a href="learning/gpu_and_system_verilog.html" class="btn btn-inline" target="_blank" rel="noopener">
+                            <i class='bx bx-certification'></i> Learning Outcomes
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1tmrFNJt8W1RQzTmlBqSiKdM9yw4QcQ0s/view?usp=sharing"
+                            class="btn btn-inline" target="_blank" rel="noopener">
+                            <i class='bx bx-certification'></i> Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card course-card" data-category="backend">
+                    <div class="course-top">
+                        <div class="card-title" style="text-transform:none; letter-spacing:0;">Full Placement and Routing Flow.</div>
+                        <span class="course-badge">Backend</span>
+                    </div>
+                    <div class="course-provider"><i class='bx bx-building-house'></i> YouTube | VLSI Academy.</div>
+                    <div class="course-date"><i class='bx bx-calendar'></i> Completed — 2025</div>
+                    <div class="card-content"></div>
+                    <div class="course-footer">
+                        <a href="#" class="btn btn-inline" target="_blank" rel="noopener">
+                            <i class='bx bx-certification'></i> Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card course-card" data-category="general">
+                    <div class="course-top">
+                        <div class="card-title" style="text-transform:none; letter-spacing:0;">TCL Tutorial: Basics to
+                            Advanced.</div>
+                        <span class="course-badge">General</span>
+                    </div>
+                    <div class="course-provider"><i class='bx bx-building-house'></i> YouTube | VLSI Academy</div>
+                    <div class="course-date"><i class='bx bx-calendar'></i> Completed — 2025</div>
+                    <div class="card-content">Learned TCL scripting fundamentals and applied on EDA tool.</div>
+                    <div class="course-footer">
+                        <a href="../pages/learning/tcl_tutorial.html" class="btn btn-inline" target="_blank" rel="noopener">
+                            <i class='bx bx-certification'></i> Learning Outcomes
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" style="line-height: 1.25">
+            <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
+                collaboration. I
+                am always open to collaborating with others in my areas of interest.</p>
+
+            <div class="grid-3">
+                <a href="mailto:mamunar.edu@gmail.com" class="card-button">
+                    <div class="card-title"><i class='bx bx-envelope'></i> Email</div>
+                    <div class="card-content">mamunar.edu@gmail.com</div>
+                </a>
+                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-linkedin-square'></i> LinkedIn</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+                <a href="https://github.com/mamunarrahoman" target="_blank" class="card-button">
+                    <div class="card-title"><i class='bx bxl-github'></i> GitHub</div>
+                    <div class="card-content">Mamunar Rahoman</div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        // Filter chips
+        const chips = document.querySelectorAll('.filter-chip');
+        const cards = document.querySelectorAll('#course-grid .course-card');
+
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                chips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                const filter = chip.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    const match = filter === 'all' || card.getAttribute('data-category') === filter;
+                    card.style.display = match ? '' : 'none';
+                });
+            });
+        });
+    </script>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
