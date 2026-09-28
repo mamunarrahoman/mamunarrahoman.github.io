@@ -9,146 +9,165 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ask_me.css">
     <style>
-        /* =========================================================
-           Homepage — modernized layout.
-           Scoped to body.home-page. Uses the site's existing
-           palette and background as-is (--primary-color,
-           --accent-color, --text-color, --text-light,
-           --border-color, --card-bg, --bg-body) — nothing new
-           introduced there. Only typography, spacing and a few
-           reusable list/row components are added.
-        ========================================================= */
-        body.home-page {
+        .home {
             --ink: var(--primary-color);
-            --ink-soft: var(--text-light);
             --line: var(--border-color);
-            --die: var(--card-bg);
+            --surface: var(--card-bg);
             --accent: var(--accent-color);
             --accent-soft: color-mix(in srgb, var(--accent-color) 10%, transparent);
+            padding-bottom: 48px;
         }
 
-        body.home-page h1 {
-            letter-spacing: -0.01em;
+        .home h2.block-title {
+            font-size: 1.25rem;
+            margin: 0 0 4px;
         }
 
-        body.home-page h2 {
-            font-weight: 700;
+        .home .block {
+            margin-top: 20px;
+            line-height: 1.25;
         }
 
-        body.home-page #home p {
-            max-width: 62ch;
+        /* ---------- Hero: split layout ---------- */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 1fr;
+            gap: 28px;
+            align-items: stretch;
+            margin-top: 28px;
         }
 
-        .hero-subtitle {
-            margin-top: -6px;
-            margin-bottom: 10px;
-        }
-
-        .hero-tags {
-            margin: 6px 0 14px;
-        }
-
-        /* --- Featured Projects: scoped tokens so this section
-           renders correctly regardless of the body class above --- */
-        #projects {
-            --ink: var(--primary-color);
-            --ink-soft: var(--text-light);
-            --line: var(--border-color);
-            --die: var(--card-bg);
-            --accent: var(--accent-color);
-            --accent-soft: color-mix(in srgb, var(--accent-color) 10%, transparent);
-        }
-
-        /* --- Key Highlights: modern row list instead of bullets --- */
-        .highlight-list {
-            list-style: none;
-            margin: 12px 0 0;
-            padding: 0;
-            background-color: var(--die);
-            border: 1px solid var(--line);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .highlight-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 14px 16px;
-            border-bottom: 1px solid var(--line);
-            text-align: left;
-            font-size: 0.95rem;
-        }
-
-        .highlight-list li:last-child {
-            border-bottom: none;
-        }
-
-        .highlight-list i {
-            color: var(--accent);
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        /* --- Featured Projects: reusable row component --- */
-        .entry-list {
-            background-color: var(--die);
-            border: 1px solid var(--line);
-            border-radius: 10px;
-            overflow: hidden;
-            margin-top: 12px;
-        }
-
-        .entry-row {
+        #home {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            padding: 16px 18px;
-            border-bottom: 1px solid var(--line);
-            transition: background-color 0.15s ease;
+            justify-content: center;
+            padding: 0;
         }
 
-        .entry-list .entry-row:last-child {
-            border-bottom: none;
+        #home h1 {
+            font-size: clamp(2rem, 4.2vw, 2.9rem);
+            font-weight: 800;
+            line-height: 1.12;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
         }
 
-        .entry-row:hover {
-            background-color: var(--accent-soft);
+        #home p {
+            max-width: 56ch;
+            text-align: justify;
+            font-size: 1.02rem;
+            line-height: 1.7;
         }
 
-        .entry-main {
+        #home .btn-container {
+            margin-top: 20px;
+        }
+
+        #home .btn {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+
+        /* Dark highlights panel (uses your primary color) */
+        #highlights {
+            background-color: var(--ink);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 26px;
+        }
+
+        #highlights h2 {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin: 0 0 8px;
+        }
+
+        #highlights ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #highlights li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin: 0;
+            padding: 14px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.16);
+            color: #ffffff;
+            font-size: 0.93rem;
+            line-height: 1.55;
+            text-align: left;
+        }
+
+        #highlights li:first-child {
+            border-top: none;
+        }
+
+        #highlights li i {
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* ---------- Featured projects: card grid ---------- */
+        .proj-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin-top: 14px;
+        }
+
+        .proj-card {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 18px;
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            transition: border-color 0.15s ease;
+        }
+
+        .proj-card:hover {
+            border-color: var(--accent);
+        }
+
+        .proj-card.featured {
+            grid-column: 1 / -1;
+            border-left: 4px solid var(--accent);
+        }
+
+        .proj-head {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: flex-start;
             gap: 12px;
         }
 
-        .entry-title {
-            font-weight: 600;
+        .proj-title {
+            margin: 0;
             font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.4;
             color: var(--ink);
-            line-height: 1.45;
             text-align: left;
         }
 
+        .proj-card.featured .proj-title {
+            font-size: 1.15rem;
+        }
+
         .status-pill {
-            font-size: 0.68rem;
-            font-weight: 500;
-            padding: 2px 9px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 10px;
             border-radius: 999px;
             background-color: rgba(220, 38, 38, 0.1);
             color: #dc2626;
             white-space: nowrap;
             flex-shrink: 0;
-        }
-
-        .entry-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
         }
 
         .tag-row {
@@ -158,72 +177,239 @@
         }
 
         .tag {
-            font-size: 0.72rem;
+            font-size: 0.74rem;
             padding: 3px 9px;
             border-radius: 5px;
             background-color: var(--bg-body);
             border: 1px solid var(--line);
-            color: var(--ink-soft);
         }
 
-        .entry-link {
-            font-size: 0.85rem;
-            font-weight: 500;
+        .proj-link {
+            margin-top: auto;
+            font-size: 0.86rem;
+            font-weight: 600;
             color: var(--accent);
             display: inline-flex;
             align-items: center;
             gap: 4px;
-            white-space: nowrap;
         }
 
-        .entry-link:hover {
+        .proj-link:hover {
             color: var(--ink);
         }
 
-        /* --- Skill cards: distinct icon per category --- */
-        #skills .card {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
+        .all-projects {
+            margin-top: 16px;
         }
 
-        #skills .card-title i {
-            color: var(--accent);
-            margin-right: 4px;
+        /* ---------- Skills: spec-sheet table ---------- */
+        .spec {
+            margin-top: 14px;
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            overflow: hidden;
         }
 
-        /* --- Interested Field: chip row instead of bullets --- */
-        .interest-row {
+        .spec-row {
+            display: grid;
+            grid-template-columns: 210px 1fr;
+            gap: 16px;
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .spec-row:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
             display: flex;
-            flex-wrap: wrap;
+            align-items: flex-start;
             gap: 8px;
+            font-weight: 700;
+            color: var(--ink);
+            font-size: 0.95rem;
+        }
+
+        .spec-label i {
+            color: var(--accent);
+            font-size: 1.15rem;
+        }
+
+        .spec-value {
+            font-size: 0.93rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* ---------- Research panel ---------- */
+        .research-card {
+            margin-top: 14px;
+            padding: 22px;
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--accent);
+            border-radius: 12px;
+        }
+
+        .research-card p {
+            text-align: left;
+        }
+
+        .research-card ul {
             margin-top: 10px;
         }
 
-        .interest-chip {
-            font-size: 0.8rem;
-            padding: 6px 14px;
-            border-radius: 999px;
-            border: 1px solid var(--line);
-            background-color: var(--die);
-            color: var(--ink-soft);
+        .research-card li {
+            text-align: left;
+            line-height: 1.6;
         }
 
-        @media (max-width: 640px) {
-            .entry-main {
-                flex-direction: column;
-                align-items: flex-start;
+        /* ---------- Interests ---------- */
+        .interest-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .interest-chip {
+            font-size: 0.88rem;
+            padding: 8px 16px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background-color: var(--surface);
+        }
+
+        /* ---------- Message + Connect side by side ---------- */
+        .split {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 28px;
+            align-items: start;
+            margin-top: 44px;
+        }
+
+        .split section {
+            margin: 0;
+        }
+
+        .split .qa-container {
+            margin-top: 14px;
+        }
+
+        /* ---------- Let's Connect: dark panel with link rows ---------- */
+        #contact {
+            background-color: var(--ink);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 26px;
+        }
+
+        #contact h2 {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin: 0 0 10px;
+        }
+
+        #contact p {
+            color: rgba(255, 255, 255, 0.85);
+            text-align: left;
+            font-size: 0.93rem;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .connect-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .connect-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 14px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 12px;
+            color: #ffffff;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .connect-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            color: #ffffff;
+        }
+
+        .connect-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.12);
+            font-size: 1.35rem;
+        }
+
+        .connect-text {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .connect-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .connect-value {
+            font-size: 0.93rem;
+            font-weight: 600;
+            overflow-wrap: anywhere;
+        }
+
+        .connect-go {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            opacity: 0.7;
+        }
+
+        .connect-item:hover .connect-go {
+            opacity: 1;
+        }
+
+        @media (max-width: 900px) {
+
+            .hero-grid,
+            .split {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .proj-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .spec-row {
+                grid-template-columns: 1fr;
                 gap: 6px;
             }
 
-            .entry-meta {
+            .proj-head {
                 flex-direction: column;
-                align-items: flex-start;
+                gap: 8px;
             }
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .entry-row {
+            .proj-card {
                 transition: none;
             }
         }
@@ -258,22 +444,44 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container home">
 
-        <section id="home" style="line-height: 1.25;">
-            <h1 style="font-weight: 700; font-size: 1.5rem;">MD MAMUNAR RAHOMAN ROTON</h1>
-            <!-- <div class="subtitle">VLSI Engineer | IC Physical Design</div> -->
-            <p>Highly interested in VLSI and digital system design, with a strong commitment to contributing to
-                technological advancements. Continuously engaged in learning and self-development through diverse
-                resources to enhance my technical expertise and professional growth.</p>
+        <div class="hero-grid">
 
-            <div class="btn-container">
-                <a href="https://drive.google.com/file/d/1ZJwfSXPQzwCUhmbIXzgiIv6hTF0pc1VK/view?usp=drive_link"
-                    class="btn btn-dark"><i class='bx bx-download'></i> Download CV</a>
-                <a href="pages/projects.html" class="btn btn-light">View Projects <i
-                        class='bx bx-right-top-arrow-circle'></i></a>
-            </div>
-        </section>
+            <section id="home">
+                <h1>MD MAMUNAR RAHOMAN ROTON</h1>
+                <!-- <div class="subtitle">VLSI Engineer | IC Physical Design</div> -->
+                <p>Highly interested in VLSI and digital system design, with a strong commitment to contributing to
+                    technological advancements. Continuously engaged in learning and self-development through diverse
+                    resources to enhance my technical expertise and professional growth.</p>
+
+                <div class="btn-container">
+                    <a href="https://drive.google.com/file/d/1ZJwfSXPQzwCUhmbIXzgiIv6hTF0pc1VK/view?usp=drive_link"
+                        class="btn btn-dark"><i class='bx bx-download'></i> Download CV</a>
+                    <a href="pages/projects.html" class="btn btn-light">View Projects <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
+                </div>
+            </section>
+
+            <section id="highlights">
+                <h2>KEY HIGHLIGHTS</h2>
+                <ul>
+                    <li><i class='bx bx-chip'></i>
+                        <span>Nearly 1 year industry experience in IC Physical Design. (Hands-on tapeout experience on
+                            TSMC 3nm node, specializing in Physical Design Verification and advanced-node sign-off
+                            methodologies.)</span>
+                    </li>
+                    <li><i class='bx bx-briefcase'></i>
+                        <span>Worked as an Assistant Engineer at Ulkasemi Pvt. Ltd. on a Synopsys contract
+                            project.</span>
+                    </li>
+                    <li><i class='bx bx-layer'></i>
+                        <span>Strong knowledge of VLSI backend flows, digital design, and CMOS systems.</span>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
 
         <!-- <section id="about">
             <h2><i class="bx bx-id-card"></i>About Me</h2>
@@ -288,307 +496,299 @@
                     class='bx bx-right-top-arrow-circle'></i></a>
         </section> -->
 
-        <section id="highlights" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">KEY HIGHLIGHTS</h2>
-            <ul>
-                <li>Nearly 1 year industry experience in IC Physical Design. (Hands-on tapeout experience on TSMC 3nm
-                    node, specializing in Physical Design Verification and advanced-node sign-off methodologies.)</li>
-                <li>Worked as an Assistant Engineer at Ulkasemi Pvt. Ltd. on a Synopsys contract project.</li>
-                <li>Strong knowledge of VLSI backend flows, digital design, and CMOS systems.</li>
-            </ul>
-        </section>
+        <section id="projects" class="block">
+            <h2 class="block-title">FEATURED PROJECTS</h2>
 
-        <section id="projects" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">FEATURED PROJECTS</h2>
+            <div class="proj-grid">
 
-            <div class="entry-list">
-
-                <article class="entry-row">
-                    <div class="entry-main">
-                        <h3 class="entry-title">Fine-Grained ASIC Physical Design Analysis & Optimization.</h3>
+                <article class="proj-card featured">
+                    <div class="proj-head">
+                        <h3 class="proj-title">Fine-Grained ASIC Physical Design Analysis & Optimization.</h3>
                         <span class="status-pill">Ongoing</span>
                     </div>
-                    <div class="entry-meta">
-                        <div class="tag-row">
-                            <span class="tag">Yosys</span>
-                            <span class="tag">OpenRoad</span>
-                            <span class="tag">OpenSTA</span>
-                        </div>
-                        <a class="entry-link" href="pages/projects/phase2/asic_pd.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a>
+                    <div class="tag-row">
+                        <span class="tag">Yosys</span>
+                        <span class="tag">OpenRoad</span>
+                        <span class="tag">OpenSTA</span>
                     </div>
+                    <a class="proj-link" href="pages/projects/phase2/asic_pd.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
                 </article>
 
-                <article class="entry-row">
-                    <div class="entry-main">
-                        <h3 class="entry-title">Complete RTL-to-GDS Flow Implementation and Verification of a 4-bit
-                            ALU Design.</h3>
+                <article class="proj-card">
+                    <div class="proj-head">
+                        <h3 class="proj-title">Complete RTL-to-GDS Flow Implementation and Verification of a 4-bit ALU
+                            Design.</h3>
                     </div>
-                    <div class="entry-meta">
-                        <div class="tag-row">
-                            <span class="tag">ModelSim</span>
-                            <span class="tag">Cadence Genus</span>
-                            <span class="tag">Cadence Innovus</span>
-                        </div>
-                        <a class="entry-link" href="pages/projects/back_end_flow.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a>
+                    <div class="tag-row">
+                        <span class="tag">ModelSim</span>
+                        <span class="tag">Cadence Genus</span>
+                        <span class="tag">Cadence Innovus</span>
                     </div>
+                    <a class="proj-link" href="pages/projects/back_end_flow.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
                 </article>
 
-                <article class="entry-row">
-                    <div class="entry-main">
-                        <h3 class="entry-title">Full-chip design of a unidirectional data transmitter using serial
-                            and parallel data communication modes.</h3>
+                <article class="proj-card">
+                    <div class="proj-head">
+                        <h3 class="proj-title">Full-chip design of a unidirectional data transmitter using serial and
+                            parallel data communication modes.</h3>
                     </div>
-                    <div class="entry-meta">
-                        <div class="tag-row">
-                            <span class="tag">ModelSim</span>
-                            <span class="tag">Xilinx Vivado</span>
-                            <span class="tag">Cadence Genus</span>
-                            <span class="tag">Cadence Innovus</span>
-                        </div>
-                        <a class="entry-link" href="./pages/projects/usb_controller.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a>
+                    <div class="tag-row">
+                        <span class="tag">ModelSim</span>
+                        <span class="tag">Xilinx Vivado</span>
+                        <span class="tag">Cadence Genus</span>
+                        <span class="tag">Cadence Innovus</span>
                     </div>
+                    <a class="proj-link" href="./pages/projects/usb_controller.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
                 </article>
 
-                <article class="entry-row">
-                    <div class="entry-main">
-                        <h3 class="entry-title">28T CMOS Full-Adder using only Metal-1, preserving higher metal
-                            layers for hierarchical integration.</h3>
+                <article class="proj-card">
+                    <div class="proj-head">
+                        <h3 class="proj-title">28T CMOS Full-Adder using only Metal-1, preserving higher metal layers
+                            for hierarchical integration.</h3>
                     </div>
-                    <div class="entry-meta">
-                        <div class="tag-row">
-                            <span class="tag">Cadence Virtuoso</span>
-                        </div>
-                        <a class="entry-link" href="./pages/projects/28_fadded.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a>
+                    <div class="tag-row">
+                        <span class="tag">Cadence Virtuoso</span>
                     </div>
+                    <a class="proj-link" href="./pages/projects/28_fadded.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
                 </article>
 
-                <article class="entry-row">
-                    <div class="entry-main">
-                        <h3 class="entry-title">Schematic and Layout Design of a Low-Power Multiplexer-Based 1-Bit
-                            Full Adder Circuit.</h3>
+                <article class="proj-card">
+                    <div class="proj-head">
+                        <h3 class="proj-title">Schematic and Layout Design of a Low-Power Multiplexer-Based 1-Bit Full
+                            Adder Circuit.</h3>
                     </div>
-                    <div class="entry-meta">
-                        <div class="tag-row">
-                            <span class="tag">Cadence Virtuoso</span>
-                        </div>
-                        <a class="entry-link" href="./pages/projects/mbfa_12t.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a>
+                    <div class="tag-row">
+                        <span class="tag">Cadence Virtuoso</span>
                     </div>
+                    <a class="proj-link" href="./pages/projects/mbfa_12t.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
                 </article>
 
-                <article class="entry-row">
-                    <div class="entry-main">
-                        <h3 class="entry-title">RTL Design, functional verification of Serial to parallel and
-                            Parallel to serial data communication system using verilog.</h3>
+                <article class="proj-card">
+                    <div class="proj-head">
+                        <h3 class="proj-title">RTL Design, functional verification of Serial to parallel and Parallel
+                            to serial data communication system using verilog.</h3>
                     </div>
-                    <div class="entry-meta">
-                        <div class="tag-row">
-                            <span class="tag">Xilinx Vivado</span>
-                            <span class="tag">ModelSim</span>
-                        </div>
-                        <a class="entry-link" href="./pages/projects/serdes.html">Project details <i
-                                class='bx bx-right-top-arrow-circle'></i></a>
+                    <div class="tag-row">
+                        <span class="tag">Xilinx Vivado</span>
+                        <span class="tag">ModelSim</span>
                     </div>
+                    <a class="proj-link" href="./pages/projects/serdes.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
                 </article>
 
-                <article class="entry-row">
-                    <div class="entry-main">
-                        <h3 class="entry-title">Over Voltage, Under Voltage, and Over Load Protection of Power System
+                <article class="proj-card">
+                    <div class="proj-head">
+                        <h3 class="proj-title">Over Voltage, Under Voltage, and Over Load Protection of Power System
                             using NodeMCU Mega WiFi R3 (ATmega 2560).</h3>
                     </div>
-                    <div class="entry-meta">
-                        <div class="tag-row">
-                            <span class="tag">Arduino IDE</span>
-                            <span class="tag">EasyEDA (for schematic drawing)</span>
-                        </div>
-                        <a class="entry-link" href="./pages/projects/power_system_protection.html">Project details
-                            <i class='bx bx-right-top-arrow-circle'></i></a>
+                    <div class="tag-row">
+                        <span class="tag">Arduino IDE</span>
+                        <span class="tag">EasyEDA (for schematic drawing)</span>
                     </div>
+                    <a class="proj-link" href="./pages/projects/power_system_protection.html">Project details <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
                 </article>
 
             </div>
 
-            <a href="pages/projects.html" class="btn btn-inline" style="margin-top: 12px;">View all projects <i
+            <a href="pages/projects.html" class="btn btn-inline all-projects">View all projects <i
                     class='bx bx-right-top-arrow-circle'></i></a>
         </section>
 
-        <section id="skills" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">SKILL OVERVIEW</h2>
+        <section id="skills" class="block">
+            <h2 class="block-title">SKILL OVERVIEW</h2>
 
-            <div class="grid-3">
-                <div class="card">
-                    <div class="card-title"><i class='bx bx-cog'></i>Domain</div>
-                    <div class="card-content">VLSI, Physical Design Verification (DRC, LVS, ERC, ANTENNA), Physical
+            <div class="spec">
+                <div class="spec-row">
+                    <div class="spec-label"><i class='bx bx-cog'></i>Domain</div>
+                    <div class="spec-value">VLSI, Physical Design Verification (DRC, LVS, ERC, ANTENNA), Physical
                         Design (PnR, CTS, STA, Timing Optimization), RTL Design and Verification.</div>
                 </div>
-                <div class="card">
-                    <div class="card-title"><i class='bx bx-cog'></i>EDA Tools</div>
-                    <div class="card-content">Synopsys (ICC2, ICV, PrimeTime), Cadence (Innovus, Virtuoso), ModelSim,
+                <div class="spec-row">
+                    <div class="spec-label"><i class='bx bx-slider-alt'></i>EDA Tools</div>
+                    <div class="spec-value">Synopsys (ICC2, ICV, PrimeTime), Cadence (Innovus, Virtuoso), ModelSim,
                         Xilinx Vivado.</div>
                 </div>
-                <div class="card">
-                    <div class="card-title"><i class='bx bx-cog'></i>Embedded Systems</div>
-                    <div class="card-content">Microprocessor Interfacing (ATmega 328P, ATmega 2560, ESP8266)</div>
+                <div class="spec-row">
+                    <div class="spec-label"><i class='bx bx-chip'></i>Embedded Systems</div>
+                    <div class="spec-value">Microprocessor Interfacing (ATmega 328P, ATmega 2560, ESP8266)</div>
                 </div>
-            </div>
-
-            <div class="grid-2">
-                <div class="card">
-                    <div class="card-title"><i class='bx bx-cog'></i>HDL/Programming</div>
-                    <div class="card-content">Verilog, C++, MATLAB, Python(basic)</div>
+                <div class="spec-row">
+                    <div class="spec-label"><i class='bx bx-code-alt'></i>HDL/Programming</div>
+                    <div class="spec-value">Verilog, C++, MATLAB, Python(basic)</div>
                 </div>
-                <div class="card">
-                    <div class="card-title"><i class='bx bx-cog'></i>Platforms</div>
-                    <div class="card-content">Linux, Shell Scripting, TCL Scripting, perl(basic)</div>
+                <div class="spec-row">
+                    <div class="spec-label"><i class='bx bx-terminal'></i>Platforms</div>
+                    <div class="spec-value">Linux, Shell Scripting, TCL Scripting, perl(basic)</div>
                 </div>
             </div>
         </section>
 
-        <section id="research" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">RESEARCH</h2>
-            <p>Undergraduate Thesis: <strong><em>Applications to Rectilinear Steiner Minimum Trees for Higher Degree
-                        Nets with Advanced Net-breaking Techniques.</em></strong></p>
-            <ul>
-                <li>Compressed and optimized the existing RSMT (Rectilinear Steiner Minimum Tree) database using
-                    orientation-based methodologies to improve efficiency and reduce redundancy.</li>
-                <li>Applied advanced net-breaking techniques to enable scalable and accurate routing for higher-degree
-                    nets in Physical Design Automation.</li>
-                <li>Developed a methodology to generate multiple routing solution paths from placement data instead of
-                    relying on a single reference solution, expanding design flexibility.</li>
-                <li>Enhanced routing efficiency and runtime performance by introducing alternative routing strategies
-                    for critical paths using the newly developed multi-solution database.</li>
-            </ul>
-            <a href="./pages/research.html" class="btn btn-inline">Explore more <i
-                    class='bx bx-right-top-arrow-circle'></i></a>
+        <section id="research" class="block">
+            <h2 class="block-title">RESEARCH</h2>
+
+            <div class="research-card">
+                <p>Undergraduate Thesis: <strong><em>Applications to Rectilinear Steiner Minimum Trees for Higher
+                            Degree Nets with Advanced Net-breaking Techniques.</em></strong></p>
+                <ul>
+                    <li>Compressed and optimized the existing RSMT (Rectilinear Steiner Minimum Tree) database using
+                        orientation-based methodologies to improve efficiency and reduce redundancy.</li>
+                    <li>Applied advanced net-breaking techniques to enable scalable and accurate routing for
+                        higher-degree nets in Physical Design Automation.</li>
+                    <li>Developed a methodology to generate multiple routing solution paths from placement data
+                        instead of relying on a single reference solution, expanding design flexibility.</li>
+                    <li>Enhanced routing efficiency and runtime performance by introducing alternative routing
+                        strategies for critical paths using the newly developed multi-solution database.</li>
+                </ul>
+                <a href="./pages/research.html" class="btn btn-inline">Explore more <i
+                        class='bx bx-right-top-arrow-circle'></i></a>
+            </div>
         </section>
 
-        <section id="interests" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">INTERESTED FIELD</h2>
-            <ul>
-                <li>Improvement of VLSI back-end design flow.</li>
-                <li>Automation tool efficiency improvement.</li>
-                <li>FPGA/Embedded systems.</li>
-            </ul>
+        <section id="interests" class="block">
+            <h2 class="block-title">INTERESTED FIELD</h2>
+            <div class="interest-row">
+                <span class="interest-chip">Improvement of VLSI back-end design flow</span>
+                <span class="interest-chip">Automation tool efficiency improvement</span>
+                <span class="interest-chip">FPGA/Embedded systems</span>
+            </div>
         </section>
 
-        <section id="qa-section" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">SEND ME A MESSAGE</h2>
+        <div class="split">
 
-            <div class="qa-container">
+            <section id="qa-section" style="line-height: 1.25;">
+                <h2 class="block-title">SEND ME A MESSAGE</h2>
 
-                <form id="qaForm" action="https://api.web3forms.com/submit" method="POST" class="qa-form">
+                <div class="qa-container">
 
-                    <!-- Web3Forms Access Key -->
-                    <input type="hidden" name="access_key" value="9fbd8b9f-0ff5-4eb7-a9ec-f7f42a448980">
+                    <form id="qaForm" action="https://api.web3forms.com/submit" method="POST" class="qa-form">
 
-                    <!-- Email Subject -->
-                    <input type="hidden" name="subject" value="New Portfolio Q&A Submission">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="9fbd8b9f-0ff5-4eb7-a9ec-f7f42a448980">
 
-                    <!-- Website Name -->
-                    <input type="hidden" name="from_name" value="Mamunar Rahoman Portfolio">
+                        <!-- Email Subject -->
+                        <input type="hidden" name="subject" value="New Portfolio Q&A Submission">
 
-                    <!-- Disable Captcha -->
-                    <input type="hidden" name="botcheck" style="display:none;">
+                        <!-- Website Name -->
+                        <input type="hidden" name="from_name" value="Mamunar Rahoman Portfolio">
 
-                    <div class="form-group-row">
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="botcheck" style="display:none;">
 
-                        <div class="form-group">
-                            <label for="qa-name">Full Name</label>
-                            <input type="text" id="qa-name" name="name" placeholder="Your name" required>
+                        <div class="form-group-row">
+
+                            <div class="form-group">
+                                <label for="qa-name">Full Name</label>
+                                <input type="text" id="qa-name" name="name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="qa-email">Email Address</label>
+                                <input type="email" id="qa-email" name="email" placeholder="your.email@example.com"
+                                    required>
+                            </div>
+
                         </div>
 
                         <div class="form-group">
-                            <label for="qa-email">Email Address</label>
-                            <input type="email" id="qa-email" name="email" placeholder="your.email@example.com"
-                                required>
+                            <label for="qa-topic">Topic / Category</label>
+
+                            <select id="qa-topic" name="topic" required>
+
+                                <option value="" disabled selected>
+                                    Select a topic...
+                                </option>
+
+                                <option value="physical-design">
+                                    IC Physical Design & Verification
+                                </option>
+
+                                <option value="rtl-digital">
+                                    RTL Design & Digital Systems
+                                </option>
+
+                                <option value="research">
+                                    Research & Thesis Inquiries
+                                </option>
+
+                                <option value="collaboration">
+                                    Professional Collaboration
+                                </option>
+
+                                <option value="other">
+                                    Other Inquiries
+                                </option>
+
+                            </select>
                         </div>
 
-                    </div>
+                        <div class="form-group">
 
-                    <div class="form-group">
-                        <label for="qa-topic">Topic / Category</label>
+                            <label for="qa-question">
+                                Your Message
+                            </label>
 
-                        <select id="qa-topic" name="topic" required>
+                            <textarea id="qa-question" name="message" rows="5"
+                                placeholder="Type your question in detail here..." required></textarea>
 
-                            <option value="" disabled selected>
-                                Select a topic...
-                            </option>
+                        </div>
 
-                            <option value="physical-design">
-                                IC Physical Design & Verification
-                            </option>
+                        <div class="form-submit">
 
-                            <option value="rtl-digital">
-                                RTL Design & Digital Systems
-                            </option>
+                            <button type="submit" class="btn btn-dark">
 
-                            <option value="research">
-                                Research & Thesis Inquiries
-                            </option>
+                                Send
+                                <i class="bx bx-paper-plane"></i>
 
-                            <option value="collaboration">
-                                Professional Collaboration
-                            </option>
+                            </button>
 
-                            <option value="other">
-                                Other Inquiries
-                            </option>
+                        </div>
 
-                        </select>
-                    </div>
+                    </form>
 
-                    <div class="form-group">
+                </div>
 
-                        <label for="qa-question">
-                            Your Message
-                        </label>
+            </section>
 
-                        <textarea id="qa-question" name="message" rows="5"
-                            placeholder="Type your question in detail here..." required></textarea>
+            <section id="contact" style="line-height: 1.25">
+                <h2 class="block-title">LET'S CONNECT</h2>
+                <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
+                    collaboration. I am always open to collaborating with others in my areas of interest.</p>
 
-                    </div>
+                <div class="connect-list">
+                    <a href="mailto:mamunar.edu@gmail.com" class="connect-item">
+                        <span class="connect-icon"><i class='bx bx-envelope'></i></span>
+                        <span class="connect-text">
+                            <span class="connect-label">Email</span>
+                            <span class="connect-value">mamunar.edu@gmail.com</span>
+                        </span>
+                        <i class='bx bx-right-top-arrow-circle connect-go'></i>
+                    </a>
+                    <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="connect-item">
+                        <span class="connect-icon"><i class='bx bxl-linkedin-square'></i></span>
+                        <span class="connect-text">
+                            <span class="connect-label">LinkedIn</span>
+                            <span class="connect-value">Mamunar Rahoman</span>
+                        </span>
+                        <i class='bx bx-right-top-arrow-circle connect-go'></i>
+                    </a>
+                    <a href="https://github.com/mamunarrahoman" target="_blank" class="connect-item">
+                        <span class="connect-icon"><i class='bx bxl-github'></i></span>
+                        <span class="connect-text">
+                            <span class="connect-label">GitHub</span>
+                            <span class="connect-value">Mamunar Rahoman</span>
+                        </span>
+                        <i class='bx bx-right-top-arrow-circle connect-go'></i>
+                    </a>
+                </div>
+            </section>
 
-                    <div class="form-submit">
-
-                        <button type="submit" class="btn btn-dark">
-
-                            Send
-                            <i class="bx bx-paper-plane"></i>
-
-                        </button>
-
-                    </div>
-
-                </form>
-
-            </div>
-
-        </section>
-
-        <section id="contact" style="line-height: 1.25">
-            <h2 style="font-size: 1.2rem;">LET'S CONNECT</h2>
-            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional collaboration. I
-                am always open to collaborating with others in my areas of interest.</p>
-
-            <div class="grid-3">
-                <a href="mailto:mamunar.edu@gmail.com" class="card-button">
-                    <div class="card-title"><i class='bx bx-envelope'></i> Email</div>
-                    <div class="card-content">mamunar.edu@gmail.com</div>
-                </a>
-                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="card-button">
-                    <div class="card-title"><i class='bx bxl-linkedin-square'></i> LinkedIn</div>
-                    <div class="card-content">Mamunar Rahoman</div>
-                </a>
-                <a href="https://github.com/mamunarrahoman" target="_blank" class="card-button">
-                    <div class="card-title"><i class='bx bxl-github'></i> GitHub</div>
-                    <div class="card-content">Mamunar Rahoman</div>
-                </a>
-            </div>
-        </section>
+        </div>
 
     </div>
 
