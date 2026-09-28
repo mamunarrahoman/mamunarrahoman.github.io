@@ -9,77 +9,129 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ask_me.css">
     <style>
+        /* =========================================================
+           Homepage v3 — unified with the other pages.
+           Uses only your existing colors, background and font
+           (all values come from the variables in style.css).
+           Tokens live on .home so nothing depends on <body>.
+
+           Spacing system (one scale, used everywhere):
+             32px  between major blocks
+             24px  between side-by-side panels
+             16px  between cards / after a section heading
+        ========================================================= */
         .home {
             --ink: var(--primary-color);
             --line: var(--border-color);
             --surface: var(--card-bg);
             --accent: var(--accent-color);
             --accent-soft: color-mix(in srgb, var(--accent-color) 10%, transparent);
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 24px;
             padding-bottom: 48px;
         }
 
-        .home h2.block-title {
+        .home section {
+            padding: 0;
+            margin: 0;
+            scroll-margin-top: 80px;
+        }
+
+        /* ---------- Shared section heading ---------- */
+        .section-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .section-head h2 {
+            margin: 0;
             font-size: 1.25rem;
-            margin: 0 0 4px;
         }
 
-        .home .block {
-            margin-top: 20px;
-            line-height: 1.25;
+        .section-head .btn {
+            margin-top: 0;
         }
 
-        /* ---------- Hero: split layout ---------- */
-        .hero-grid {
+        /* ---------- Hero: one dark panel, two aligned columns ---------- */
+        .hero {
             display: grid;
-            grid-template-columns: 1.25fr 1fr;
-            gap: 28px;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 32px;
             align-items: stretch;
-            margin-top: 28px;
+            padding: 32px;
+            background-color: var(--ink);
+            color: #ffffff;
+            border-radius: 16px;
         }
 
         #home {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            padding: 0;
         }
 
         #home h1 {
+            color: #ffffff;
             font-size: clamp(2rem, 4.2vw, 2.9rem);
             font-weight: 800;
             line-height: 1.12;
             letter-spacing: -0.02em;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         #home p {
-            max-width: 56ch;
+            max-width: none;
+            color: rgba(255, 255, 255, 0.88);
             text-align: justify;
-            font-size: 1.02rem;
-            line-height: 1.7;
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 0;
         }
 
         #home .btn-container {
-            margin-top: 20px;
+            margin-top: auto;
+            padding-top: 22px;
+            margin-bottom: 0;
         }
 
-        #home .btn {
+        .hero .btn {
             padding: 8px 16px;
             font-size: 0.9rem;
         }
 
-        /* Dark highlights panel (uses your primary color) */
-        #highlights {
-            background-color: var(--ink);
+        .hero .btn-dark {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: var(--ink);
+        }
+
+        .hero .btn-light {
+            background-color: transparent;
+            border-color: rgba(255, 255, 255, 0.45);
             color: #ffffff;
-            border-radius: 16px;
-            padding: 26px;
+        }
+
+        .hero .btn:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: #ffffff;
+        }
+
+        #highlights {
+            padding-left: 32px;
+            border-left: 1px solid rgba(255, 255, 255, 0.16);
         }
 
         #highlights h2 {
             color: #ffffff;
-            font-size: 1.05rem;
-            margin: 0 0 8px;
+            font-size: 1.25rem;
+            margin: 0 0 6px;
         }
 
         #highlights ul {
@@ -111,12 +163,11 @@
             margin-top: 1px;
         }
 
-        /* ---------- Featured projects: card grid ---------- */
+        /* ---------- Featured projects ---------- */
         .proj-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-            margin-top: 14px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
         }
 
         .proj-card {
@@ -198,13 +249,8 @@
             color: var(--ink);
         }
 
-        .all-projects {
-            margin-top: 16px;
-        }
-
-        /* ---------- Skills: spec-sheet table ---------- */
+        /* ---------- Skills: spec sheet ---------- */
         .spec {
-            margin-top: 14px;
             background-color: var(--surface);
             border: 1px solid var(--line);
             border-radius: 12px;
@@ -215,7 +261,7 @@
             display: grid;
             grid-template-columns: 210px 1fr;
             gap: 16px;
-            padding: 15px 20px;
+            padding: 14px 20px;
             border-bottom: 1px solid var(--line);
         }
 
@@ -243,9 +289,23 @@
             text-align: left;
         }
 
-        /* ---------- Research panel ---------- */
+        /* ---------- Research + Interests: equal-height pair ---------- */
+        .duo {
+            display: grid;
+            grid-template-columns: 1.7fr 1fr;
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .duo > section {
+            display: flex;
+            flex-direction: column;
+        }
+
         .research-card {
-            margin-top: 14px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
             padding: 22px;
             background-color: var(--surface);
             border: 1px solid var(--line);
@@ -255,10 +315,11 @@
 
         .research-card p {
             text-align: left;
+            margin-bottom: 10px;
         }
 
         .research-card ul {
-            margin-top: 10px;
+            margin-bottom: 16px;
         }
 
         .research-card li {
@@ -266,51 +327,71 @@
             line-height: 1.6;
         }
 
-        /* ---------- Interests ---------- */
-        .interest-row {
+        .research-card .btn {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        .interest-list {
+            flex: 1;
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 14px;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .interest-chip {
-            font-size: 0.88rem;
-            padding: 8px 16px;
-            border-radius: 999px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 12px 18px;
+            font-size: 0.93rem;
+            font-weight: 500;
             border: 1px solid var(--line);
+            border-radius: 12px;
             background-color: var(--surface);
         }
 
-        /* ---------- Message + Connect side by side ---------- */
+        /* ---------- Message + Connect: matching panels ---------- */
         .split {
             display: grid;
             grid-template-columns: 1.4fr 1fr;
-            gap: 28px;
-            align-items: start;
-            margin-top: 44px;
+            gap: 24px;
+            align-items: stretch;
         }
 
-        .split section {
-            margin: 0;
-        }
-
-        .split .qa-container {
-            margin-top: 14px;
-        }
-
-        /* ---------- Let's Connect: dark panel with link rows ---------- */
+        #qa-section,
         #contact {
+            padding: 26px;
+            border-radius: 16px;
+        }
+
+        #qa-section {
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+        }
+
+        #contact {
+            display: flex;
+            flex-direction: column;
             background-color: var(--ink);
             color: #ffffff;
-            border-radius: 16px;
-            padding: 26px;
+        }
+
+        #qa-section h2,
+        #contact h2 {
+            margin: 0 0 14px;
+            font-size: 1.25rem;
         }
 
         #contact h2 {
             color: #ffffff;
-            font-size: 1.05rem;
-            margin: 0 0 10px;
+        }
+
+        #qa-section .qa-container {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
         }
 
         #contact p {
@@ -322,12 +403,14 @@
         }
 
         .connect-list {
+            flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
 
         .connect-item {
+            flex: 1;
             display: flex;
             align-items: center;
             gap: 14px;
@@ -384,17 +467,31 @@
             opacity: 1;
         }
 
+        /* ---------- Responsive ---------- */
         @media (max-width: 900px) {
 
-            .hero-grid,
+            .hero,
+            .duo,
             .split {
                 grid-template-columns: 1fr;
+            }
+
+            #highlights {
+                padding-left: 0;
+                padding-top: 24px;
+                border-left: none;
+                border-top: 1px solid rgba(255, 255, 255, 0.16);
             }
         }
 
         @media (max-width: 768px) {
-            .proj-grid {
-                grid-template-columns: 1fr;
+            .hero {
+                padding: 22px;
+            }
+
+            #qa-section,
+            #contact {
+                padding: 20px;
             }
 
             .spec-row {
@@ -406,10 +503,16 @@
                 flex-direction: column;
                 gap: 8px;
             }
+
+            .section-head {
+                flex-wrap: wrap;
+            }
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .proj-card {
+
+            .proj-card,
+            .connect-item {
                 transition: none;
             }
         }
@@ -446,7 +549,7 @@
 
     <div class="container home">
 
-        <div class="hero-grid">
+        <div class="hero">
 
             <section id="home">
                 <h1>MD MAMUNAR RAHOMAN ROTON</h1>
@@ -496,8 +599,12 @@
                     class='bx bx-right-top-arrow-circle'></i></a>
         </section> -->
 
-        <section id="projects" class="block">
-            <h2 class="block-title">FEATURED PROJECTS</h2>
+        <section id="projects">
+            <div class="section-head">
+                <h2>FEATURED PROJECTS</h2>
+                <a href="pages/projects.html" class="btn btn-inline">View all projects <i
+                        class='bx bx-right-top-arrow-circle'></i></a>
+            </div>
 
             <div class="proj-grid">
 
@@ -595,13 +702,12 @@
                 </article>
 
             </div>
-
-            <a href="pages/projects.html" class="btn btn-inline all-projects">View all projects <i
-                    class='bx bx-right-top-arrow-circle'></i></a>
         </section>
 
-        <section id="skills" class="block">
-            <h2 class="block-title">SKILL OVERVIEW</h2>
+        <section id="skills">
+            <div class="section-head">
+                <h2>SKILL OVERVIEW</h2>
+            </div>
 
             <div class="spec">
                 <div class="spec-row">
@@ -629,40 +735,49 @@
             </div>
         </section>
 
-        <section id="research" class="block">
-            <h2 class="block-title">RESEARCH</h2>
+        <div class="duo">
 
-            <div class="research-card">
-                <p>Undergraduate Thesis: <strong><em>Applications to Rectilinear Steiner Minimum Trees for Higher
-                            Degree Nets with Advanced Net-breaking Techniques.</em></strong></p>
-                <ul>
-                    <li>Compressed and optimized the existing RSMT (Rectilinear Steiner Minimum Tree) database using
-                        orientation-based methodologies to improve efficiency and reduce redundancy.</li>
-                    <li>Applied advanced net-breaking techniques to enable scalable and accurate routing for
-                        higher-degree nets in Physical Design Automation.</li>
-                    <li>Developed a methodology to generate multiple routing solution paths from placement data
-                        instead of relying on a single reference solution, expanding design flexibility.</li>
-                    <li>Enhanced routing efficiency and runtime performance by introducing alternative routing
-                        strategies for critical paths using the newly developed multi-solution database.</li>
-                </ul>
-                <a href="./pages/research.html" class="btn btn-inline">Explore more <i
-                        class='bx bx-right-top-arrow-circle'></i></a>
-            </div>
-        </section>
+            <section id="research">
+                <div class="section-head">
+                    <h2>RESEARCH</h2>
+                </div>
 
-        <section id="interests" class="block">
-            <h2 class="block-title">INTERESTED FIELD</h2>
-            <div class="interest-row">
-                <span class="interest-chip">Improvement of VLSI back-end design flow</span>
-                <span class="interest-chip">Automation tool efficiency improvement</span>
-                <span class="interest-chip">FPGA/Embedded systems</span>
-            </div>
-        </section>
+                <div class="research-card">
+                    <p>Undergraduate Thesis: <strong><em>Applications to Rectilinear Steiner Minimum Trees for Higher
+                                Degree Nets with Advanced Net-breaking Techniques.</em></strong></p>
+                    <ul>
+                        <li>Compressed and optimized the existing RSMT (Rectilinear Steiner Minimum Tree) database
+                            using orientation-based methodologies to improve efficiency and reduce redundancy.</li>
+                        <li>Applied advanced net-breaking techniques to enable scalable and accurate routing for
+                            higher-degree nets in Physical Design Automation.</li>
+                        <li>Developed a methodology to generate multiple routing solution paths from placement data
+                            instead of relying on a single reference solution, expanding design flexibility.</li>
+                        <li>Enhanced routing efficiency and runtime performance by introducing alternative routing
+                            strategies for critical paths using the newly developed multi-solution database.</li>
+                    </ul>
+                    <a href="./pages/research.html" class="btn btn-inline">Explore more <i
+                            class='bx bx-right-top-arrow-circle'></i></a>
+                </div>
+            </section>
+
+            <section id="interests">
+                <div class="section-head">
+                    <h2>INTERESTED FIELD</h2>
+                </div>
+
+                <div class="interest-list">
+                    <span class="interest-chip">Improvement of VLSI back-end design flow</span>
+                    <span class="interest-chip">Automation tool efficiency improvement</span>
+                    <span class="interest-chip">FPGA/Embedded systems</span>
+                </div>
+            </section>
+
+        </div>
 
         <div class="split">
 
-            <section id="qa-section" style="line-height: 1.25;">
-                <h2 class="block-title">SEND ME A MESSAGE</h2>
+            <section id="qa-section">
+                <h2>SEND ME A MESSAGE</h2>
 
                 <div class="qa-container">
 
@@ -755,8 +870,8 @@
 
             </section>
 
-            <section id="contact" style="line-height: 1.25">
-                <h2 class="block-title">LET'S CONNECT</h2>
+            <section id="contact">
+                <h2>LET'S CONNECT</h2>
                 <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
                     collaboration. I am always open to collaborating with others in my areas of interest.</p>
 

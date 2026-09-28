@@ -8,39 +8,135 @@
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
-        .resume-item {
-            margin-bottom: 8px;
-            padding-left: 2px;
+        /* =========================================================
+           CV/SoP page v2 — rebuilt layout.
+           Uses only your existing colors, background and font
+           (all values come from the variables in style.css).
+           Tokens live on .cv so nothing depends on <body>.
+        ========================================================= */
+        .cv {
+            --ink: var(--primary-color);
+            --line: var(--border-color);
+            --surface: var(--card-bg);
+            --accent: var(--accent-color);
+            --accent-soft: color-mix(in srgb, var(--accent-color) 10%, transparent);
+            padding-top: 24px;
+            padding-bottom: 56px;
         }
 
-        .date-badge {
-            font-size: 0.88rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 2px;
-            letter-spacing: -0.1px;
+        /* ---------- Header panel ---------- */
+        .page-head {
+            background-color: var(--ink);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
         }
 
-        .job-title {
-            font-size: 1.12rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            letter-spacing: -0.3px;
-            line-height: 1.3;
+        .page-head h1 {
+            color: #ffffff;
+            font-size: clamp(2rem, 4vw, 2.7rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.12;
+            margin-bottom: 14px;
         }
 
-        .company-name {
-            font-size: 0.96rem;
-            color: var(--text-color);
-            font-weight: 500;
-            margin-top: 1px;
+        .page-head p {
+            max-width: none;
+            color: rgba(255, 255, 255, 0.88);
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 0;
         }
 
-        .details-text {
-            font-size: 0.92rem;
-            color: var(--text-light);
-            margin-top: 2px;
+        /* ---------- Document cards ---------- */
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 32px;
+            padding: 0;
+        }
+
+        .doc-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            min-height: 190px;
+            padding: 22px;
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            color: var(--ink);
+            transition: border-color 0.15s ease, transform 0.15s ease;
+        }
+
+        .doc-card:hover {
+            border-color: var(--accent);
+            color: var(--ink);
+            transform: translateY(-2px);
+        }
+
+        .doc-card:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .doc-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background-color: var(--accent-soft);
+            color: var(--accent);
+            font-size: 1.7rem;
+        }
+
+        .doc-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .doc-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+        }
+
+        .doc-sub {
+            font-size: 0.86rem;
+        }
+
+        .doc-go {
+            margin-top: auto;
+            align-self: flex-end;
+            font-size: 1.6rem;
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .page-head {
+                padding: 22px;
+            }
+
+            .doc-card {
+                min-height: 0;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .doc-card {
+                transition: none;
+            }
+
+            .doc-card:hover {
+                transform: none;
+            }
         }
     </style>
 </head>
@@ -73,34 +169,47 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container cv">
 
-        <section id="contact">
-            <p>Hi, my CV and statement of purpose (SoP) are fully accessible here. Feel free to view or download them at
-                your convenience. If my profile interests you, please feel free to get in touch—I am always open to
+        <header class="page-head" id="cv-intro">
+            <h1>CV / SoP</h1>
+            <p>Hi, my CV and statement of purpose (SoP) are fully accessible here. Feel free to view or download them
+                at your convenience. If my profile interests you, please feel free to get in touch—I am always open to
                 professional discussions, collaborations, and opportunities to contribute to innovative work in my
                 interested field.
             </p>
+        </header>
+
+        <section id="cv-sop" class="doc-grid">
+            <a href="https://drive.google.com/file/d/1ZJwfSXPQzwCUhmbIXzgiIv6hTF0pc1VK/view?usp=drive_link"
+                target="_blank" rel="noopener" class="doc-card">
+                <span class="doc-icon"><i class="bx bx-file"></i></span>
+                <span class="doc-text">
+                    <span class="doc-title">CV</span>
+                    <span class="doc-sub">click to explore</span>
+                </span>
+                <i class='bx bx-right-top-arrow-circle doc-go'></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1yGxdOdUXoTpA_tZMylYj_O0hCiLKzGxj/view" target="_blank"
+                rel="noopener" class="doc-card">
+                <span class="doc-icon"><i class="bx bx-file"></i></span>
+                <span class="doc-text">
+                    <span class="doc-title">SoP</span>
+                    <span class="doc-sub">click to explore</span>
+                </span>
+                <i class='bx bx-right-top-arrow-circle doc-go'></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1RFRss4-WbhfFR5id32R6RjCj23Pf4fOE/view?usp=sharing"
+                target="_blank" rel="noopener" class="doc-card">
+                <span class="doc-icon"><i class="bx bx-file"></i></span>
+                <span class="doc-text">
+                    <span class="doc-title">Resume</span>
+                    <span class="doc-sub">click to explore</span>
+                </span>
+                <i class='bx bx-right-top-arrow-circle doc-go'></i>
+            </a>
         </section>
 
-        <section id="cv-sop" style="line-height: 1.25" margin-top: 10px;">
-            <div class="grid-3">
-                <a href="https://drive.google.com/file/d/1ZJwfSXPQzwCUhmbIXzgiIv6hTF0pc1VK/view?usp=drive_link" target="_blank"
-                    class="card-button">
-                    <div class="card-title"><i class="bx bx-file"></i>CV</div>
-                    <div class="card-content">click to explore</div>
-                </a>
-                <a href="https://drive.google.com/file/d/1yGxdOdUXoTpA_tZMylYj_O0hCiLKzGxj/view" target="_blank"
-                    class="card-button">
-                    <div class="card-title"><i class="bx bx-file"></i> SoP</div>
-                    <div class="card-content">click to explore</div>
-                </a>
-                <a href="https://drive.google.com/file/d/1RFRss4-WbhfFR5id32R6RjCj23Pf4fOE/view?usp=sharing" target="_blank" class="card-button">
-                    <div class="card-title"><i class="bx bx-file"></i> resume</div>
-                    <div class="card-content">click to explore</div>
-                </a>
-            </div>
-        </section>
         <!-- <section id="contact" style="line-height: 1.25">
             <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
             <p>Please feel free to contact me if you wish to discuss any ideas or explore professional collaboration. I

@@ -8,39 +8,177 @@
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
-        .resume-item {
-            margin-bottom: 8px;
-            padding-left: 2px;
+        /* =========================================================
+           About page v2 — new layout.
+           Uses only your existing colors, background and font
+           (all values come from the variables in style.css).
+           Tokens live on .about so nothing depends on <body>.
+        ========================================================= */
+        .about {
+            --ink: var(--primary-color);
+            --line: var(--border-color);
+            --surface: var(--card-bg);
+            --accent: var(--accent-color);
+            padding-top: 24px;
+            padding-bottom: 56px;
         }
 
-        .date-badge {
-            font-size: 0.88rem;
-            color: var(--accent-color);
+        /* ---------- Header panel ---------- */
+        .page-head {
+            background-color: var(--ink);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        .page-head h1 {
+            color: #ffffff;
+            font-size: clamp(2rem, 4vw, 2.7rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.12;
+            margin-bottom: 14px;
+        }
+
+        .page-head p {
+            max-width: none;
+            color: rgba(255, 255, 255, 0.88);
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 0;
+        }
+
+        /* ---------- Three timeline columns ---------- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+            margin-top: 44px;
+            align-items: start;
+        }
+
+        .about-grid section {
+            padding: 0;
+        }
+
+        .group-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .group-head h2 {
+            margin: 0;
+            font-size: 1.15rem;
+        }
+
+        .group-count {
+            font-size: 0.78rem;
             font-weight: 600;
-            margin-bottom: 2px;
-            letter-spacing: -0.1px;
+            padding: 2px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background-color: var(--surface);
         }
 
-        .job-title {
-            font-size: 1.12rem;
+        .timeline {
+            position: relative;
+            margin-top: 18px;
+            padding-left: 24px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background-color: var(--line);
+        }
+
+        .t-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 16px 18px;
+            margin-bottom: 14px;
+            background-color: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            transition: border-color 0.15s ease;
+        }
+
+        .t-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .t-item:hover {
+            border-color: var(--accent);
+        }
+
+        .t-item::before {
+            content: "";
+            position: absolute;
+            left: -24px;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--bg-body);
+        }
+
+        .t-date {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .t-title {
+            margin: 0;
+            font-size: 1.02rem;
             font-weight: 700;
-            color: var(--primary-color);
-            letter-spacing: -0.3px;
-            line-height: 1.3;
+            line-height: 1.35;
+            color: var(--ink);
+            text-align: left;
         }
 
-        .company-name {
-            font-size: 0.96rem;
-            color: var(--text-color);
-            font-weight: 500;
-            margin-top: 1px;
-        }
-
-        .details-text {
+        .t-org {
             font-size: 0.92rem;
-            color: var(--text-light);
+            font-weight: 500;
+            line-height: 1.45;
+        }
+
+        .t-note {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 400;
             margin-top: 2px;
+        }
+
+        .t-details {
+            font-size: 0.88rem;
+            line-height: 1.5;
+            margin-top: 4px;
+            padding-top: 8px;
+            border-top: 1px solid var(--line);
+        }
+
+        @media (max-width: 768px) {
+            .page-head {
+                padding: 22px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .t-item {
+                transition: none;
+            }
         }
     </style>
 </head>
@@ -73,11 +211,11 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container about">
 
-        <section id="objective" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">ABOUT ME</h2>
-            <p style="margin-top: 4px; font-size: 1.02rem; color: var(--text-color); line-height: 1.25;">
+        <header class="page-head" id="objective">
+            <h1>About Me</h1>
+            <p>
                 Hi, I am Md. Mamunar Rahoman Roton — a VLSI engineer with hands-on experience in IC Physical Design and
                 backend implementation flows, including floorplanning, CTS, place & route, timing closure, and physical
                 verification using industry EDA tools at advanced technology nodes. I am particularly interested in
@@ -86,53 +224,72 @@
                 goal is to bridge architecture and physical implementation, contributing to efficient and scalable
                 semiconductor designs as a future Digital System Design Architect.
             </p>
-        </section>
+        </header>
 
-        <section id="experience" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">Experience</h2>
+        <div class="about-grid">
 
-            <div class="resume-item">
-                <div class="date-badge">[20 July 2025] - [31 December 2025]</div>
-                <div class="job-title">Assistant Engineer</div>
-                <div class="company-name">Ulkasemi Pvt. Limited, Bangladesh <span
-                        style="font-weight: normal; color: var(--text-light); font-size: 0.92rem;">(On contract project
-                        of Synopsys Inc.)</span></div>
-                <div class="details-text">IC Physical Design, IC Physical Implementation Engineering</div>
-            </div>
+            <section id="experience">
+                <div class="group-head">
+                    <h2>Experience</h2>
+                    <span class="group-count">2</span>
+                </div>
 
-            <div class="resume-item">
-                <div class="date-badge">[20 January 2025] - [19 July 2025]</div>
-                <div class="job-title">Trainee Engineer</div>
-                <div class="company-name">Ulkasemi Pvt. Limited, Bangladesh</div>
-                <div class="details-text">IC Physical Design, IC physical Implementation Engineering</div>
-            </div>
-        </section>
+                <div class="timeline">
+                    <div class="t-item">
+                        <div class="t-date">[20 July 2025] - [31 December 2025]</div>
+                        <h3 class="t-title">Assistant Engineer</h3>
+                        <div class="t-org">Ulkasemi Pvt. Limited, Bangladesh
+                            <span class="t-note">(On contract project of Synopsys Inc.)</span>
+                        </div>
+                        <div class="t-details">IC Physical Design, IC Physical Implementation Engineering</div>
+                    </div>
 
-        <section id="training" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">Training/Industrial Attachments</h2>
+                    <div class="t-item">
+                        <div class="t-date">[20 January 2025] - [19 July 2025]</div>
+                        <h3 class="t-title">Trainee Engineer</h3>
+                        <div class="t-org">Ulkasemi Pvt. Limited, Bangladesh</div>
+                        <div class="t-details">IC Physical Design, IC physical Implementation Engineering</div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="resume-item">
-                <div class="date-badge">[01 July 2024] - [05 July 2024]</div>
-                <div class="job-title">ASIC design flow and Analog design</div>
-                <div class="company-name">Neural Semiconductor Limited, Bangladesh</div>
-            </div>
+            <section id="training">
+                <div class="group-head">
+                    <h2>Training/Industrial Attachments</h2>
+                    <span class="group-count">2</span>
+                </div>
 
-            <div class="resume-item">
-                <div class="date-badge">[04 June 2024] - [13 June 2024]</div>
-                <div class="job-title">Electrical Engineer Intern</div>
-                <div class="company-name">Energypac Engineering Limited, Bangladesh</div>
-            </div>
-        </section>
+                <div class="timeline">
+                    <div class="t-item">
+                        <div class="t-date">[01 July 2024] - [05 July 2024]</div>
+                        <h3 class="t-title">ASIC design flow and Analog design</h3>
+                        <div class="t-org">Neural Semiconductor Limited, Bangladesh</div>
+                    </div>
 
-        <section id="education" style="line-height: 1.25;">
-            <h2 style="font-size: 1.2rem;">Education</h2>
+                    <div class="t-item">
+                        <div class="t-date">[04 June 2024] - [13 June 2024]</div>
+                        <h3 class="t-title">Electrical Engineer Intern</h3>
+                        <div class="t-org">Energypac Engineering Limited, Bangladesh</div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="resume-item">
-                <div class="date-badge">[13 December 2020] - [27 January 2025]</div>
-                <div class="job-title">Bachelor of science in Electrical and Electronic Engineering (EEE)</div>
-                <div class="company-name">Ahsanullah University of Science and Technology (AUST)</div>
-            </div>
-        </section>
+            <section id="education">
+                <div class="group-head">
+                    <h2>Education</h2>
+                    <span class="group-count">1</span>
+                </div>
+
+                <div class="timeline">
+                    <div class="t-item">
+                        <div class="t-date">[13 December 2020] - [27 January 2025]</div>
+                        <h3 class="t-title">Bachelor of science in Electrical and Electronic Engineering (EEE)</h3>
+                        <div class="t-org">Ahsanullah University of Science and Technology (AUST)</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
 
         <!-- <section id="contact" style="line-height: 1.25">
             <h2><i class="bx bx-group"></i>LET'S CONNECT</h2>
