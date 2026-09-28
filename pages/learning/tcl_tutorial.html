@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | MMRR</title>
+
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/project.css">
+
     <style>
+        .about {
+            --ink: var(--primary-color);
+            --line: var(--border-color);
+            --surface: var(--card-bg);
+            --accent: var(--accent-color);
+            padding-top: 24px;
+            padding-bottom: 56px;
+        }
 
         .resume-item {
             margin-bottom: 8px;
@@ -50,12 +60,15 @@
 
     <nav class="navbar">
         <div class="nav-container">
+
             <div class="nav-logo">
                 <a href="../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
             </div>
+
             <div class="nav-toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
+
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../about.html">About me</a></li>
@@ -71,163 +84,557 @@
                     </div>
                 </div>
             </ul>
+
         </div>
     </nav>
 
+
     <div class="container">
 
+        <!-- Course Title -->
         <section id="contact" style="line-height: 1.25;">
-            <h2 style="font-weight: 500;"><strong>COURSE TITLE: </strong>
+            <h2 style="font-weight: 500;">
+                <strong>COURSE TITLE: </strong>
                 <span style="font-weight: 350;">
                     TCL Tutorial - Basics to Advanced.
                 </span>
             </h2>
         </section>
 
+
+        <!-- Platform -->
         <section id="contact" style="line-height: 1.25;">
-            <p> <strong>Platform: </strong>
+            <p>
+                <strong>Platform: </strong>
                 YouTube | VLSI Academy
             </p>
         </section>
 
+
+        <!-- About -->
         <section id="contact" style="line-height: 1.25;">
-            <p> <strong>About this course: </strong>
+            <p>
+                <strong>About this course: </strong>
                 As an IC Physical Design Engineer, mastering TCL scripting and its application in PnR flows is
                 essential. As part of my Trainee Engineer onboarding at Ulkasemi Pvt. Ltd., I completed a fast-paced TCL
                 training module within a few hours and successfully passed the hands-on scripting evaluation.
             </p>
         </section>
 
-        <section id="pdf-viewer-section">
-            <h2 style="font-weight: 600;"><i class="bx bx-file"></i> Course Note:</h2>
-            <div class="pdf-viewer-box">
-                <object class="pdf-object" data="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" type="application/pdf">
-                    <div class="pdf-fallback">
-                        <p>Your browser can't display the PDF inline.</p>
-                        <a class="btn btn-dark" href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" target="_blank"
-                            rel="noopener">
-                            <i class='bx bx-download'></i> Download PDF
-                        </a>
-                    </div>
-                </object>
+
+        <!-- Recaptured -->
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>Recaptured: </strong>
+                While working on open-source projects and tools, I realized that mastering TCL and Python scripting is
+                essential. To reinforce my TCL skills, I have decided to build a complete project that covers its
+                primary real-world applications.
+            </p>
+        </section>
+
+
+        <!-- GitHub Repository -->
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>GitHub Repository:</strong>
+                <a href="https://github.com/mamunarrahoman/tcl_tutorial" class="btn btn-light" target="_blank"
+                    rel="noopener">
+                    <i class='bx bxl-github'></i> View Repository
+                </a>
+            </p>
+        </section>
+
+
+        <!-- main.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/main.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 main.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
             </div>
+        </section>
+
+
+        <!-- main.log -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/main.log">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 main.log
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 01_basics.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/01_basics.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 01_basics.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 02_data_structures.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/02_data_structures.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 02_data_structures.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 03_string_regex.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/03_string_regex.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 03_string_regex.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 04_file_io.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/04_file_io.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 04_file_io.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 05_error_handling.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/05_error_handling.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 05_error_handling.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 06_oop_tcloo.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/06_oop_tcloo.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 06_oop_tcloo.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 07_namespaces.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/07_namespaces.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 07_namespaces.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 08_networking.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/08_networking.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 08_networking.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 09_eda_scripting.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/09_eda_scripting.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 09_eda_scripting.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 10_gui_tk.tcl -->
+        <section id="code-viewer-section">
+            <div class="viewer-box"
+                data-src="https://raw.githubusercontent.com/mamunarrahoman/tcl_tutorial/refs/heads/main/10_gui_tk.tcl">
+
+                <h2 style="margin-top: -10px; color: #ffffff;">
+                    💻 10_gui_tk.tcl
+                </h2>
+
+                <div class="viewer-meta" style="margin-top: -12px;"></div>
+                <div class="viewer-editor">Loading...</div>
+                <div class="viewer-status"></div>
+
+            </div>
+        </section>
+
+
+        <!-- Portfolio Banner -->
+        <section id="portfolio-banner-section"
+            style="display: flex; justify-content: center; align-items: center; width: 100%;">
+
+            <div style="height: auto; width: auto; text-align: center;">
+
+                <img src="../learning/cal_gui.png" alt="VLSI Design Banner"
+                    style="max-width: 100%; height: auto; display: block; margin-top: -20px;">
+
+            </div>
+        </section>
+
+
+        <!-- PDF Viewer -->
+        <section id="pdf-viewer-section">
+
+            <h2 style="font-weight: 600;">
+                <i class="bx bx-file"></i> Course Note:
+            </h2>
+
+            <div class="pdf-viewer-box">
+
+                <object class="pdf-object" data="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf"
+                    type="application/pdf">
+
+                    <div class="pdf-fallback">
+
+                        <p>Your browser can't display the PDF inline.</p>
+
+                        <a class="btn btn-dark" href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf"
+                            target="_blank" rel="noopener">
+
+                            <i class='bx bx-download'></i> Download PDF
+
+                        </a>
+
+                    </div>
+
+                </object>
+
+            </div>
+
+
             <div class="pdf-viewer-actions">
+
                 <a class="btn btn-light" href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" target="_blank"
                     rel="noopener">
+
                     <i class='bx bx-expand'></i> Open in new tab
+
                 </a>
+
+
                 <a class="btn btn-light" href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" download>
+
                     <i class='bx bx-download'></i> Download
+
                 </a>
+
             </div>
+
         </section>
 
     </div>
 
+
     <footer>
     </footer>
 
+
+    <!-- Code Viewer -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+
             function escapeHTML(str) {
-                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                return str
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;");
             }
 
+
             function highlight(text) {
+
                 const lines = text.split("\n");
+
                 const keywords = [
-                    "set", "proc", "if", "else", "foreach", "for", "while",
-                    "module", "endmodule", "assign", "always", "begin", "end",
-                    "input", "output", "wire", "reg", "logic", "parameter"
+                    "set",
+                    "proc",
+                    "if",
+                    "else",
+                    "foreach",
+                    "for",
+                    "while",
+                    "module",
+                    "endmodule",
+                    "assign",
+                    "always",
+                    "begin",
+                    "end",
+                    "input",
+                    "output",
+                    "wire",
+                    "reg",
+                    "logic",
+                    "parameter"
                 ];
 
+
                 return lines.map(line => {
+
                     let safe = escapeHTML(line);
+
                     let commentStart = safe.length;
 
                     const i1 = safe.indexOf("#");
                     const i2 = safe.indexOf("//");
                     const i3 = safe.indexOf("--");
-                    const arr = [i1, i2, i3].filter(i => i !== -1);
 
-                    if (arr.length > 0) commentStart = Math.min(...arr);
+                    const arr = [i1, i2, i3]
+                        .filter(i => i !== -1);
+
+
+                    if (arr.length > 0) {
+                        commentStart = Math.min(...arr);
+                    }
+
 
                     let code = safe.substring(0, commentStart);
                     let comment = safe.substring(commentStart);
 
+
                     keywords.forEach(k => {
-                        const r = new RegExp("\\b" + k + "\\b", "g");
-                        code = code.replace(r, `<span class="kw">${k}</span>`);
+
+                        const r = new RegExp(
+                            "\\b" + k + "\\b",
+                            "g"
+                        );
+
+                        code = code.replace(
+                            r,
+                            `<span class="kw">${k}</span>`
+                        );
+
                     });
 
+
                     if (commentStart !== safe.length) {
+
                         comment = `<span class="com">${comment}</span>`;
+
                     } else {
+
                         comment = "";
+
                     }
+
+
                     return code + comment;
+
                 }).join("\n");
+
             }
 
-            // Universal execution over all boxes relative to their content placement
+
             document.querySelectorAll(".viewer-box").forEach(async (box) => {
+
                 const fileURL = box.getAttribute("data-src");
+
                 const metaEl = box.querySelector(".viewer-meta");
                 const editorEl = box.querySelector(".viewer-editor");
                 const statusEl = box.querySelector(".viewer-status");
 
-                if (metaEl) metaEl.textContent = fileURL;
+
+                if (metaEl) {
+                    metaEl.textContent = fileURL;
+                }
+
 
                 try {
-                    if (statusEl) statusEl.textContent = "Loading file...";
+
+                    if (statusEl) {
+                        statusEl.textContent = "Loading file...";
+                    }
+
+
                     const res = await fetch(fileURL);
                     const text = await res.text();
 
-                    if (editorEl) editorEl.innerHTML = highlight(text);
-                    if (statusEl) statusEl.textContent = "Loaded successfully";
+
+                    if (editorEl) {
+                        editorEl.innerHTML = highlight(text);
+                    }
+
+
+                    if (statusEl) {
+                        statusEl.textContent = "Loaded successfully";
+                    }
+
                 } catch (e) {
-                    if (editorEl) editorEl.textContent = "Error loading file";
-                    if (statusEl) statusEl.textContent = "Failed";
+
+                    if (editorEl) {
+                        editorEl.textContent = "Error loading file";
+                    }
+
+
+                    if (statusEl) {
+                        statusEl.textContent = "Failed";
+                    }
+
                 }
+
             });
+
         });
     </script>
 
+
+    <!-- Navigation -->
     <script>
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
         const drawerClose = document.getElementById('drawer-close');
         const navLinks = document.querySelectorAll('.nav-menu a');
 
+
         navToggle.addEventListener('click', (e) => {
+
             navMenu.classList.toggle('show-menu');
+
             const icon = navToggle.querySelector('i');
+
+
             if (navMenu.classList.contains('show-menu')) {
+
                 icon.className = 'bx bx-x';
+
             } else {
+
                 icon.className = 'bx bx-menu';
+
             }
+
+
             e.stopPropagation();
+
         });
+
 
         drawerClose.addEventListener('click', () => {
+
             navMenu.classList.remove('show-menu');
+
             navToggle.querySelector('i').className = 'bx bx-menu';
+
         });
+
 
         navLinks.forEach(link => {
+
             link.addEventListener('click', () => {
+
                 navMenu.classList.remove('show-menu');
+
                 navToggle.querySelector('i').className = 'bx bx-menu';
+
             });
+
         });
 
+
         document.addEventListener('click', (e) => {
-            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+
+            if (
+                !navMenu.contains(e.target) &&
+                !navToggle.contains(e.target)
+            ) {
+
                 navMenu.classList.remove('show-menu');
+
                 navToggle.querySelector('i').className = 'bx bx-menu';
+
             }
+
         });
+
     </script>
 
 </body>
