@@ -14,6 +14,111 @@
            (all values come from the variables in style.css).
            Tokens live on .projects so nothing depends on <body>.
         ========================================================= */
+/* ---------- Let's Connect: dark panel ---------- */
+        #contact {
+            margin-top: 44px;
+            background-color: var(--ink);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 26px;
+        }
+
+        #contact h2 {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin: 0 0 10px;
+        }
+
+        #contact p {
+            color: rgba(255, 255, 255, 0.85);
+            text-align: left;
+            font-size: 0.93rem;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .connect-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+        }
+
+        .connect-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 14px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 12px;
+            color: #ffffff;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .connect-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            color: #ffffff;
+        }
+
+        .connect-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.12);
+            font-size: 1.35rem;
+        }
+
+        .connect-text {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .connect-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .connect-value {
+            font-size: 0.93rem;
+            font-weight: 600;
+            overflow-wrap: anywhere;
+        }
+
+        .connect-go {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            opacity: 0.7;
+        }
+
+        .connect-item:hover .connect-go {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .page-head {
+                padding: 22px;
+            }
+
+            .course-head {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .course-card,
+            .chip {
+                transition: none;
+            }
+        }
+
         .projects {
             --ink: var(--primary-color);
             --line: var(--border-color);
@@ -515,8 +620,41 @@
             </div>
         </section>
 
-    </div>
+         <section id="contact" style="line-height: 1.25">
+            <h2>LET'S CONNECT</h2>
+            <p>Please feel free to contact me if you wish to discuss any ideas or explore professional
+                collaboration. I am always open to collaborating with others in my areas of interest.</p>
 
+            <div class="connect-list">
+                <a href="mailto:mamunar.edu@gmail.com" class="connect-item">
+                    <span class="connect-icon"><i class='bx bx-envelope'></i></span>
+                    <span class="connect-text">
+                        <span class="connect-label">Email</span>
+                        <span class="connect-value">mamunar.edu@gmail.com</span>
+                    </span>
+                    <i class='bx bx-right-top-arrow-circle connect-go'></i>
+                </a>
+                <a href="http://linkedin.com/in/mamunar-rahoman" target="_blank" class="connect-item">
+                    <span class="connect-icon"><i class='bx bxl-linkedin-square'></i></span>
+                    <span class="connect-text">
+                        <span class="connect-label">LinkedIn</span>
+                        <span class="connect-value">Mamunar Rahoman</span>
+                    </span>
+                    <i class='bx bx-right-top-arrow-circle connect-go'></i>
+                </a>
+                <a href="https://github.com/mamunarrahoman" target="_blank" class="connect-item">
+                    <span class="connect-icon"><i class='bx bxl-github'></i></span>
+                    <span class="connect-text">
+                        <span class="connect-label">GitHub</span>
+                        <span class="connect-value">Mamunar Rahoman</span>
+                    </span>
+                    <i class='bx bx-right-top-arrow-circle connect-go'></i>
+                </a>
+            </div>
+        </section>
+
+
+    </div>
     <footer>
     </footer>
 

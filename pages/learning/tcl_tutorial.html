@@ -4,18 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Projects | MMRR</title>
-
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/project.css">
-
     <style>
-        /* =========================================================
-           Resume / Course Information
-           ========================================================= */
 
         .resume-item {
             margin-bottom: 8px;
@@ -50,495 +43,191 @@
             color: var(--text-light);
             margin-top: 2px;
         }
-
-
-        /* =========================================================
-           PDF Viewer
-           ========================================================= */
-
-        .pdf-viewer-box {
-            width: 100%;
-            height: 750px;
-            margin-top: 20px;
-            border-radius: 12px;
-            overflow: hidden;
-            background: #f5f5f5;
-            border: 1px solid rgba(0, 0, 0, 0.08);
-            position: relative;
-        }
-
-        .pdf-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
-
-        /*
-         * Mobile fallback is hidden on desktop.
-         */
-        .pdf-mobile-fallback {
-            display: none;
-        }
-
-        .pdf-viewer-actions {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-
-
-        /* =========================================================
-           Tablet
-           ========================================================= */
-
-        @media screen and (max-width: 768px) {
-
-            .pdf-viewer-box {
-                height: 650px;
-                border-radius: 10px;
-            }
-
-        }
-
-
-        /* =========================================================
-           Mobile
-           ========================================================= */
-
-        @media screen and (max-width: 480px) {
-
-            /*
-             * Embedded PDF viewers are unreliable on many
-             * mobile browsers, so replace the iframe with
-             * a clean mobile PDF access panel.
-             */
-
-            .pdf-viewer-box {
-                height: auto;
-                min-height: 260px;
-                border-radius: 10px;
-            }
-
-            .pdf-iframe {
-                display: none;
-            }
-
-            .pdf-mobile-fallback {
-                min-height: 260px;
-                padding: 35px 20px;
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                text-align: center;
-                gap: 12px;
-            }
-
-            .pdf-mobile-fallback > i {
-                font-size: 3rem;
-                color: var(--accent-color);
-            }
-
-            .pdf-mobile-fallback p {
-                margin: 0 0 8px;
-                color: var(--text-light);
-                font-size: 0.95rem;
-                line-height: 1.5;
-            }
-
-            .pdf-mobile-fallback .btn {
-                width: 100%;
-                max-width: 260px;
-                text-align: center;
-            }
-
-            .pdf-viewer-actions {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .pdf-viewer-actions .btn {
-                width: 100%;
-                text-align: center;
-            }
-
-        }
     </style>
 </head>
 
-
 <body>
 
-    <!-- =========================================================
-         Navigation
-         ========================================================= -->
-
     <nav class="navbar">
-
         <div class="nav-container">
-
             <div class="nav-logo">
-                <a href="../../index.html"
-                    style="color: #ffffff; text-decoration: none;">
-                    MMRR
-                </a>
+                <a href="../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
             </div>
-
-
             <div class="nav-toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
-
-
             <ul class="nav-menu" id="nav-menu">
-
-                <li>
-                    <a href="../../index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../about.html">
-                        About me
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../projects.html">
-                        Project Page
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../self_learning.html" class="active">
-                        Self-Learning
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../research.html">
-                        Research
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../cv_sop.html">
-                        CV/SoP
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../../index.html#contact">
-                        Contact
-                    </a>
-                </li>
-
-
-                <!-- Mobile Drawer Close -->
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About me</a></li>
+                <li><a href="../projects.html">Project Page</a></li>
+                <li><a href="../self_learning.html" class="active">Self-Learning</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../cv_sop.html">CV/SoP</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
 
                 <div class="drawer-close-container">
-
                     <div class="drawer-close-circle" id="drawer-close">
                         <i class='bx bx-x'></i>
                     </div>
-
                 </div>
-
             </ul>
-
         </div>
-
     </nav>
-
-
-
-    <!-- =========================================================
-         Main Content
-         ========================================================= -->
 
     <div class="container">
 
-
-        <!-- Course Title -->
-
-        <section id="course-title" style="line-height: 1.25;">
-
-            <h2 style="font-weight: 500;">
-
-                <strong>COURSE TITLE: </strong>
-
+        <section id="contact" style="line-height: 1.25;">
+            <h2 style="font-weight: 500;"><strong>COURSE TITLE: </strong>
                 <span style="font-weight: 350;">
                     TCL Tutorial - Basics to Advanced.
                 </span>
-
             </h2>
-
         </section>
 
-
-
-        <!-- Platform -->
-
-        <section id="platform" style="line-height: 1.25;">
-
-            <p>
-
-                <strong>Platform: </strong>
-
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>Platform: </strong>
                 YouTube | VLSI Academy
-
             </p>
-
         </section>
 
-
-
-        <!-- About Course -->
-
-        <section id="course-about" style="line-height: 1.25;">
-
-            <p>
-
-                <strong>About this course: </strong>
-
-                As an IC Physical Design Engineer, mastering TCL scripting
-                and its application in PnR flows is essential. As part of
-                my Trainee Engineer onboarding at Ulkasemi Pvt. Ltd., I
-                completed a fast-paced TCL training module within a few
-                hours and successfully passed the hands-on scripting
-                evaluation.
-
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>About this course: </strong>
+                As an IC Physical Design Engineer, mastering TCL scripting and its application in PnR flows is
+                essential. As part of my Trainee Engineer onboarding at Ulkasemi Pvt. Ltd., I completed a fast-paced TCL
+                training module within a few hours and successfully passed the hands-on scripting evaluation.
             </p>
-
         </section>
-
-
-
-        <!-- =====================================================
-             PDF Course Note
-             ===================================================== -->
 
         <section id="pdf-viewer-section">
-
-            <h2 style="font-weight: 600;">
-
-                <i class="bx bx-file"></i>
-
-                Course Note:
-
-            </h2>
-
-
+            <h2 style="font-weight: 600;"><i class="bx bx-file"></i> Course Note:</h2>
             <div class="pdf-viewer-box">
-
-                <!--
-                    Desktop PDF viewer.
-
-                    The #toolbar parameter keeps the browser's
-                    native PDF toolbar available where supported.
-                -->
-
-                <iframe
-                    src="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf#toolbar=1&navpanes=0&scrollbar=1"
-                    class="pdf-iframe"
-                    title="TCL Tutorial Course Note">
-                </iframe>
-
-
-                <!--
-                    Mobile fallback.
-
-                    This replaces the embedded viewer on small
-                    screens because many mobile browsers do not
-                    reliably render PDFs inside iframes.
-                -->
-
-                <div class="pdf-mobile-fallback">
-
-                    <i class="bx bx-file"></i>
-
-                    <p>
-                        PDF preview is not supported on this
-                        mobile browser.
-                    </p>
-
-
-                    <a
-                        class="btn btn-dark"
-                        href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf"
-                        target="_blank"
-                        rel="noopener">
-
-                        <i class="bx bx-file-blank"></i>
-
-                        View PDF
-
-                    </a>
-
-
-                    <a
-                        class="btn btn-light"
-                        href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf"
-                        download>
-
-                        <i class="bx bx-download"></i>
-
-                        Download PDF
-
-                    </a>
-
-                </div>
-
+                <object class="pdf-object" data="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" type="application/pdf">
+                    <div class="pdf-fallback">
+                        <p>Your browser can't display the PDF inline.</p>
+                        <a class="btn btn-dark" href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" target="_blank"
+                            rel="noopener">
+                            <i class='bx bx-download'></i> Download PDF
+                        </a>
+                    </div>
+                </object>
             </div>
-
-
-
-            <!-- PDF Actions -->
-
             <div class="pdf-viewer-actions">
-
-                <a
-                    class="btn btn-light"
-                    href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf"
-                    target="_blank"
+                <a class="btn btn-light" href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" target="_blank"
                     rel="noopener">
-
-                    <i class="bx bx-expand"></i>
-
-                    Open PDF
-
+                    <i class='bx bx-expand'></i> Open in new tab
                 </a>
-
-
-                <a
-                    class="btn btn-light"
-                    href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf"
-                    download>
-
-                    <i class="bx bx-download"></i>
-
-                    Download
-
+                <a class="btn btn-light" href="../../assest/self_learning/tcl_tutorial/tcl_tutorial.pdf" download>
+                    <i class='bx bx-download'></i> Download
                 </a>
-
             </div>
-
         </section>
 
     </div>
 
-
-
-    <!-- =========================================================
-         Footer
-         ========================================================= -->
-
     <footer>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function escapeHTML(str) {
+                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            }
 
+            function highlight(text) {
+                const lines = text.split("\n");
+                const keywords = [
+                    "set", "proc", "if", "else", "foreach", "for", "while",
+                    "module", "endmodule", "assign", "always", "begin", "end",
+                    "input", "output", "wire", "reg", "logic", "parameter"
+                ];
 
-    <!-- =========================================================
-         Navigation JavaScript
-         ========================================================= -->
+                return lines.map(line => {
+                    let safe = escapeHTML(line);
+                    let commentStart = safe.length;
+
+                    const i1 = safe.indexOf("#");
+                    const i2 = safe.indexOf("//");
+                    const i3 = safe.indexOf("--");
+                    const arr = [i1, i2, i3].filter(i => i !== -1);
+
+                    if (arr.length > 0) commentStart = Math.min(...arr);
+
+                    let code = safe.substring(0, commentStart);
+                    let comment = safe.substring(commentStart);
+
+                    keywords.forEach(k => {
+                        const r = new RegExp("\\b" + k + "\\b", "g");
+                        code = code.replace(r, `<span class="kw">${k}</span>`);
+                    });
+
+                    if (commentStart !== safe.length) {
+                        comment = `<span class="com">${comment}</span>`;
+                    } else {
+                        comment = "";
+                    }
+                    return code + comment;
+                }).join("\n");
+            }
+
+            // Universal execution over all boxes relative to their content placement
+            document.querySelectorAll(".viewer-box").forEach(async (box) => {
+                const fileURL = box.getAttribute("data-src");
+                const metaEl = box.querySelector(".viewer-meta");
+                const editorEl = box.querySelector(".viewer-editor");
+                const statusEl = box.querySelector(".viewer-status");
+
+                if (metaEl) metaEl.textContent = fileURL;
+
+                try {
+                    if (statusEl) statusEl.textContent = "Loading file...";
+                    const res = await fetch(fileURL);
+                    const text = await res.text();
+
+                    if (editorEl) editorEl.innerHTML = highlight(text);
+                    if (statusEl) statusEl.textContent = "Loaded successfully";
+                } catch (e) {
+                    if (editorEl) editorEl.textContent = "Error loading file";
+                    if (statusEl) statusEl.textContent = "Failed";
+                }
+            });
+        });
+    </script>
 
     <script>
-
         const navToggle = document.getElementById('nav-toggle');
-
         const navMenu = document.getElementById('nav-menu');
-
-        const drawerClose =
-            document.getElementById('drawer-close');
-
-        const navLinks =
-            document.querySelectorAll('.nav-menu a');
-
-
-        /*
-         * Open / close mobile navigation
-         */
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
 
         navToggle.addEventListener('click', (e) => {
-
             navMenu.classList.toggle('show-menu');
-
-            const icon =
-                navToggle.querySelector('i');
-
-
+            const icon = navToggle.querySelector('i');
             if (navMenu.classList.contains('show-menu')) {
-
                 icon.className = 'bx bx-x';
-
             } else {
-
                 icon.className = 'bx bx-menu';
-
             }
-
             e.stopPropagation();
-
         });
-
-
-        /*
-         * Close drawer button
-         */
 
         drawerClose.addEventListener('click', () => {
-
             navMenu.classList.remove('show-menu');
-
-            navToggle.querySelector('i').className =
-                'bx bx-menu';
-
+            navToggle.querySelector('i').className = 'bx bx-menu';
         });
-
-
-        /*
-         * Close menu after clicking a navigation link
-         */
 
         navLinks.forEach(link => {
-
             link.addEventListener('click', () => {
-
                 navMenu.classList.remove('show-menu');
-
-                navToggle.querySelector('i').className =
-                    'bx bx-menu';
-
+                navToggle.querySelector('i').className = 'bx bx-menu';
             });
-
         });
-
-
-        /*
-         * Close menu when clicking outside
-         */
 
         document.addEventListener('click', (e) => {
-
-            if (
-                !navMenu.contains(e.target) &&
-                !navToggle.contains(e.target)
-            ) {
-
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                 navMenu.classList.remove('show-menu');
-
-                navToggle.querySelector('i').className =
-                    'bx bx-menu';
-
+                navToggle.querySelector('i').className = 'bx bx-menu';
             }
-
         });
-
     </script>
 
 </body>
