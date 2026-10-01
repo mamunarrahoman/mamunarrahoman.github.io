@@ -43,6 +43,89 @@
             color: var(--text-light);
             margin-top: 2px;
         }
+
+        /* ---------- Code block with copy button ---------- */
+        .code-block {
+            position: relative;
+            background: #232323;
+            border-radius: 18px;
+            padding: 20px 56px 20px 24px;
+            margin: 16px 0;
+        }
+
+        .code-block pre {
+            margin: 0;
+            overflow-x: auto;
+            color: #e6e6e6;
+            font-family: "Fira Code", Consolas, "Courier New", monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            white-space: pre;
+        }
+
+        .code-copy {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: none;
+            border: none;
+            color: #e6e6e6;
+            font-size: 1.3rem;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .code-copy:hover {
+            opacity: 1;
+        }
+
+        /* ---------- File-loading text viewer (optional) ---------- */
+        .viewer-box {
+            border: 1px solid #2d2d2d;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #1e1e1e;
+            margin-top: 12px;
+        }
+
+        .viewer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 14px;
+            background: #2a2a2a;
+            color: #cfcfcf;
+            font-size: 0.85rem;
+        }
+
+        .viewer-editor {
+            margin: 0;
+            padding: 14px;
+            max-height: 480px;
+            overflow: auto;
+            color: #d4d4d4;
+            font-family: "Fira Code", Consolas, monospace;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            white-space: pre;
+            tab-size: 4;
+        }
+
+        .viewer-editor .kw {
+            color: #569cd6;
+            font-weight: 600;
+        }
+
+        .viewer-editor .com {
+            color: #6a9955;
+            font-style: italic;
+        }
+
+        .viewer-status {
+            color: #9a9a9a;
+            font-size: 0.8rem;
+        }
     </style>
 </head>
 
@@ -91,47 +174,139 @@
         </section>
 
         <section id="contact" style="line-height: 1.25;">
-            <p> <strong>About this course: </strong>
-                
+            <p> <strong>Introduction: </strong>
+                A GPU is essentially a processor designed to execute many similar operations in parallel. A CPU
+                typically has a relatively small number of powerful cores, whereas a GPU contains a large number of
+                smaller execution units. The key idea behind a GPU is the combination of a large amount of arithmetic
+                hardware and a mechanism for keeping those hardware units busy by efficiently distributing parallel
+                workloads.
             </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/gpu_design/images/cpu_vs_gpu.jpeg" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <div class="table-wrap">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>CPU</th>
+                            <th>GPU</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Core count</td>
+                            <td>Few, powerful cores</td>
+                            <td>Many, smaller execution units</td>
+                        </tr>
+                        <tr>
+                            <td>Optimized for</td>
+                            <td>Low-latency, sequential work</td>
+                            <td>High-throughput, parallel work</td>
+                        </tr>
+                        <tr>
+                            <td>Control logic</td>
+                            <td>Complex (branch prediction, out-of-order execution)</td>
+                            <td>Simple, shared across groups of units</td>
+                        </tr>
+                        <tr>
+                            <td>Silicon area</td>
+                            <td>Large share for cache and control</td>
+                            <td>Large share for arithmetic units</td>
+                        </tr>
+                        <tr>
+                            <td>Typical workload</td>
+                            <td>OS, general-purpose programs</td>
+                            <td>Graphics, matrix math, ML</td>
+                        </tr>
+                        <tr>
+                            <td>Latency</td>
+                            <td>Low latency</td>
+                            <td>High throughput</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                <strong>Note:</strong> Latency is the time delay for a single request to travel from start to finish, while throughput is the
+                total volume of work or data processed over a given period
+            </p>
+            <p> <strong>Reason behind GPUs are good at parallel workloads: </strong>
+                Suppose, we want to add two arrays:
+            </p>
+
+            <div class="code-block">
+                <button class="code-copy" aria-label="Copy code"><i class='bx bx-copy'></i></button>
+                <pre>
+C[i] = A[i] + B[i]
+</pre>
+            </div>
+            <p>
+                For, 100,000 elements ... | These operations are largely independent.
+            </p>
+            <div class="code-block">
+                <button class="code-copy" aria-label="Copy code"><i class='bx bx-copy'></i></button>
+                <pre>
+C[0] = A[0] + B[0]
+C[1] = A[1] + B[1]
+C[2] = A[2] + B[2]
+C[3] = A[3] + B[3]
+C[4] = A[4] + B[4]
+C[5] = A[5] + B[5]
+...
+C[567] = A[567] + B[567]
+...
+C[99999] = A[99999] + B[99999]
+</pre>
+
         </section>
 
-        <section id="pdf-viewer-section">
+        <!-- <section id="pdf-viewer-section">
             <h2 style="font-weight: 600;"><i class="bx bx-file"></i> Course Note:</h2>
             <div class="pdf-viewer-box">
                 <object class="pdf-object" data="" type="application/pdf">
                     <div class="pdf-fallback">
                         <p>Your browser can't display the PDF inline.</p>
-                        <a class="btn btn-dark" href="" target="_blank"
-                            rel="noopener">
+                        <a class="btn btn-dark" href="" target="_blank" rel="noopener">
                             <i class='bx bx-download'></i> Download PDF
                         </a>
                     </div>
                 </object>
             </div>
             <div class="pdf-viewer-actions">
-                <a class="btn btn-light" href="" target="_blank"
-                    rel="noopener">
+                <a class="btn btn-light" href="" target="_blank" rel="noopener">
                     <i class='bx bx-expand'></i> Open in new tab
                 </a>
                 <a class="btn btn-light" href="" download>
                     <i class='bx bx-download'></i> Download
                 </a>
             </div>
-        </section>
+        </section> -->
 
     </div>
 
     <footer>
     </footer>
 
+    <!-- File viewer script (only acts on .viewer-box elements) -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             function escapeHTML(str) {
                 return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
             }
 
-            function highlight(text) {
+            // Comment style per file extension: SystemVerilog uses //, Tcl/shell use #
+            function commentMarkers(url) {
+                const ext = (url.split(".").pop() || "").toLowerCase();
+                if (ext === "sv" || ext === "v" || ext === "svh") return ["//"];
+                if (ext === "tcl" || ext === "sh" || ext === "py" || ext === "sdc") return ["#"];
+                if (ext === "vhd" || ext === "vhdl") return ["--"];
+                return ["//", "#"];
+            }
+
+            function highlight(text, markers) {
                 const lines = text.split("\n");
                 const keywords = [
                     "set", "proc", "if", "else", "foreach", "for", "while",
@@ -143,11 +318,7 @@
                     let safe = escapeHTML(line);
                     let commentStart = safe.length;
 
-                    const i1 = safe.indexOf("#");
-                    const i2 = safe.indexOf("//");
-                    const i3 = safe.indexOf("--");
-                    const arr = [i1, i2, i3].filter(i => i !== -1);
-
+                    const arr = markers.map(m => safe.indexOf(m)).filter(i => i !== -1);
                     if (arr.length > 0) commentStart = Math.min(...arr);
 
                     let code = safe.substring(0, commentStart);
@@ -167,7 +338,6 @@
                 }).join("\n");
             }
 
-            // Universal execution over all boxes relative to their content placement
             document.querySelectorAll(".viewer-box").forEach(async (box) => {
                 const fileURL = box.getAttribute("data-src");
                 const metaEl = box.querySelector(".viewer-meta");
@@ -181,7 +351,7 @@
                     const res = await fetch(fileURL);
                     const text = await res.text();
 
-                    if (editorEl) editorEl.innerHTML = highlight(text);
+                    if (editorEl) editorEl.innerHTML = highlight(text, commentMarkers(fileURL));
                     if (statusEl) statusEl.textContent = "Loaded successfully";
                 } catch (e) {
                     if (editorEl) editorEl.textContent = "Error loading file";
@@ -191,6 +361,24 @@
         });
     </script>
 
+    <!-- Copy button script -->
+    <script>
+        document.querySelectorAll('.code-copy').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const text = btn.parentElement.querySelector('pre').innerText;
+                const icon = btn.querySelector('i');
+                try {
+                    await navigator.clipboard.writeText(text);
+                    icon.className = 'bx bx-check';
+                } catch (e) {
+                    icon.className = 'bx bx-x';
+                }
+                setTimeout(() => icon.className = 'bx bx-copy', 1500);
+            });
+        });
+    </script>
+
+    <!-- Navbar script -->
     <script>
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');

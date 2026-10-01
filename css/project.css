@@ -30,8 +30,8 @@
     width: 100%;
     min-height: 500px;
     max-height: 70vh;
-    background-color: var(--card-bg_code_viwer); 
-    border: 1px solid var(--border-color_code_viewer); 
+    background-color: var(--card-bg_code_viwer);
+    border: 1px solid var(--border-color_code_viewer);
     border-radius: 18px;
     overflow: hidden;
     display: flex;
@@ -42,14 +42,14 @@
 }
 
 .viewer-box h2 {
-    color: var(--primary-color); 
+    color: var(--primary-color);
     font-size: 1.25rem;
     margin: 0 0 12px 0;
 }
 
 .viewer-meta {
     font-size: 0.8rem;
-    color: var(--text-light_code_viewer); 
+    color: var(--text-light_code_viewer);
     margin-bottom: 10px;
     word-break: break-all;
     font-family: inherit;
@@ -57,7 +57,8 @@
 
 .viewer-editor {
     flex: 1;
-    background: #090d16; /* Clean dark theme for code readability */
+    background: #090d16;
+    /* Clean dark theme for code readability */
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     overflow: auto;
@@ -70,20 +71,21 @@
 }
 
 .viewer-status {
-    color: var(--text-light_code_viewer); 
+    color: var(--text-light_code_viewer);
     font-size: 0.75rem;
     margin-top: 12px;
     font-family: inherit;
 }
 
 /* Syntax Highlighting */
-.kw { 
-    color: var(--accent-color); 
-    font-weight: 600; 
+.kw {
+    color: var(--accent-color);
+    font-weight: 600;
 }
-.com { 
-    color: #94a3b8; 
-    font-style: italic; 
+
+.com {
+    color: #94a3b8;
+    font-style: italic;
 }
 
 /* Responsive adjustments */
@@ -92,6 +94,7 @@
         padding: 16px;
         min-height: 400px;
     }
+
     .viewer-editor {
         padding: 14px;
         font-size: 0.85rem;
@@ -157,6 +160,49 @@
     }
 }
 
+/* Table CSS */
+.table-wrap {
+    overflow-x: auto;
+    margin: 16px 0;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    background: #232323;
+    color: #e6e6e6;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.data-table thead th {
+    background: #2a2a2a;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background: #2c2c2c;
+}
+
+.data-table td:first-child {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 /* --- Portfolio Banner Image Styles --- */
 #portfolio-banner-section {
     margin-top: 24px;
@@ -167,16 +213,20 @@
 .banner-image-container {
     width: 100%;
     overflow: hidden;
-    border-radius: 20px; /* Applies cleanly to the wrapper frame */
-    margin-top: -15px;;
+    border-radius: 20px;
+    /* Applies cleanly to the wrapper frame */
+    margin-top: -15px;
+    ;
 }
 
 .banner-image-container img {
     width: 100%;
     height: auto;
-    max-width: 100%;       /* Prevents stretching past its layout scale */
+    max-width: 100%;
+    /* Prevents stretching past its layout scale */
     display: block;
-    object-fit: cover;     /* Seamless aspect ratio scaling */
+    object-fit: cover;
+    /* Seamless aspect ratio scaling */
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
 }
 
@@ -185,6 +235,7 @@
         margin-top: 16px;
         margin-bottom: 16px;
     }
+
     .banner-image-container {
         border-radius: 12px;
     }
