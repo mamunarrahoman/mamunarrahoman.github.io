@@ -158,7 +158,69 @@
     </nav>
 
     <div class="container">
-
+        <section id="contact" style="line-height: 1.25;">
+            <h2 style="font-weight: 500;"><strong>TOPIC: </strong>
+                <span style="font-weight: 350;">
+                    Latency versus Throughtput
+                </span>
+            </h2>
+        </section>
+        <section id="contact" style="line-height: 1.25;">
+            <p><strong>Latency: </strong>
+                The time delay (measured in clock cycles or nanoseconds) required for a single instruction, operation,
+                or data packet to complete its path from input to output.
+            </p>
+            <p><strong>Throughput: </strong>
+                The rate at which tasks, instructions, or data bytes are successfully processed by the hardware per unit
+                of time (often measured in instructions per cycle, FLOPs, or GB/s).
+            </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/gpu_design/images/latency_vs_throughput.jpeg" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <!-- <p>
+                <strong>In GPU context:</strong>
+                </br>
+                <strong>Latency: </strong>The time it takes for a single instruction to execute inside a Streaming
+                Multiprocessor (SM) or the
+                round-trip delay to fetch data from the global VRAM (GDDR/HBM) back to the registers.
+            </p>
+            <p>
+                <strong>Throughput: </strong>The massive volume of parallel operations (like pixel shading, matrix
+                multiplications for AI, or rendering triangles) the GPU can crank out simultaneously every clock cycle.
+            </p> -->
+            <p><strong>Visual Representation (Latency):</strong>
+                To visualize how these concepts operate at the silicon level-
+            </p>
+            <div class="code-block">
+                <button class="code-copy" aria-label="Copy code"><i class='bx bx-copy'></i></button>
+                <pre>
+[Input Data/Instructions] 
+       │
+       ▼
+ ┌───┬───┬───┬───┬───┐   ──> Latency: Time taken for ONE specific piece of 
+ │ P1│ P2│ P3│ P4│ P5│       data to travel from input P1 to output P5 
+ └───┴───┴───┴───┴───┘       (e.g., 5 clock cycles).
+       │
+       ▼
+[Processed Output]
+</pre>
+            </div>
+            <p><strong>Visual Representation (Throughput):</strong>
+                Instead of waiting for one operation to finish before starting the next, a GPU uses deep pipelining and
+                massive multithreading.
+            </p>
+            <div class="code-block">
+                <button class="code-copy" aria-label="Copy code"><i class='bx bx-copy'></i></button>
+                <pre>
+Clock Cycle 1: [Task A1] 
+Clock Cycle 2: [Task A2] [Task B1] 
+Clock Cycle 3: [Task A3] [Task B2] [Task C1]
+Clock Cycle 4: [Task A4] [Task B3] [Task C2]
+</pre>
+            </div>
+        </section>
     </div>
 
     <footer>
