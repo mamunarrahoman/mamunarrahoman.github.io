@@ -79,7 +79,8 @@
         <section id="contact" style="line-height: 1.25;">
             <h2 style="font-weight: 500;"><strong>PROJECT TITLE: </strong>
                 <span style="font-weight: 350;">
-                    Fine-Grained ASIC Physical Design Analysis & Optimization.
+                    PPA-Driven Design and Optimization of a Heterogeneous CPU–GPU SoC with Unified Shared Memory for
+                    High-Performance Computing.
                 </span>
             </h2>
         </section>
@@ -106,20 +107,41 @@
 
 
         <section id="contact" style="line-height: 1.25;">
-            <p><strong>MOTIVE: </strong>
-                It is my goal to design, implement, and tape out a complete IC from the first step to the final step,
-                and eventually fabricate it. That is why I am choosing an open-source platform, so that I do not need to
-                rely on commercial tools and can independently handle and troubleshoot the problems that arise at each
-                stage of the process. In this way, I can learn the complete process from the fundamentals. On the other
-                hand, throughout this project, I will try to utilize my observations and the knowledge I gained from my
-                previous experience. From my point of view, this will not only strengthen my existing knowledge of
-                complete IC design but also allow me to learn many new things that will help me understand more complex
-                designs. Most importantly, by taking responsibility for the entire process myself, I will gain
-                experience in identifying and solving problems independently and learn how to adapt to different design
-                environments, including commercial IC design flows.
+            <p><strong>Abstract: </strong>
+
+                This project proposes a high-performance heterogeneous computing architecture that integrates a
+                multi-core CPU and a parallel GPU within a unified System-on-Chip (SoC) environment using shared memory.
+                The primary objective is to enable efficient execution of diverse workloads, including operating-system
+                and user-interface tasks, general-purpose computation, graphics rendering, parallel processing, and
+                artificial intelligence workloads. Unlike conventional systems that rely on separate CPU and GPU memory
+                spaces and require frequent data transfers, the proposed architecture provides a unified shared-memory
+                system that allows both processing units to access common data with reduced memory-copy overhead.
                 </br>
                 </br>
-                Following this
+                The architecture consists of a CPU complex, a massively parallel GPU, a coherent high-bandwidth
+                interconnect, cache hierarchies, a shared memory controller, and unified system memory. Cache coherence
+                and efficient memory arbitration are incorporated to maintain data consistency while enabling
+                low-latency communication between the CPU and GPU. The GPU is designed to accelerate highly parallel
+                workloads such as graphics rendering, matrix operations, image processing, and AI computation, while the
+                CPU handles sequential, control-intensive, operating-system, and general-purpose tasks.
+                </br>
+                </br>
+                The proposed architecture aims to improve CPU–GPU collaboration by reducing data movement, increasing
+                effective memory utilization, and providing high memory bandwidth for parallel workloads. The design can
+                serve as a foundation for an APU-like heterogeneous processor and can be further extended with dedicated
+                AI accelerators, advanced cache architectures, and high-bandwidth memory technologies. The architecture
+                will ultimately be explored and evaluated in terms of latency, memory bandwidth, throughput, resource
+                utilization, and workload performance.
+            </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../../assest/cpu_gpu_memory/architecture.png" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <p style="margin-top: -20px; text-align: center;">
+                <strong>Figure 1.1:</strong>
+                Graphical representation of the proposed architecture. | Note: This image is AI-generated, which saved
+                my time compared to creating it manually.
             </p>
 
     </div>
