@@ -213,10 +213,10 @@
 .banner-image-container {
     width: 100%;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     /* Applies cleanly to the wrapper frame */
     margin-top: -15px;
-    ;
+    border: 1px solid black;
 }
 
 .banner-image-container img {

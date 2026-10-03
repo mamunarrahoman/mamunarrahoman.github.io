@@ -228,9 +228,9 @@ strong {
 }
 
 .btn-light {
-    background-color: #ffffff;
+    background-color: white;
     color: var(--primary-color);
-    border: 1px solid var(--border-color);
+    border: 1px solid black;
 }
 
 .btn-inline {
