@@ -6,7 +6,7 @@ body {
 
 /* --- Root Variables & Modern Reset --- */
 :root {
-    --primary-color: #0f172a;
+    --primary-color: #000000;
     /* Slate 900 */
     --accent-color: #4548c4;
     /* Modern Accent Blue */
