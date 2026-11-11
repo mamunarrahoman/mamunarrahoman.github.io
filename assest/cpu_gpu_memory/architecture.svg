@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 508 285.75001"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="../../Desktop/drawing.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.50394254"
+     inkscape:cx="1077.5038"
+     inkscape:cy="623.08691"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g32">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="508"
+       height="285.75"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="1554.6898"
+       y="123.47717"
+       width="297.46771"
+       height="544.42206"
+       id="rect36" />
+    <rect
+       x="839.38141"
+       y="833.42834"
+       width="502.04135"
+       height="93.264603"
+       id="rect35" />
+    <rect
+       x="1539.8582"
+       y="109.13943"
+       width="224.2319"
+       height="33.734005"
+       id="rect34" />
+    <marker
+       style="overflow:visible"
+       id="marker27"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path27" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker27-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path27-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker27-2-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path27-5-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-4-4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-0-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker27-2-28"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path27-5-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-4-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-0-6" />
+    </marker>
+    <rect
+       x="839.38141"
+       y="833.42834"
+       width="502.04135"
+       height="93.264603"
+       id="rect35-3" />
+    <rect
+       x="1554.6898"
+       y="123.47717"
+       width="297.46771"
+       height="544.42206"
+       id="rect36-0" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g32">
+      <g
+         id="g40">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.26458333,0,0,0.26458333,1.2878081,1.2919145)"
+           id="text33"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect34);display:inline;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+        <g
+           id="g39">
+          <rect
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.352778;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+             id="rect33"
+             width="93.454765"
+             height="252.89101"
+             x="403.98334"
+             y="16.429497" />
+          <text
+             xml:space="preserve"
+             transform="matrix(0.26458333,0,0,0.26458333,0.52258125,84.675814)"
+             id="text35-1"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect36-0);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+             x="0"
+             y="0"><tspan
+               x="1554.6895"
+               y="145.31357"
+               id="tspan8"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan7">• CPU handles OS, UI </tspan></tspan><tspan
+               x="1554.6895"
+               y="175.31357"
+               id="tspan10"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan9">logic, control flow and </tspan></tspan><tspan
+               x="1554.6895"
+               y="205.31357"
+               id="tspan12"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan11">sequential tasks.
+</tspan></tspan><tspan
+               x="1554.6895"
+               y="235.31357"
+               id="tspan14"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan13">• GPU handles rendaring, </tspan></tspan><tspan
+               x="1554.6895"
+               y="265.31357"
+               id="tspan16"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan15">prallel computation, AI </tspan></tspan><tspan
+               x="1554.6895"
+               y="295.31357"
+               id="tspan18"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan17">interface/training, and </tspan></tspan><tspan
+               x="1554.6895"
+               y="325.31357"
+               id="tspan23"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan19">compute heavy tasks.
+</tspan></tspan><tspan
+               x="1554.6895"
+               y="355.31357"
+               id="tspan25"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan24">• Both access the same </tspan></tspan><tspan
+               x="1554.6895"
+               y="385.31357"
+               id="tspan27"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan26">physical memory through </tspan></tspan><tspan
+               x="1554.6895"
+               y="415.31357"
+               id="tspan34"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan33">a coherent interconnect.
+</tspan></tspan><tspan
+               x="1554.6895"
+               y="445.31357"
+               id="tspan37"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan35">• Shared memory reduces </tspan></tspan><tspan
+               x="1554.6895"
+               y="475.31357"
+               id="tspan39"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan38">date copying, minimizes </tspan></tspan><tspan
+               x="1554.6895"
+               y="505.31357"
+               id="tspan41"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan40">latency and increases </tspan></tspan><tspan
+               x="1554.6895"
+               y="535.31357"
+               id="tspan43"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan42">throughput.</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             transform="matrix(0.26458333,0,0,0.26458333,189.20981,-197.50511)"
+             id="text34"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect35);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"><tspan
+               x="839.38086"
+               y="855.26474"
+               id="tspan44">EXPECTED FETURES:</tspan></text>
+          <text
+             xml:space="preserve"
+             transform="matrix(0.26458333,0,0,0.26458333,189.20981,-113.51729)"
+             id="text34-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect35-3);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"><tspan
+               x="839.38086"
+               y="855.26474"
+               id="tspan45">HOW IT WILL WORK:</tspan></text>
+          <text
+             xml:space="preserve"
+             transform="matrix(0.26458333,0,0,0.26458333,0.52258125,0.6879959)"
+             id="text35"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect36);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+             x="0"
+             y="0"><tspan
+               x="1554.6895"
+               y="145.31357"
+               id="tspan47"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan46">• Shared Physical Memory  </tspan></tspan><tspan
+               x="1554.6895"
+               y="175.31357"
+               id="tspan49"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan48">(CPU &amp; GPU).
+</tspan></tspan><tspan
+               x="1554.6895"
+               y="205.31357"
+               id="tspan51"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan50">• Cache Coherence.
+</tspan></tspan><tspan
+               x="1554.6895"
+               y="235.31357"
+               id="tspan53"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan52">• Hight-bandwidth </tspan></tspan><tspan
+               x="1554.6895"
+               y="265.31357"
+               id="tspan55"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan54">interconnect.
+</tspan></tspan><tspan
+               x="1554.6895"
+               y="295.31357"
+               id="tspan57"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan56">• Low-Latency CPU-GPU </tspan></tspan><tspan
+               x="1554.6895"
+               y="325.31357"
+               id="tspan59"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan58">communication.
+</tspan></tspan><tspan
+               x="1554.6895"
+               y="355.31357"
+               id="tspan61"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan60">• Parallel Computing and </tspan></tspan><tspan
+               x="1554.6895"
+               y="385.31357"
+               id="tspan63"><tspan
+                 style="font-weight:normal;-inkscape-font-specification:sans-serif"
+                 id="tspan62">AI workloads.</tspan></tspan></text>
+        </g>
+        <g
+           id="g37"
+           transform="translate(1.2878081,2.955368)">
+          <g
+             id="g33"
+             transform="translate(1.1363468,1.2217056)">
+            <g
+               id="g26">
+              <g
+                 id="g7"
+                 transform="translate(-16.851233,-27.581625)">
+                <rect
+                   style="fill:#333333;stroke-width:0.343203"
+                   id="rect1"
+                   width="160"
+                   height="90"
+                   x="28.975842"
+                   y="44.300987" />
+                <g
+                   id="g5"
+                   transform="translate(-39.3525,-108.15288)">
+                  <g
+                     id="g6">
+                    <g
+                       id="g4"
+                       transform="translate(8.43494,15.234063)">
+                      <rect
+                         style="fill:#008080;stroke-width:1.3;stroke-dasharray:none"
+                         id="rect3"
+                         width="35.582825"
+                         height="28.876474"
+                         x="64.578293"
+                         y="154.22858" />
+                      <rect
+                         style="fill:#008080;stroke-width:33.492;stroke-dasharray:none"
+                         id="rect3-3"
+                         width="35.582825"
+                         height="28.876474"
+                         x="141.3764"
+                         y="154.22858" />
+                      <rect
+                         style="fill:#008080;stroke-width:33.492;stroke-dasharray:none"
+                         id="rect3-1"
+                         width="35.582825"
+                         height="28.876474"
+                         x="102.97736"
+                         y="154.22858" />
+                      <rect
+                         style="fill:#008080;stroke-width:33.492;stroke-dasharray:none"
+                         id="rect3-36"
+                         width="35.582825"
+                         height="28.876474"
+                         x="179.77547"
+                         y="154.22858" />
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.53988px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="77.053329"
+                         y="178.976"
+                         id="text3"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           id="tspan3"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="77.053329"
+                           y="178.976">CPU</tspan><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="77.053329"
+                           y="184.65085"
+                           id="tspan4">CORE 0</tspan></text>
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.53988px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="113.27317"
+                         y="178.976"
+                         id="text3-1"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           id="tspan3-8"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="113.27317"
+                           y="178.976">CPU</tspan><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="113.27317"
+                           y="184.65085"
+                           id="tspan4-7">CORE 1</tspan></text>
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.53988px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="148.93004"
+                         y="178.976"
+                         id="text3-1-3"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           id="tspan3-8-1"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="148.93004"
+                           y="178.976">CPU</tspan><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="148.93004"
+                           y="184.65085"
+                           id="tspan4-7-9">CORE 2</tspan></text>
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.53988px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="184.88884"
+                         y="178.976"
+                         id="text3-1-3-5"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           id="tspan3-8-1-0"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="184.88884"
+                           y="178.976">CPU</tspan><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53988px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="184.88884"
+                           y="184.65085"
+                           id="tspan4-7-9-3">CORE 3</tspan></text>
+                    </g>
+                    <rect
+                       style="fill:#004343;fill-opacity:1;stroke-width:0.585957;stroke-dasharray:none"
+                       id="rect4"
+                       width="150.78"
+                       height="15"
+                       x="73.013229"
+                       y="201.47165" />
+                    <rect
+                       style="fill:#004343;fill-opacity:1;stroke-width:0.585957;stroke-dasharray:none"
+                       id="rect4-3"
+                       width="150.78"
+                       height="15"
+                       x="73.013229"
+                       y="219.60417" />
+                    <text
+                       xml:space="preserve"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+                       x="127.82555"
+                       y="189.1696"
+                       id="text5"
+                       transform="scale(0.89609404,1.1159543)"><tspan
+                         sodipodi:role="line"
+                         id="tspan5"
+                         style="font-size:6.35px;fill:#ffffff;stroke-width:1.49457"
+                         x="127.82555"
+                         y="189.1696">L1 I/D Caches (Per Core)</tspan></text>
+                    <text
+                       xml:space="preserve"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+                       x="132.56583"
+                       y="205.41805"
+                       id="text5-5"
+                       transform="scale(0.89609404,1.1159543)"><tspan
+                         sodipodi:role="line"
+                         id="tspan5-5"
+                         style="font-size:6.35px;fill:#ffffff;stroke-width:1.49457"
+                         x="132.56583"
+                         y="205.41805">L2/L3 Cache (Shared)</tspan></text>
+                  </g>
+                </g>
+                <text
+                   xml:space="preserve"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke-width:1.3;stroke-dasharray:none"
+                   x="73.83564"
+                   y="56.058746"
+                   id="text6"><tspan
+                     sodipodi:role="line"
+                     id="tspan6"
+                     style="font-size:9.87778px;fill:#ffffff;stroke-width:1.3"
+                     x="73.83564"
+                     y="56.058746">CPU COMPLEX</tspan></text>
+              </g>
+              <g
+                 id="g19"
+                 transform="translate(-17.989982,-27.581625)">
+                <rect
+                   style="fill:#333333;stroke-width:0.255793"
+                   id="rect2"
+                   width="138.09625"
+                   height="90"
+                   x="194.03352"
+                   y="44.300987" />
+                <text
+                   xml:space="preserve"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke-width:1.3;stroke-dasharray:none"
+                   x="252.80382"
+                   y="56.058746"
+                   id="text6-9"><tspan
+                     sodipodi:role="line"
+                     id="tspan6-0"
+                     style="font-size:9.87778px;fill:#ffffff;stroke-width:1.3"
+                     x="252.80382"
+                     y="56.058746">GPU</tspan></text>
+                <g
+                   id="g18">
+                  <g
+                     id="g16"
+                     transform="translate(-5.8072739)">
+                    <g
+                       id="g14">
+                      <g
+                         id="g13">
+                        <rect
+                           style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                           id="rect7"
+                           width="30.01425"
+                           height="17.779249"
+                           x="205.14409"
+                           y="61.309761" />
+                        <text
+                           xml:space="preserve"
+                           style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                           x="206.01758"
+                           y="76.762123"
+                           id="text3-9"
+                           transform="scale(1.0683351,0.93603589)"><tspan
+                             sodipodi:role="line"
+                             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                             x="206.01758"
+                             y="76.762123"
+                             id="tspan4-0">CU 0</tspan></text>
+                      </g>
+                      <g
+                         id="g10"
+                         transform="translate(0,0.40187073)">
+                        <rect
+                           style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                           id="rect7-5"
+                           width="30.01425"
+                           height="17.779249"
+                           x="237.63591"
+                           y="60.90789" />
+                        <text
+                           xml:space="preserve"
+                           style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                           x="236.73236"
+                           y="76.330322"
+                           id="text3-9-6"
+                           transform="scale(1.0683351,0.93603589)"><tspan
+                             sodipodi:role="line"
+                             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                             x="236.73236"
+                             y="76.330322"
+                             id="tspan4-0-6">CU 1</tspan></text>
+                      </g>
+                      <g
+                         id="g11"
+                         transform="translate(0,0.40187073)">
+                        <rect
+                           style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                           id="rect7-6"
+                           width="30.01425"
+                           height="17.779249"
+                           x="270.12772"
+                           y="60.90789" />
+                        <text
+                           xml:space="preserve"
+                           style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                           x="266.83472"
+                           y="76.330322"
+                           id="text3-9-4"
+                           transform="scale(1.0683351,0.93603589)"><tspan
+                             sodipodi:role="line"
+                             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                             x="266.83472"
+                             y="76.330322"
+                             id="tspan4-0-8">CU 2</tspan></text>
+                      </g>
+                      <g
+                         id="g12"
+                         transform="translate(0,0.40187073)">
+                        <rect
+                           style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                           id="rect7-4"
+                           width="30.01425"
+                           height="17.779249"
+                           x="302.61951"
+                           y="60.90789" />
+                        <text
+                           xml:space="preserve"
+                           style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                           x="297.2655"
+                           y="76.330322"
+                           id="text3-9-7"
+                           transform="scale(1.0683351,0.93603589)"><tspan
+                             sodipodi:role="line"
+                             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                             x="297.2655"
+                             y="76.330322"
+                             id="tspan4-0-2">CU 3</tspan></text>
+                      </g>
+                    </g>
+                    <g
+                       id="g15"
+                       transform="translate(0,-22.225008)">
+                      <rect
+                         style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                         id="rect7-8"
+                         width="30.01425"
+                         height="17.779249"
+                         x="205.1441"
+                         y="103.62311" />
+                      <rect
+                         style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                         id="rect7-6-6"
+                         width="30.01425"
+                         height="17.779249"
+                         x="270.12772"
+                         y="103.62311" />
+                      <rect
+                         style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                         id="rect7-4-8"
+                         width="30.01425"
+                         height="17.779249"
+                         x="302.61951"
+                         y="103.62311" />
+                      <rect
+                         style="fill:#008080;fill-opacity:1;stroke-width:1.65809;stroke-dasharray:none"
+                         id="rect7-5-8"
+                         width="30.01425"
+                         height="17.779249"
+                         x="237.63591"
+                         y="103.62311" />
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="205.9682"
+                         y="121.96459"
+                         id="text3-9-61"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="205.9682"
+                           y="121.96459"
+                           id="tspan4-0-5">CU 4</tspan></text>
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="236.45331"
+                         y="121.96459"
+                         id="text3-9-9"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="236.45331"
+                           y="121.96459"
+                           id="tspan4-0-1">CU 5</tspan></text>
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="266.83472"
+                         y="121.96459"
+                         id="text3-9-9-5"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="266.83472"
+                           y="121.96459"
+                           id="tspan4-0-1-9">CU 6</tspan></text>
+                      <text
+                         xml:space="preserve"
+                         style="font-size:4.93889px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:0.247657"
+                         x="297.2482"
+                         y="121.96459"
+                         id="text3-9-9-5-3"
+                         transform="scale(1.0683351,0.93603589)"><tspan
+                           sodipodi:role="line"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.247657"
+                           x="297.2482"
+                           y="121.96459"
+                           id="tspan4-0-1-9-6">CU 7</tspan></text>
+                    </g>
+                  </g>
+                  <g
+                     id="g17"
+                     transform="translate(89.47125,-59.186667)">
+                    <rect
+                       style="fill:#005959;fill-opacity:1;stroke-width:1.502;stroke-dasharray:none"
+                       id="rect16"
+                       width="127.49"
+                       height="11.88"
+                       x="109.89"
+                       y="160.75125" />
+                    <rect
+                       style="fill:#005959;fill-opacity:1;stroke-width:1.502;stroke-dasharray:none"
+                       id="rect16-9"
+                       width="127.49"
+                       height="11.88"
+                       x="109.68875"
+                       y="174.05418" />
+                    <text
+                       xml:space="preserve"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+                       x="167.77325"
+                       y="151.07001"
+                       id="text5-6"
+                       transform="scale(0.89609404,1.1159543)"><tspan
+                         sodipodi:role="line"
+                         id="tspan5-1"
+                         style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                         x="167.77325"
+                         y="151.07001">L1 Caches (Per CU)</tspan></text>
+                    <text
+                       xml:space="preserve"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+                       x="167.14227"
+                       y="162.99069"
+                       id="text5-6-4"
+                       transform="scale(0.89609404,1.1159543)"><tspan
+                         sodipodi:role="line"
+                         id="tspan5-1-4"
+                         style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                         x="167.14227"
+                         y="162.99069">L2 Caches (Shared)</tspan></text>
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="g22"
+                 transform="translate(267.88083,-67.925627)">
+                <rect
+                   style="fill:#005959;fill-opacity:1;stroke-width:1.34561;stroke-dasharray:none"
+                   id="rect20"
+                   width="76.106247"
+                   height="27.445435"
+                   x="50.611465"
+                   y="84.644989" />
+                <rect
+                   style="fill:#005959;fill-opacity:1;stroke-width:1.34561;stroke-dasharray:none"
+                   id="rect20-3"
+                   width="76.106247"
+                   height="27.445435"
+                   x="50.611465"
+                   y="147.19957" />
+                <rect
+                   style="fill:#005959;fill-opacity:1;stroke-width:1.34561;stroke-dasharray:none"
+                   id="rect20-6"
+                   width="76.106247"
+                   height="27.445435"
+                   x="50.611465"
+                   y="115.92227" />
+                <text
+                   xml:space="preserve"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+                   x="98.691628"
+                   y="85.987717"
+                   id="text5-57"
+                   transform="scale(0.89609404,1.1159543)"><tspan
+                     sodipodi:role="line"
+                     id="tspan5-4"
+                     style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                     x="98.691628"
+                     y="85.987717">DISPLAY CONTROLLER</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                     x="98.691628"
+                     y="93.043266"
+                     id="tspan20">(UI/Graphics output)</tspan></text>
+                <text
+                   xml:space="preserve"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+                   x="98.945633"
+                   y="114.24652"
+                   id="text5-7"
+                   transform="scale(0.89609404,1.1159543)"><tspan
+                     sodipodi:role="line"
+                     id="tspan5-53"
+                     style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                     x="98.945633"
+                     y="114.24652">VIDEO ENCODER/DECODER</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                     x="98.945633"
+                     y="121.30207"
+                     id="tspan21">(Media)</tspan></text>
+                <text
+                   xml:space="preserve"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+                   x="98.945625"
+                   y="142.04251"
+                   id="text5-7-8"
+                   transform="scale(0.89609404,1.1159543)"><tspan
+                     sodipodi:role="line"
+                     style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                     x="98.945625"
+                     y="142.04251"
+                     id="tspan21-6">AI ACCELERATOR</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                     x="98.945625"
+                     y="149.09807"
+                     id="tspan22">(Optional/NPU)</tspan></text>
+              </g>
+            </g>
+            <rect
+               style="fill:#005959;fill-opacity:1;stroke-width:1.05059;stroke-dasharray:none"
+               id="rect23"
+               width="382.474"
+               height="24.15123"
+               x="12.124575"
+               y="123.39106" />
+            <path
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.02025;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker27);marker-end:url(#Triangle)"
+               d="m 90.092971,110.33152 v 9.30165"
+               id="path26" />
+            <path
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.02025;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker27);marker-end:url(#Triangle-3)"
+               d="m 248.09782,110.33152 v 9.30165"
+               id="path26-0" />
+            <path
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.02025;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker27);marker-end:url(#Triangle-8)"
+               d="m 359.51018,110.33152 v 9.30165"
+               id="path26-7" />
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.84596;stroke-dasharray:none;stroke-opacity:1"
+               id="rect27"
+               width="167.48354"
+               height="22.051125"
+               x="12.547555"
+               y="161.79089" />
+            <rect
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.84596;stroke-dasharray:none;stroke-opacity:1"
+               id="rect27-3"
+               width="167.48354"
+               height="22.051125"
+               x="226.65526"
+               y="161.70726" />
+            <rect
+               style="fill:#004040;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+               id="rect28"
+               width="168.32899"
+               height="62.478188"
+               x="12.124575"
+               y="198.1983" />
+            <path
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.920368;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker27-2);marker-end:url(#Triangle-4)"
+               d="m 94.640582,150.73144 v 7.56955"
+               id="path26-4" />
+            <path
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.920368;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker27-2-2);marker-end:url(#Triangle-4-4)"
+               d="m 314.93292,150.72977 v 7.56955"
+               id="path26-4-4" />
+            <path
+               style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.920368;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker27-2-28);marker-end:url(#Triangle-4-3)"
+               d="m 94.258186,187.46048 v 7.56955"
+               id="path26-4-2" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+               x="226.94221"
+               y="119.23188"
+               id="text5-7-8-1"
+               transform="scale(0.89609404,1.1159543)"><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="226.94221"
+                 y="119.23188"
+                 id="tspan22-8">COHERENT INTERCONNECT</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="226.94221"
+                 y="126.28743"
+                 id="tspan28">(High Bandwidth + Low Latency + Cache Coherence)</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+               x="107.45448"
+               y="152.93222"
+               id="text5-7-8-6"
+               transform="scale(0.89609404,1.1159543)"><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="107.45448"
+                 y="152.93222"
+                 id="tspan22-5">MEMORY CONTROLLER</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="107.45448"
+                 y="159.98778"
+                 id="tspan29">(DDR Controller + Coherence)</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+               x="346.38889"
+               y="152.95605"
+               id="text5-7-8-4"
+               transform="scale(0.89609404,1.1159543)"><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="346.38889"
+                 y="152.95605"
+                 id="tspan22-2">I/O Subsystem</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="346.38889"
+                 y="160.01161"
+                 id="tspan30">(PCIe, USB, NVMe, etc.)</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.49457;stroke-dasharray:none"
+               x="107.21432"
+               y="203.43849"
+               id="text5-7-8-9"
+               transform="scale(0.89609404,1.1159543)"><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="107.21432"
+                 y="203.43849"
+                 id="tspan31">UNIFIED SHARED MEMORY</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-size:5.64444px;fill:#ffffff;stroke-width:1.49457"
+                 x="107.21432"
+                 y="210.49405"
+                 id="tspan32">(System RAM)</tspan></text>
+          </g>
+          <rect
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.352778;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+             id="rect37"
+             width="390.09488"
+             height="252.53787"
+             x="9.4504814"
+             y="13.650696" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
