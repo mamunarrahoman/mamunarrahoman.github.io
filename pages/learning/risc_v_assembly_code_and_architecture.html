@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | MMRR</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <style>
+        /* Minimal layout adjustments for resume timeline data alignment without altering global section distances */
+        .resume-item {
+            margin-bottom: 8px;
+            padding-left: 2px;
+        }
+
+        .date-badge {
+            font-size: 0.88rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 2px;
+            letter-spacing: -0.1px;
+        }
+
+        .job-title {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.3px;
+            line-height: 1.3;
+        }
+
+        .company-name {
+            font-size: 0.96rem;
+            color: var(--text-color);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .details-text {
+            font-size: 0.92rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ---------- Code block with copy button ---------- */
+        .code-block {
+            position: relative;
+            background: #232323;
+            border-radius: 18px;
+            padding: 20px 56px 20px 24px;
+            margin: 16px 0;
+        }
+
+        .code-block pre {
+            margin: 0;
+            overflow-x: auto;
+            color: #e6e6e6;
+            font-family: "Fira Code", Consolas, "Courier New", monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            white-space: pre;
+        }
+
+        .code-copy {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: none;
+            border: none;
+            color: #e6e6e6;
+            font-size: 1.3rem;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .code-copy:hover {
+            opacity: 1;
+        }
+
+        /* ---------- File-loading text viewer (optional) ---------- */
+        .viewer-box {
+            border: 1px solid #2d2d2d;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #1e1e1e;
+            margin-top: 12px;
+        }
+
+        .viewer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 14px;
+            background: #2a2a2a;
+            color: #cfcfcf;
+            font-size: 0.85rem;
+        }
+
+        .viewer-editor {
+            margin: 0;
+            padding: 14px;
+            max-height: 480px;
+            overflow: auto;
+            color: #d4d4d4;
+            font-family: "Fira Code", Consolas, monospace;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            white-space: pre;
+            tab-size: 4;
+        }
+
+        .viewer-editor .kw {
+            color: #569cd6;
+            font-weight: 600;
+        }
+
+        .viewer-editor .com {
+            color: #6a9955;
+            font-style: italic;
+        }
+
+        .viewer-status {
+            color: #9a9a9a;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html" style="color: #ffffff; text-decoration: none;">MMRR</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About me</a></li>
+                <li><a href="../projects.html">Project Page</a></li>
+                <li><a href="../self_learning.html" class="active">Self-Learning</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../cv_sop.html">CV/Resume</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+
+                <div class="drawer-close-container">
+                    <div class="drawer-close-circle" id="drawer-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="contact" style="line-height: 1.25;">
+            <h2 style="font-weight: 500;"><strong>TOPIC: </strong>
+                <span style="font-weight: 350;">
+                    RISC-V assembly instructions and architecture.
+                </span>
+            </h2>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>Learning Platform: </strong>
+                hhp3 | YouTube
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p>
+                <strong>GitHub Repository:</strong>
+                <a href="#" class="btn btn-light" target="_blank" rel="noopener">
+                    <i class='bx bxl-github'></i> View Repository
+                </a>
+            </p>
+        </section>
+
+        <section id="contact" style="line-height: 1.25;">
+            <p> <strong>Introduction: </strong>
+                RISC-V is a free and open standard instruction set architecture (ISA) for computer CPUs. It is based on
+                reduced instruction set computer (RISC) principles. Unlike proprietary ISAs such as x86 and ARM, RISC-V
+                is described as "free and open" because its specifications are released under permissive open-source
+                licenses and can be implemented without paying royalties. - [wikipedia]
+                </br>
+                RISC-V is a popular architecture for microcontrollers and embedded systems, with development of
+                higher-performance implementations targeting mobile, desktop, and server markets ongoing. The ISA is
+                supported by several major Linux distributions, and companies such as SiFive, Andes Technology,
+                SpacemiT, Synopsys, Alibaba (DAMO Academy), StarFive, Espressif Systems, and Raspberry Pi offer
+                commercial systems on a chip (SoCs) and microcontrollers (MCUs) that incorporate one or more RISC-V
+                compatible processor cores. - [wikipedia]
+            </p>
+            <p> <strong> RISC-V features:</strong>
+            <ul
+                style="list-style-type: disc; margin-left: 20px; padding-left: 5px; font-size: 0.95rem; color: var(--text-color); line-height: 1.6;">
+                <li>High performance per watt for battery optimized devices.</li>
+                <li>Execute one action per instruction.</li>
+                <li>Supports more register and spends less time on loading and storing values to memory.</li>
+                <li>Reduced instruction set, simple decoding logic, less chip space is used, fewer transistor are
+                    required, and more general-purpose register can fit into the central processing unit.</li>
+            </ul>
+            </p>
+            <p>
+                <strong>Instruction Execution Flow-Chart:</strong>
+            </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/self_learning/risc_v/block_diagram.svg" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <p><strong>RISC-V Register Specification:</strong>
+            </p>
+
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/self_learning/risc_v/register_spec.svg" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <p> <strong>RISC-V assembly language:</strongs>
+            </p>
+            <div class="code-block">
+                <button class="code-copy" aria-label="Copy code"><i class='bx bx-copy'></i></button>
+                <pre>
+opcode
+    myLoop: add t0, a0, a1      # add first two args.
+opcode examples:
+    add     machine instructions
+    call    pseudo instruction
+    c.add   cpmpressed instruction
+    .word   assembler directive
+</pre>
+            </div>
+            <p>Arithmatic and Logic instructions:
+            </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/self_learning/risc_v/register_arithmatic_logic.svg" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <div class="table-wrap">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Instruction Command</th>
+                            <th>Arguments</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>add</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 + rs2</td>
+                        </tr>
+                        <tr>
+                            <td>sub</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 - rs2</td>
+                        </tr>
+                        <tr>
+                            <td>and</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 & rs2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Jump and Link instruction:
+            </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/self_learning/risc_v/instruction_encoding.svg" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <p>Load upper immediate instruction:
+            </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/self_learning/risc_v/load_upper_immediate.svg" alt="VLSI Design Banner">
+                </div>
+            </section>
+            <p>Add upper immediate to PC:
+            </p>
+            <section id="portfolio-banner-section">
+                <div class="banner-image-container">
+                    <img src="../../assest/self_learning/risc_v/add_upper_imeediate.svg" alt="VLSI Design Banner">
+                </div>
+            </section>
+
+        </section>
+
+        <!-- <section id="pdf-viewer-section">
+            <h2 style="font-weight: 600;"><i class="bx bx-file"></i> Course Note:</h2>
+            <div class="pdf-viewer-box">
+                <object class="pdf-object" data="" type="application/pdf">
+                    <div class="pdf-fallback">
+                        <p>Your browser can't display the PDF inline.</p>
+                        <a class="btn btn-dark" href="" target="_blank" rel="noopener">
+                            <i class='bx bx-download'></i> Download PDF
+                        </a>
+                    </div>
+                </object>
+            </div>
+            <div class="pdf-viewer-actions">
+                <a class="btn btn-light" href="" target="_blank" rel="noopener">
+                    <i class='bx bx-expand'></i> Open in new tab
+                </a>
+                <a class="btn btn-light" href="" download>
+                    <i class='bx bx-download'></i> Download
+                </a>
+            </div>
+        </section> -->
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <!-- File viewer script (only acts on .viewer-box elements) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function escapeHTML(str) {
+                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            }
+
+            // Comment style per file extension: SystemVerilog uses //, Tcl/shell use #
+            function commentMarkers(url) {
+                const ext = (url.split(".").pop() || "").toLowerCase();
+                if (ext === "sv" || ext === "v" || ext === "svh") return ["//"];
+                if (ext === "tcl" || ext === "sh" || ext === "py" || ext === "sdc") return ["#"];
+                if (ext === "vhd" || ext === "vhdl") return ["--"];
+                return ["//", "#"];
+            }
+
+            function highlight(text, markers) {
+                const lines = text.split("\n");
+                const keywords = [
+                    "set", "proc", "if", "else", "foreach", "for", "while",
+                    "module", "endmodule", "assign", "always", "begin", "end",
+                    "input", "output", "wire", "reg", "logic", "parameter"
+                ];
+
+                return lines.map(line => {
+                    let safe = escapeHTML(line);
+                    let commentStart = safe.length;
+
+                    const arr = markers.map(m => safe.indexOf(m)).filter(i => i !== -1);
+                    if (arr.length > 0) commentStart = Math.min(...arr);
+
+                    let code = safe.substring(0, commentStart);
+                    let comment = safe.substring(commentStart);
+
+                    keywords.forEach(k => {
+                        const r = new RegExp("\\b" + k + "\\b", "g");
+                        code = code.replace(r, `<span class="kw">${k}</span>`);
+                    });
+
+                    if (commentStart !== safe.length) {
+                        comment = `<span class="com">${comment}</span>`;
+                    } else {
+                        comment = "";
+                    }
+                    return code + comment;
+                }).join("\n");
+            }
+
+            document.querySelectorAll(".viewer-box").forEach(async (box) => {
+                const fileURL = box.getAttribute("data-src");
+                const metaEl = box.querySelector(".viewer-meta");
+                const editorEl = box.querySelector(".viewer-editor");
+                const statusEl = box.querySelector(".viewer-status");
+
+                if (metaEl) metaEl.textContent = fileURL;
+
+                try {
+                    if (statusEl) statusEl.textContent = "Loading file...";
+                    const res = await fetch(fileURL);
+                    const text = await res.text();
+
+                    if (editorEl) editorEl.innerHTML = highlight(text, commentMarkers(fileURL));
+                    if (statusEl) statusEl.textContent = "Loaded successfully";
+                } catch (e) {
+                    if (editorEl) editorEl.textContent = "Error loading file";
+                    if (statusEl) statusEl.textContent = "Failed";
+                }
+            });
+        });
+    </script>
+
+    <!-- Copy button script -->
+    <script>
+        document.querySelectorAll('.code-copy').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const text = btn.parentElement.querySelector('pre').innerText;
+                const icon = btn.querySelector('i');
+                try {
+                    await navigator.clipboard.writeText(text);
+                    icon.className = 'bx bx-check';
+                } catch (e) {
+                    icon.className = 'bx bx-x';
+                }
+                setTimeout(() => icon.className = 'bx bx-copy', 1500);
+            });
+        });
+    </script>
+
+    <!-- Navbar script -->
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const drawerClose = document.getElementById('drawer-close');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        navToggle.addEventListener('click', (e) => {
+            navMenu.classList.toggle('show-menu');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('show-menu')) {
+                icon.className = 'bx bx-x';
+            } else {
+                icon.className = 'bx bx-menu';
+            }
+            e.stopPropagation();
+        });
+
+        drawerClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            navToggle.querySelector('i').className = 'bx bx-menu';
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('show-menu');
+                navToggle.querySelector('i').className = 'bx bx-menu';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

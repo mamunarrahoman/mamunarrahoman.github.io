@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 507.99999 285.75"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="register_spec.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="508"
+       height="285.75"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g103">
+      <g
+         id="g10"
+         transform="translate(-16.765151,-36.767441)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+           x="25.290285"
+           y="46.991566"
+           id="text1"><tspan
+             sodipodi:role="line"
+             id="tspan1"
+             style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+             x="25.290285"
+             y="46.991566">ZERO REGISTER (x0)</tspan></text>
+        <g
+           id="g6"
+           transform="translate(-163.14814,-65.178805)">
+          <rect
+             style="fill:#008080;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+             id="rect1"
+             width="130.20663"
+             height="55.127811"
+             x="188.89668"
+             y="115.3111" />
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+             x="204.1525"
+             y="129.38126"
+             id="text2"><tspan
+               sodipodi:role="line"
+               id="tspan2"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="204.1525"
+               y="129.38126">zero (x0)</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="204.1525"
+               y="137.31876"
+               id="tspan3">Special -Not general purpose</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="204.1525"
+               y="145.25626"
+               id="tspan4">Hardwared to 0</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="204.1525"
+               y="153.19376"
+               id="tspan5">Zero is often a useful value</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="204.1525"
+               y="161.13126"
+               id="tspan6">As a destination discart the value</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g11-0"
+         transform="translate(63.572043,33.605849)" />
+      <g
+         id="g10-9"
+         transform="translate(320.21056,56.910594)">
+        <g
+           id="g20"
+           transform="translate(26.544375,-19.119375)">
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+             x="-0.60851514"
+             y="63.116863"
+             id="text1-2"><tspan
+               sodipodi:role="line"
+               id="tspan1-0"
+               style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+               x="-0.60851514"
+               y="63.116863">RETURN ADDRESS (x1)</tspan></text>
+          <g
+             id="g19"
+             transform="translate(12.435417,-6.3145846)">
+            <rect
+               style="fill:#008080;stroke:#000000;stroke-width:0.286309;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               id="rect1-3"
+               width="152.49852"
+               height="55.116928"
+               x="-12.683468"
+               y="72.583038" />
+            <text
+               xml:space="preserve"
+               style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               x="2.5614824"
+               y="81.943329"
+               id="text2-7"><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="2.5614824"
+                 y="81.943329"
+                 id="tspan6-8">ra (x1)</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="2.5614824"
+                 y="89.880829"
+                 id="tspan15">CALL Instruction</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="2.5614824"
+                 y="97.818329"
+                 id="tspan16">Does not push ret.addr.onto stack</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="2.5614824"
+                 y="105.75583"
+                 id="tspan17">Return address saved in x1</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="2.5614824"
+                 y="113.69333"
+                 id="tspan18">RET Instruction</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="2.5614824"
+                 y="121.63083"
+                 id="tspan19">Jumps to addr in x1</tspan></text>
+            <g
+               id="g28">
+              <rect
+                 style="fill:#008080;stroke:#000000;stroke-width:0.286309;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+                 id="rect1-3-1"
+                 width="152.49852"
+                 height="55.116928"
+                 x="-12.683322"
+                 y="127.49857" />
+              <text
+                 xml:space="preserve"
+                 style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+                 x="2.4920027"
+                 y="137.64757"
+                 id="text2-7-9"><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="2.4920027"
+                   y="137.64757"
+                   id="tspan19-0">Befifit: CALL &amp; RET do not touch</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="2.4920027"
+                   y="145.58507"
+                   id="tspan24">memory - fast!</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="2.4920027"
+                   y="153.52257"
+                   id="tspan25">Downside: Nested calls ....</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="2.4920027"
+                   y="161.46007"
+                   id="tspan26">Additional instructions to save and</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="2.4920027"
+                   y="169.39757"
+                   id="tspan27">restore from memory. But &quot;leaf&quot; function</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="2.4920027"
+                   y="177.33507"
+                   id="tspan28">are fast.</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g33"
+         transform="translate(0.55372927,36.125049)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+           x="345.77896"
+           y="186.61905"
+           id="text1-1-3"><tspan
+             sodipodi:role="line"
+             id="tspan1-2-2"
+             style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+             x="345.77896"
+             y="186.61905">ARGUMENT REGISTER (x10 ... x17)</tspan></text>
+        <g
+           id="g32"
+           transform="translate(0,-5.791664)">
+          <g
+             id="g31">
+            <rect
+               style="fill:#008080;stroke:#000000;stroke-width:0.286282;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               id="rect1-0-6"
+               width="152.49872"
+               height="55.106113"
+               x="345.95355"
+               y="195.9348" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+             x="360.98297"
+             y="209.99413"
+             id="text2-9-1"><tspan
+               sodipodi:role="line"
+               id="tspan2-3-5"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="360.98297"
+               y="209.99413">a0, a1, ......, a7 (x10 ...... x17)</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="360.98297"
+               y="217.93163"
+               id="tspan10-5">up to 8 arguments are passed in regs</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="360.98297"
+               y="225.86913"
+               id="tspan29">More than 8? Larger than register size?</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="360.98297"
+               y="233.80663"
+               id="tspan30">Must pass them on stack results (if any)</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="360.98297"
+               y="241.74413"
+               id="tspan31">Retuened into a0</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g50"
+         transform="translate(-204.98327,-29.545085)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+           x="213.75639"
+           y="106.61904"
+           id="text1-2-4"><tspan
+             sodipodi:role="line"
+             id="tspan1-0-4"
+             style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+             x="213.75639"
+             y="106.61904">TEMP REGISTER (x5 ... x7, x28 ... x31)</tspan></text>
+        <g
+           id="g49"
+           transform="translate(0,-4.2545867)">
+          <g
+             id="g47"
+             transform="translate(48.827491,-34.126741)">
+            <g
+               id="g48">
+              <rect
+                 style="fill:#008080;stroke:#000000;stroke-width:0.261545;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+                 id="rect1-3-0"
+                 width="174.57442"
+                 height="40.178429"
+                 x="165.13771"
+                 y="148.5121" />
+              <text
+                 xml:space="preserve"
+                 style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+                 x="178.23152"
+                 y="158.34607"
+                 id="text2-7-7"><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="178.23152"
+                   y="158.34607"
+                   id="tspan6-8-8">t0, t1, ......, t6 (x5 ..... x7, x28 ...... x31)</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="178.23152"
+                   y="166.28357"
+                   id="tspan19-3">&quot;work&quot; register</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="178.23152"
+                   y="174.22107"
+                   id="tspan36">WATCH OUT</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="178.23152"
+                   y="182.15857"
+                   id="tspan38">A called function may modify! them (convention)</tspan><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="178.23152"
+                   y="190.09607"
+                   id="tspan40" /><tspan
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                   x="178.23152"
+                   y="198.03357"
+                   id="tspan39" /></text>
+            </g>
+          </g>
+          <g
+             id="g46"
+             transform="translate(36.226412,26.084942)">
+            <rect
+               style="fill:#008080;stroke:#000000;stroke-width:0.222964;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               id="rect1-3-1-4"
+               width="174.61304"
+               height="29.192772"
+               x="177.71907"
+               y="128.27861" />
+            <text
+               xml:space="preserve"
+               style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               x="190.82669"
+               y="140.55725"
+               id="text2-7-9-9"><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="190.82669"
+                 y="140.55725"
+                 id="tspan45">&quot;Caller saved&quot;</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="190.82669"
+                 y="148.49475"
+                 id="tspan46">want them to be unchanged? - must save!</tspan></text>
+          </g>
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+         x="245.22322"
+         y="247.88278"
+         id="text59"><tspan
+           sodipodi:role="line"
+           id="tspan59"
+           style="stroke-width:0.264583"
+           x="245.22322"
+           y="247.88278"></tspan></text>
+      <g
+         id="g70"
+         transform="translate(64.077429,-185.17194)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+           x="282.05417"
+           y="196.99156"
+           id="text1-2-7"><tspan
+             sodipodi:role="line"
+             id="tspan1-0-2"
+             style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+             x="282.05417"
+             y="196.99156">SAVED REGISTER (x8, x9, x18 ... x27)</tspan></text>
+        <g
+           id="g69"
+           transform="translate(-97.654982,35.958333)">
+          <g
+             id="g67">
+            <rect
+               style="fill:#008080;stroke:#000000;stroke-width:0.250041;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               id="rect1-3-2"
+               width="152.53479"
+               height="42.027527"
+               x="380.06668"
+               y="164.16669" />
+            <text
+               xml:space="preserve"
+               style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               x="395.08249"
+               y="175.65546"
+               id="text2-7-2"><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="395.08249"
+                 y="175.65546"
+                 id="tspan19-5">s0, s1 ... s11 (x8, x9, x18 ... x27)</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="395.08249"
+                 y="183.59296"
+                 id="tspan54">Can be used as work regs</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="395.08249"
+                 y="191.53046"
+                 id="tspan55">But there is a cost - &quot;callee saved&quot; - id used</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="395.08249"
+                 y="199.46796"
+                 id="tspan56">must save and restore old values!</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="395.08249"
+                 y="207.40546"
+                 id="tspan58" /></text>
+          </g>
+          <g
+             id="g68"
+             transform="translate(202.33441,80.828206)">
+            <rect
+               style="fill:#008080;stroke:#000000;stroke-width:0.229771;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               id="rect1-3-1-49"
+               width="152.55505"
+               height="35.484962"
+               x="177.72247"
+               y="125.13251" />
+            <text
+               xml:space="preserve"
+               style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               x="192.79889"
+               y="136.99808"
+               id="text2-7-9-0"><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="192.79889"
+                 y="136.99808"
+                 id="tspan28-1">Call a function?</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="192.79889"
+                 y="144.93558"
+                 id="tspan64">That function will preserve the s registers if</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="192.79889"
+                 y="152.87308"
+                 id="tspan65">it uses then it will save/restore old values.</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g70-4"
+         transform="translate(-273.43595,-38.665657)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+           x="282.05417"
+           y="196.99156"
+           id="text1-2-7-7"><tspan
+             sodipodi:role="line"
+             id="tspan1-0-2-6"
+             style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+             x="282.05417"
+             y="196.99156">GLOBAL POINTER (x3)</tspan></text>
+        <g
+           id="g69-3"
+           transform="translate(-97.654982,35.958333)">
+          <g
+             id="g67-1">
+            <rect
+               style="fill:#008080;stroke:#000000;stroke-width:0.250041;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               id="rect1-3-2-7"
+               width="152.53479"
+               height="42.027527"
+               x="380.06668"
+               y="164.16669" />
+            <text
+               xml:space="preserve"
+               style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               x="392.65311"
+               y="175.65546"
+               id="text2-7-2-5"><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="392.65311"
+                 y="175.65546"
+                 id="tspan58-7">gp (x3)</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="392.65311"
+                 y="183.59296"
+                 id="tspan94">Points in an area where global (static)</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="392.65311"
+                 y="191.53046"
+                 id="tspan95">variables are kept</tspan><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="392.65311"
+                 y="199.46796"
+                 id="tspan96">Makes addressing easier</tspan></text>
+          </g>
+          <g
+             id="g68-8"
+             transform="translate(202.33441,80.828206)">
+            <rect
+               style="fill:#008080;stroke:#000000;stroke-width:0.173885;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               id="rect1-3-1-49-5"
+               width="152.61095"
+               height="20.315071"
+               x="177.69453"
+               y="125.10456" />
+            <text
+               xml:space="preserve"
+               style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+               x="190.10257"
+               y="136.99808"
+               id="text2-7-9-0-7"><tspan
+                 sodipodi:role="line"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                 x="190.10257"
+                 y="136.99808"
+                 id="tspan65-8">LOAD WORD into reg t0</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g86"
+         transform="translate(-56.009267,-49.392463)">
+        <g
+           id="g85">
+          <g
+             id="g84">
+            <g
+               id="g83">
+              <g
+                 id="g82">
+                <g
+                   id="g81"
+                   transform="translate(-123.90399,148.73441)" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g12"
+         transform="translate(180.43693,21.334002)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+           x="-0.23283832"
+           y="136.99156"
+           id="text1-1"><tspan
+             sodipodi:role="line"
+             id="tspan1-2"
+             style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+             x="-0.23283832"
+             y="136.99156">STACK POINTER (x2)</tspan></text>
+        <g
+           id="g11"
+           transform="translate(-175.11369,24.821198)">
+          <rect
+             style="fill:#008080;stroke:#000000;stroke-width:0.290909;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+             id="rect1-0"
+             width="157.4817"
+             height="55.101486"
+             x="175.25914"
+             y="115.32426" />
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+             x="190.97943"
+             y="124.68225"
+             id="text2-9"><tspan
+               sodipodi:role="line"
+               id="tspan2-3"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="190.97943"
+               y="124.68225">sp (x2)</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="190.97943"
+               y="132.61975"
+               id="tspan6-2">No special stack pointer register (sp)</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="190.97943"
+               y="140.55725"
+               id="tspan7">Programming convention only</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="190.97943"
+               y="148.49475"
+               id="tspan8">Could use any register</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="190.97943"
+               y="156.43225"
+               id="tspan9">Some compressed instructions assume</tspan><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+               x="190.97943"
+               y="164.36975"
+               id="tspan10">x2 is the stack pointer c.lwsp rd, offset(sp)</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g91"
+         transform="translate(185.79762,-133.46548)">
+        <g
+           id="g90">
+          <g
+             id="g89">
+            <g
+               id="g88">
+              <text
+                 xml:space="preserve"
+                 style="font-weight:bold;font-size:7.7611px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+                 x="64.782387"
+                 y="246.99156"
+                 id="text1-8"
+                 transform="translate(-56.569999,-47.625024)"><tspan
+                   sodipodi:role="line"
+                   id="tspan1-5"
+                   style="fill:#0000ff;stroke:none;stroke-width:0.264583"
+                   x="64.782387"
+                   y="246.99156">THREAD POINTER (x4)</tspan></text>
+              <g
+                 id="g87"
+                 transform="translate(-0.63645438,0.77937715)">
+                <rect
+                   style="fill:#008080;stroke:#000000;stroke-width:0.312569;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+                   id="rect1-9"
+                   width="130.15865"
+                   height="76.966248"
+                   x="9.0827389"
+                   y="201.75191" />
+                <text
+                   xml:space="preserve"
+                   style="font-weight:bold;font-size:6.35px;font-family:Serif;-inkscape-font-specification:'Serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+                   x="23.377966"
+                   y="214.83504"
+                   id="text2-6"><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="214.83504"
+                     id="tspan6-1">tp (x4)</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="222.77254"
+                     id="tspan73">Points to on area where variables </tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="230.71004"
+                     id="tspan74">are kept</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="238.64754"
+                     id="tspan75">Thread-specific variables</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="246.58504"
+                     id="tspan76">Thread ID</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="254.52254"
+                     id="tspan77">Parameters to thread</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="262.46002"
+                     id="tspan80">Static/global variables local to</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="270.39752"
+                     id="tspan81">the thread</tspan><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="278.33502"
+                     id="tspan79" /><tspan
+                     sodipodi:role="line"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Serif;-inkscape-font-specification:Serif;fill:#ffffff;stroke-width:0.264583"
+                     x="23.377966"
+                     y="286.27252"
+                     id="tspan78" /></text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Serif;-inkscape-font-specification:Serif;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+         x="256.44717"
+         y="31.072807"
+         id="text99"><tspan
+           sodipodi:role="line"
+           id="tspan99"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:Serif;-inkscape-font-specification:'Serif Bold';fill:#000000;stroke-width:0.264583"
+           x="256.44717"
+           y="31.072807">RISC-V PROCESSOR</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:Serif;-inkscape-font-specification:'Serif Bold';fill:#000000;stroke-width:0.264583"
+           x="256.44717"
+           y="41.656143"
+           id="tspan100">REGISTER SPECIFICATION</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:Serif;-inkscape-font-specification:'Serif Bold';writing-mode:lr-tb;direction:ltr;fill:#000000;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+         x="8.5290108"
+         y="234.94582"
+         id="text101"><tspan
+           sodipodi:role="line"
+           id="tspan101"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif;stroke-width:0.264583"
+           x="8.5290108"
+           y="234.94582">Register size (32 general purpose register)</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif;stroke-width:0.264583"
+           x="8.5290108"
+           y="245.52916"
+           id="tspan102">RV32 - 32 bit</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif;stroke-width:0.264583"
+           x="8.5290108"
+           y="256.11249"
+           id="tspan103">RV64 - 64 bit</tspan></text>
+    </g>
+  </g>
+</svg>
