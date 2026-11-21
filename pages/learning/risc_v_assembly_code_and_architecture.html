@@ -183,6 +183,7 @@
         </section>
 
         <section id="contact" style="line-height: 1.25;">
+            <p style="text-align: center;font-size: 20px;"><strong>--- RISC-V ---</strong>
             <p> <strong>Introduction: </strong>
                 RISC-V is a free and open standard instruction set architecture (ISA) for computer CPUs. It is based on
                 reduced instruction set computer (RISC) principles. Unlike proprietary ISAs such as x86 and ARM, RISC-V
@@ -214,14 +215,24 @@
                     <img src="../../assest/self_learning/risc_v/block_diagram.svg" alt="VLSI Design Banner">
                 </div>
             </section>
-            <p><strong>RISC-V Register Specification:</strong>
+            <p style="text-align: center;font-size: 20px; margin-top: 30px;"><strong>--- RISC-V REGISTER SPECIFICATION
+                    ---</strong>
             </p>
             <section id="portfolio-banner-section">
                 <div class="banner-image-container">
                     <img src="../../assest/self_learning/risc_v/register_spec.svg" alt="VLSI Design Banner">
                 </div>
             </section>
-            <p> <strong>RISC-V assembly language:</strongs>
+            <p><strong>Zero Register:</strong></p>
+            <p><strong>Temporary Register:</strong></p>
+            <p><strong>Global Ponter:</strong></p>
+            <p><strong>Thread Pointer:</strong></p>
+            <p><strong>Stack Ponter:</strong></p>
+            <p><strong>Saved Register:</strong></p>
+            <p><strong>Return Address:</strong></p>
+            <p><strong>Argument Register:</strong></p>
+            <p style="text-align: center;font-size: 20px; margin-top: 30px;"><strong>--- RISC-V ASSEMBLY LANGUAGE
+                    ---</strong>
             </p>
             <div class="code-block">
                 <button class="code-copy" aria-label="Copy code"><i class='bx bx-copy'></i></button>
@@ -235,7 +246,7 @@ opcode examples:
     .word   assembler directive
 </pre>
             </div>
-            <p>Arithmatic and Logic instructions:
+            <p> <strong>Arithmatic and Logic instructions:</strong>
             </p>
             <section id="portfolio-banner-section">
                 <div class="banner-image-container">
@@ -249,6 +260,7 @@ opcode examples:
                             <th>Instruction Command</th>
                             <th>Arguments</th>
                             <th>Comment</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -256,35 +268,85 @@ opcode examples:
                             <td>add</td>
                             <td>rd, rs1, rs2</td>
                             <td># rd = rs1 + rs2</td>
+                            <td>Adds the values of rs1 and rs2 and stores the result in rd.</td>
                         </tr>
                         <tr>
                             <td>sub</td>
                             <td>rd, rs1, rs2</td>
                             <td># rd = rs1 - rs2</td>
+                            <td>Subtracts the value of rs2 from rs1 and stores the result in rd.</td>
                         </tr>
                         <tr>
                             <td>and</td>
                             <td>rd, rs1, rs2</td>
                             <td># rd = rs1 & rs2</td>
+                            <td>Performs a bitwise AND operation on rs1 and rs2 and stores the result in rd.</td>
+                        </tr>
+                        <tr>
+                            <td>or</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 | rs2</td>
+                            <td>Performs a bitwise OR operation on rs1 and rs2 and stores the result in rd.</td>
+                        </tr>
+                        <tr>
+                            <td>xor</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 ^ rs2</td>
+                            <td>Performs a bitwise XOR (exclusive OR) operation on rs1 and rs2 and stores the result in
+                                rd.</td>
+                        </tr>
+                        <tr>
+                            <td>s11</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 << rs2</td>
+                            <td>Performs a logical left shift on rs1 by the number of bit positions specified in rs2.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>sr1</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 >> rs2</td>
+                            <td>Performs a logical right shift on rs1, filling the vacated upper bits with zeros.</td>
+                        </tr>
+                        <tr>
+                            <td>sra</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = rs1 >>> rs2</td>
+                            <td>Performs an arithmetic right shift on rs1, preserving its sign bit while shifting.</td>
+                        </tr>
+                        <tr>
+                            <td>slt</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = (rs1 &lt; rs2) ? 1:0</td>
+                            <td>Compares rs1 and rs2 as signed integers and stores 1 in rd if rs1 is less than rs2;
+                                otherwise, stores 0.</td>
+                        </tr>
+                        <tr>
+                            <td>sltu</td>
+                            <td>rd, rs1, rs2</td>
+                            <td># rd = (rs1 &ltu rs2) ? 1:0</td>
+                            <td>Compares rs1 and rs2 as unsigned integers and stores 1 in rd if rs1 is less than rs2;
+                                otherwise, stores 0.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p>Jump and Link instruction:
+            <p>Note: No subtract immediate instruction in RISC-V</p>
+            <p><strong>Jump and Link instruction:</strong>
             </p>
             <section id="portfolio-banner-section">
                 <div class="banner-image-container">
                     <img src="../../assest/self_learning/risc_v/instruction_encoding.svg" alt="VLSI Design Banner">
                 </div>
             </section>
-            <p>Load upper immediate instruction:
+            <p><strong>Load upper immediate instruction:</strong>
             </p>
             <section id="portfolio-banner-section">
                 <div class="banner-image-container">
                     <img src="../../assest/self_learning/risc_v/load_upper_immediate.svg" alt="VLSI Design Banner">
                 </div>
             </section>
-            <p>Add upper immediate to PC:
+            <p><strong>Add upper immediate to PC:</strong>
             </p>
             <section id="portfolio-banner-section">
                 <div class="banner-image-container">
